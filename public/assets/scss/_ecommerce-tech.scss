@@ -1,0 +1,49 @@
+
+@import './uikit';
+@import './variables';
+
+.store-text-white {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--white);
+}
+
+.store-text-beige {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--beige);
+}
+
+.store-text-slate-grey {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--slate-grey);
+}
+
+.store-text-tomato {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--tomato);
+}
+
+.store-text-silver {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--silver);
+}
+
+.store-text-silver-two {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--silver-two);
+}
+
+.store-text-blue-sky {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--blue-sky);
+}
+
+.store-text-black {
+    color: var(--black);
+}
