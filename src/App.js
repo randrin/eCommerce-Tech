@@ -1,9 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route } from "react-router-dom";
+import Routes from "./components/routes/Routes";
+import { Footer, Navbar, Sidebar, Sidecart } from "./components";
 
-function App() {
-  return <h1 className="store-text-blue-sky"> Welcome to Store Tech</h1>;
+class App extends Component {
+  render() {
+    return (
+      <>
+        <BrowserRouter>
+          <Navbar />
+          <Sidebar />
+          <Sidecart />
+          <Route component={Routes} />
+          <Footer />
+        </BrowserRouter>
+      </>
+    );
+  }
 }
 
 export default App;
