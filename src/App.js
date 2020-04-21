@@ -9,6 +9,7 @@ import {
   Sidecart,
   Categories,
   Nouveautes,
+  Deals,
 } from "./components";
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
             </div>
             <Categories />
             <Nouveautes />
+            <Deals />
           </main>
           <Sidecart />
           <Route component={Routes} />

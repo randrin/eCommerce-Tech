@@ -179,7 +179,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -234,7 +237,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -292,22 +298,25 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -370,7 +379,10 @@ export default class Nouveautes extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 10 Reviews )</span>
                     </div>
@@ -379,14 +391,14 @@ export default class Nouveautes extends Component {
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#edd2c8'}}
+                        style={{ background: "#edd2c8" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -444,7 +456,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 5 Reviews )</span>
                     </div>
@@ -500,7 +515,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -592,22 +610,25 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -663,7 +684,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -725,7 +749,10 @@ export default class Nouveautes extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 10 Reviews )</span>
                     </div>
@@ -734,14 +761,14 @@ export default class Nouveautes extends Component {
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#edd2c8'}}
+                        style={{ background: "#edd2c8" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -799,7 +826,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 5 Reviews )</span>
                     </div>
@@ -855,7 +885,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -947,7 +980,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 5 Reviews )</span>
                     </div>
@@ -1003,7 +1039,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -1061,22 +1100,25 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -1132,7 +1174,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -1194,7 +1239,10 @@ export default class Nouveautes extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 10 Reviews )</span>
                     </div>
@@ -1203,14 +1251,14 @@ export default class Nouveautes extends Component {
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#edd2c8'}}
+                        style={{ background: "#edd2c8" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -1300,7 +1348,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -1355,7 +1406,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -1413,22 +1467,25 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -1487,7 +1544,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 5 Reviews )</span>
                     </div>
@@ -1543,7 +1603,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -1605,7 +1668,10 @@ export default class Nouveautes extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 10 Reviews )</span>
                     </div>
@@ -1614,14 +1680,14 @@ export default class Nouveautes extends Component {
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#edd2c8'}}
+                        style={{ background: "#edd2c8" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -1717,7 +1783,10 @@ export default class Nouveautes extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 10 Reviews )</span>
                     </div>
@@ -1726,14 +1795,14 @@ export default class Nouveautes extends Component {
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#edd2c8'}}
+                        style={{ background: "#edd2c8" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -1789,7 +1858,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -1844,7 +1916,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -1902,22 +1977,25 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -2008,7 +2086,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -2066,7 +2147,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 5 Reviews )</span>
                     </div>
@@ -2122,7 +2206,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$1,199.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '100%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "100%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
@@ -2177,7 +2264,10 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$79.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 6 Reviews )</span>
                     </div>
@@ -2232,21 +2322,24 @@ export default class Nouveautes extends Component {
                     <div className="product-price">$899.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '80%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "80%" }}
+                        ></div>
                       </div>
                       <span className="ratings-text">( 4 Reviews )</span>
                     </div>
                     <div className="product-nav product-nav-dots">
-                      <a href="#" style={{background: '#edd2c8'}}>
+                      <a href="#" style={{ background: "#edd2c8" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#333333'}}
+                        style={{ background: "#333333" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
@@ -2258,6 +2351,37 @@ export default class Nouveautes extends Component {
           </div>
         </div>
         <div className="mb-6"></div>
+        <div className="container">
+          <div
+            className="cta cta-border mb-5"
+            style={{
+              backgroundImage:
+                "url(" + "assets/images/demos/demo-4/bg-1.jpg" + ")",
+            }}
+          >
+            <img
+              src="assets/images/demos/demo-4/camera.png"
+              alt="camera"
+              className="cta-img"
+            />
+            <div className="row justify-content-center">
+              <div className="col-md-12">
+                <div className="cta-content">
+                  <div className="cta-text text-right text-white">
+                    <p>
+                      Shop Today’s Deals <br />
+                      <strong>Awesome Made Easy. HERO7 Black</strong>
+                    </p>
+                  </div>
+                  <a href="#" className="btn btn-primary btn-round">
+                    <span>Shop Now - $429.99</span>
+                    <i className="icon-long-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </>
     );
   }
