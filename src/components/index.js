@@ -9,4 +9,5 @@ export { default as HeaderBottom } from "./web/inc/HeaderBottom";
 export { default as Login } from "./auth/Login";
 export { default as Services } from "./web/pages/services/Services";
 export { default as Categories } from "./web/pages/categories/Categories";
+export { default as Nouveautes } from "./web/pages/nouveautes/Nouveautes";
 

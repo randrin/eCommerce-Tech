@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 import Routes from "./components/routes/Routes";
-import { Footer, Navbar, Sidebar, Sidecart, Categories } from "./components";
+import {
+  Footer,
+  Navbar,
+  Sidebar,
+  Sidecart,
+  Categories,
+  Nouveautes,
+} from "./components";
 
 class App extends Component {
   render() {
@@ -15,6 +22,7 @@ class App extends Component {
               <Sidebar />
             </div>
             <Categories />
+            <Nouveautes />
           </main>
           <Sidecart />
           <Route component={Routes} />
