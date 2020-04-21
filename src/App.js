@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 import Routes from "./components/routes/Routes";
-import { Footer, Navbar, Sidebar, Sidecart } from "./components";
+import { Footer, Navbar, Sidebar, Sidecart, Categories } from "./components";
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
             <div class="intro-slider-container mb-5">
               <Sidebar />
             </div>
+            <Categories />
           </main>
           <Sidecart />
           <Route component={Routes} />
