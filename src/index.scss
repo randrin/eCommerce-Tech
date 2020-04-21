@@ -4,3 +4,68 @@ body {
   font-family: "Open Sans", sans-serif !important;
   background-color: var(--silver-two) !important;
 }
+
+//Test Orange Tangerine
+.header-top a:hover,
+.header-top a:focus,
+.wishlist a:hover,
+.wishlist a:focus,
+.cart-dropdown:hover .dropdown-toggle,
+.cart-dropdown.show .dropdown-toggle,
+.compare-dropdown:hover .dropdown-toggle,
+.compare-dropdown.show .dropdown-toggle,
+.compare-product-title a:hover,
+.compare-product-title a:focus,
+.compare-actions .action-link:hover,
+.compare-actions .action-link:focus,
+.cart-dropdown .product-title a:hover,
+.cart-dropdown .product-title a:focus,
+.menu-vertical>li:hover>a,
+.menu-vertical>li.show>a,
+.menu-vertical>li.active>a,
+.menu li:hover>a,
+.menu li.show>a,
+.menu li.active>a,
+.header-3 .header-search-extended .btn:hover,
+.header-3 .header-search-extended .btn:focus,
+.header-4 .header-search-extended .btn:hover,
+.header-4 .header-search-extended .btn:focus,
+.nav.nav-pills .nav-link:hover,
+.nav.nav-pills .nav-link:focus,
+.form-tab .form-footer a:hover,
+.form-tab .form-footer a:focus {
+  color: var(--orange-tangerine) !important;
+}
+.wishlist a .wishlist-count,
+.cart-dropdown .cart-count,
+.category-dropdown .dropdown-toggle:hover,
+.category-dropdown .dropdown-toggle:focus,
+.category-dropdown:not(.is-on):hover .dropdown-toggle,
+.header-bottom .menu>li>a:before,
+.nav.nav-border-anim .nav-link:before {
+  background-color: var(--orange-tangerine) !important;
+}
+.btn-outline-primary-2,
+.btn-primary {
+  color: var(--orange-tangerine) !important;
+  border-color: var(--orange-tangerine) !important;
+}
+.btn-outline-primary-2:hover,
+.btn-outline-primary-2:focus,
+.btn-outline-primary-2.focus,
+.btn-outline-primary-2:not(:disabled):not(.disabled):active,
+.btn-outline-primary-2:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary-2.dropdown-toggle,
+a.btn-primary {
+  color: #fff !important;
+  background-color: var(--orange-tangerine) !important;
+  border-color: var(--orange-tangerine) !important;
+}
+.nav.nav-pills .nav-item.show .nav-link,
+.nav.nav-pills .nav-item .nav-link.active {
+  color: var(--orange-tangerine) !important;
+  border-bottom-color: var(--orange-tangerine) !important;
+}
+.form-control:focus {
+  border-color: var(--orange-tangerine) !important;
+}
