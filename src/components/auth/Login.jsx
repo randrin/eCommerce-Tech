@@ -6,7 +6,7 @@ export default class Login extends Component {
       <div
         className="modal fade"
         id="signin-modal"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-hidden="true"
       >
@@ -102,7 +102,7 @@ export default class Login extends Component {
                             />
                             <label
                               className="custom-control-label"
-                              htmlfor="signin-remember"
+                              htmlFor="signin-remember"
                             >
                               Remember Me
                             </label>

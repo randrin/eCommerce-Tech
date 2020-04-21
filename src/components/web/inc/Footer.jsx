@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Services } from "../../../components";
+import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
   render() {
@@ -76,7 +77,7 @@ export default class Footer extends Component {
                     <h4 className="widget-title">Useful Links</h4>
                     <ul className="widget-list">
                       <li>
-                        <a href="about.html">About Molla</a>
+                        <Link to="/about">About Molla</Link>
                       </li>
                       <li>
                         <a href="#">Our Services</a>
@@ -85,10 +86,10 @@ export default class Footer extends Component {
                         <a href="#">How to shop on Molla</a>
                       </li>
                       <li>
-                        <a href="faq.html">FAQ</a>
+                        <Link to="/faqs">FAQ</Link>
                       </li>
                       <li>
-                        <a href="contact.html">Contact us</a>
+                        <Link to="/contact">Contact us</Link>
                       </li>
                     </ul>
                   </div>

@@ -7,6 +7,7 @@ import {
   Home,
   Product,
   Products,
+  Faqs,
 } from "../../pages";
 import { Route, Switch } from "react-router-dom";
 
@@ -15,6 +16,7 @@ const Routes = (props) => (
     <Route exact path="/" component={Home} />
     <Route exact path="/home" component={Home} />
     <Route exact path="/about" component={About} />
+    <Route exact path="/faqs" component={Faqs} />
     <Route exact path="/products" component={Products} />
     <Route exact path="/product/:id" component={Product} />
     <Route exact path="/contact" component={Contact} />
