@@ -10,7 +10,11 @@ class App extends Component {
       <>
         <BrowserRouter>
           <Navbar />
-          <Sidebar />
+          <main class="main">
+            <div class="intro-slider-container mb-5">
+              <Sidebar />
+            </div>
+          </main>
           <Sidecart />
           <Route component={Routes} />
           <Footer />

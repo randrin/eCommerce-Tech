@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HeaderTop, HeaderMiddle, HeaderBottom } from "../../components";
+import { HeaderTop, HeaderMiddle, HeaderBottom } from "../../../components";
 
 export default class Navbar extends Component {
   render() {
