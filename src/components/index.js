@@ -16,4 +16,6 @@ export { default as Partenaires } from "./web/pages/partenaires/Partenaires";
 export { default as Produits } from "./web/pages/produits/Produits";
 export { default as Recommandations } from "./web/pages/recommandations/Recommandations";
 export { default as Annonces } from "./web/pages/annonces/Annonces";
+export { default as ComingSoon } from "./web/pages/coming-soon/ComingSoon";
+export { default as Temoignages } from "./web/pages/temoignages/Temoignages";
 

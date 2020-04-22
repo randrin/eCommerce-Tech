@@ -91,6 +91,12 @@ export default class Footer extends Component {
                       <li>
                         <Link to="/contact">Contact us</Link>
                       </li>
+                      <li>
+                        <Link to="/coming-soon">Coming Soon</Link>
+                      </li>
+                      <li>
+                        <Link to="/temoignages">Temoignages</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 $(document).ready(function () {
   "use strict";
 
-  // Close Notifications Banner
+  // Close Notification Banner
   var $notificationClose = $(".notification .notify-action").find(
     ".icon-close"
   );

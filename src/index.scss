@@ -8,11 +8,8 @@ body {
 //Test Orange Tangerine
 .header-top a:hover,
 .header-top a:focus,
-.wishlist a:hover,
 .wishlist a:focus,
-.cart-dropdown:hover .dropdown-toggle,
 .cart-dropdown.show .dropdown-toggle,
-.compare-dropdown:hover .dropdown-toggle,
 .compare-dropdown.show .dropdown-toggle,
 .compare-product-title a:hover,
 .compare-product-title a:focus,
@@ -24,8 +21,6 @@ body {
 .menu-vertical>li.show>a,
 .menu-vertical>li.active>a,
 .menu li:hover>a,
-.menu li.show>a,
-.menu li.active>a,
 .header-3 .header-search-extended .btn:hover,
 .header-3 .header-search-extended .btn:focus,
 .header-4 .header-search-extended .btn:hover,
@@ -33,17 +28,16 @@ body {
 .nav.nav-pills .nav-link:hover,
 .nav.nav-pills .nav-link:focus,
 .form-tab .form-footer a:hover,
-.form-tab .form-footer a:focus,
-.header-right-login a {
+.form-tab .form-footer a:focus {
   color: var(--orange-tangerine) !important;
 }
-.wishlist a .wishlist-count,
-.cart-dropdown .cart-count,
 .category-dropdown .dropdown-toggle:hover,
 .category-dropdown .dropdown-toggle:focus,
 .category-dropdown:not(.is-on):hover .dropdown-toggle,
 .header-bottom .menu>li>a:before,
-.nav.nav-border-anim .nav-link:before {
+.nav.nav-border-anim .nav-link:before,
+.header,
+.header-bottom.fixed {
   background-color: var(--orange-tangerine) !important;
 }
 .btn-outline-primary-2,
@@ -69,4 +63,38 @@ a.btn-primary {
 }
 .form-control:focus {
   border-color: var(--orange-tangerine) !important;
+}
+.icon-box-side {
+  border: .2rem solid #39f !important;
+}
+.cart-dropdown .cart-count,
+.wishlist a .wishlist-count {
+  background-color: #fff !important;
+  color: var(--orange-tangerine) !important;
+}
+.header-intro-clearance .header-middle .header-right p {
+  color: #fff !important;
+}
+.wishlist a:hover,
+.cart-dropdown:hover .dropdown-toggle,
+.compare-dropdown:hover .dropdown-toggle,
+.header-intro-clearance .header-bottom .menu>li>a,
+.header-intro-clearance .header-bottom .header-right p,
+.header-right-login a {
+  color: #fff !important;
+}
+.header-4 .header-bottom {
+  background-color: inherit;
+}
+.header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
+.header-intro-clearance .header-bottom .container::after {
+  background-color: #fff !important;
+}
+.header-bottom .menu li:hover>a:before,
+.header-bottom .menu li.show>a:before,
+.header-bottom .menu li.active>a:before {
+  border-top: 1px solid #fff;
+}
+.header-4 .header-middle {
+  margin: 2rem 0;
 }
