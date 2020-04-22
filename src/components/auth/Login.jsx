@@ -65,7 +65,7 @@ export default class Login extends Component {
                     >
                       <form action="#">
                         <div className="form-group">
-                          <label htmlfor="singin-email">
+                          <label htmlFor="singin-email">
                             Username or email address *
                           </label>
                           <input
@@ -77,7 +77,7 @@ export default class Login extends Component {
                           />
                         </div>
                         <div className="form-group">
-                          <label htmlfor="singin-password">Password *</label>
+                          <label htmlFor="singin-password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
@@ -138,7 +138,7 @@ export default class Login extends Component {
                     >
                       <form action="#">
                         <div className="form-group">
-                          <label htmlfor="register-email">
+                          <label htmlFor="register-email">
                             Your email address *
                           </label>
                           <input
@@ -150,7 +150,7 @@ export default class Login extends Component {
                           />
                         </div>
                         <div className="form-group">
-                          <label htmlfor="register-password">Password *</label>
+                          <label htmlFor="register-password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
@@ -176,7 +176,7 @@ export default class Login extends Component {
                             />
                             <label
                               className="custom-control-label"
-                              htmlfor="register-policy"
+                              htmlFor="register-policy"
                             >
                               I agree to the <a href="#">privacy policy</a> *
                             </label>

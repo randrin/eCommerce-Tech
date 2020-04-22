@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { CategoriesHeaderList } from "../../../components";
 
 export default class HeaderBottom extends Component {
     render() {
@@ -10,23 +11,7 @@ export default class HeaderBottom extends Component {
                             <a href="#" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
                                 Browse Categories <i className="icon-angle-down"></i>
                             </a>
-                            <div className="dropdown-menu">
-                                <nav className="side-nav">
-                                    <ul className="menu-vertical sf-arrows">
-                                        <li className="item-lead"><a href="#">Daily offers</a></li>
-                                        <li className="item-lead"><a href="#">Gift Ideas</a></li>
-                                        <li><a href="#">Beds</a></li>
-                                        <li><a href="#">Lighting</a></li>
-                                        <li><a href="#">Sofas & Sleeper sofas</a></li>
-                                        <li><a href="#">Storage</a></li>
-                                        <li><a href="#">Armchairs & Chaises</a></li>
-                                        <li><a href="#">Decoration </a></li>
-                                        <li><a href="#">Kitchen Cabinets</a></li>
-                                        <li><a href="#">Coffee & Tables</a></li>
-                                        <li><a href="#">Outdoor Furniture </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                            <CategoriesHeaderList />
                         </div>
                     </div>
                     <div className="header-center">
@@ -359,8 +344,13 @@ export default class HeaderBottom extends Component {
                             </ul>
                         </nav>
                     </div>
-                    <div className="header-right">
+                    <div className="header-right header-right-fixed">
                         <i className="la la-lightbulb-o"></i><p>Clearance<span className="highlight">&nbsp;Up to 30% Off</span></p>
+                    </div>
+                    <div className="header-right header-right-login">
+                        <a href="#signin-modal" data-toggle="modal">
+                            <i className="icon-user"></i> Sign in / Sign up
+                        </a>
                     </div>
                 </div>
             </div>

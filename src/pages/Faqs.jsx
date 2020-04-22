@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import { Navbar, Footer } from "../components";
 
 export default class Faqs extends Component {
     render() {

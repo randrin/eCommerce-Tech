@@ -9,9 +9,11 @@ export { default as HeaderBottom } from "./web/inc/HeaderBottom";
 export { default as Login } from "./auth/Login";
 export { default as Services } from "./web/pages/services/Services";
 export { default as Categories } from "./web/pages/categories/Categories";
+export { default as CategoriesHeaderList } from "./web/pages/categories/CategoriesHeaderList";
 export { default as Nouveautes } from "./web/pages/nouveautes/Nouveautes";
 export { default as Deals } from "./web/pages/deals/Deals";
 export { default as Partenaires } from "./web/pages/partenaires/Partenaires";
 export { default as Produits } from "./web/pages/produits/Produits";
 export { default as Recommandations } from "./web/pages/recommandations/Recommandations";
+export { default as Annonces } from "./web/pages/annonces/Annonces";
 

@@ -52,7 +52,7 @@ export default class HeaderTop extends Component {
                     </li>
                     <li>
                       <a href="#signin-modal" data-toggle="modal">
-                        Sign in / Sign up
+                        <i className="icon-user"></i> Sign in / Sign up
                       </a>
                     </li>
                   </ul>
