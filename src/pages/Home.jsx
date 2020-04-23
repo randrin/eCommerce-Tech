@@ -9,6 +9,8 @@ import {
   Partenaires,
   Produits,
   Recommandations,
+  Services,
+  Abonnement,
 } from "../components";
 
 export default class Home extends Component {
@@ -27,6 +29,8 @@ export default class Home extends Component {
           <Produits />
           <Recommandations />
         </main>
+        <Services />
+        <Abonnement />
         <Footer />
       </>
     );

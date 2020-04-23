@@ -10,7 +10,7 @@ import {
   Products,
   Faqs,
 } from "../../pages";
-import { ComingSoon, Temoignages } from "../../components";
+import { ComingSoon, Temoignages, Blogs } from "../../components";
 
 const Routes = (props) => (
   <Switch>
@@ -24,6 +24,7 @@ const Routes = (props) => (
     <Route exact path="/cart" component={Cart} />
     <Route exact path="/coming-soon" component={ComingSoon} />
     <Route exact path="/temoignages" component={Temoignages} />
+    <Route exact path="/blogs" component={Blogs} />
     <Route component={Error404} />
   </Switch>
 );

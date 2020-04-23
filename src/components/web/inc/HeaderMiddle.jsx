@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class HeaderMiddle extends Component {
     render() {
@@ -10,9 +11,9 @@ export default class HeaderMiddle extends Component {
                             <span className="sr-only">Toggle mobile menu</span>
                             <i className="icon-bars"></i>
                         </button>
-                        <a href="index.html" className="logo">
+                        <Link to="/" className="logo">
                             <img src="/assets/images/demos/demo-4/logo.png" alt="Molla Logo" width="105" height="25" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="header-center">
                         <div className="header-search header-search-extended header-search-visible d-none d-lg-block">

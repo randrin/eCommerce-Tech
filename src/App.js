@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <BrowserRouter>
+        <BrowserRouter forceRefresh={true}>
           <Route component={Routes} />
         </BrowserRouter>
       </>

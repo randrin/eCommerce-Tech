@@ -7,6 +7,7 @@ export { default as HeaderTop } from "./web/inc/HeaderTop";
 export { default as HeaderMiddle } from "./web/inc/HeaderMiddle";
 export { default as HeaderBottom } from "./web/inc/HeaderBottom";
 export { default as Login } from "./auth/Login";
+export { default as Dashboard } from "./auth/dashboard/Dashboard";
 export { default as Services } from "./web/pages/services/Services";
 export { default as Categories } from "./web/pages/categories/Categories";
 export { default as CategoriesHeaderList } from "./web/pages/categories/CategoriesHeaderList";
@@ -18,4 +19,6 @@ export { default as Recommandations } from "./web/pages/recommandations/Recomman
 export { default as Annonces } from "./web/pages/annonces/Annonces";
 export { default as ComingSoon } from "./web/pages/coming-soon/ComingSoon";
 export { default as Temoignages } from "./web/pages/temoignages/Temoignages";
+export { default as Abonnement } from "./web/pages/abonnement/Abonnement";
+export { default as Blogs } from "./web/pages/blogs/Blogs";
 
