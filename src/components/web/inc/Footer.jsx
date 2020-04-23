@@ -93,10 +93,10 @@ export default class Footer extends Component {
                         <a href="#">Sign In</a>
                       </li>
                       <li>
-                        <a href="cart.html">View Cart</a>
+                        <Link to="/cart">View Cart</Link>
                       </li>
                       <li>
-                        <a href="#">My Wishlist</a>
+                        <Link to="/favoris">My Wishlist</Link>
                       </li>
                       <li>
                         <a href="#">Track My Order</a>

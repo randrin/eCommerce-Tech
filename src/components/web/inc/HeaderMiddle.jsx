@@ -188,16 +188,16 @@ export default class HeaderMiddle extends Component {
                       <span className="cart-total-price">$160.00</span>
                     </div>
                     <div className="dropdown-cart-action">
-                      <a href="cart.html" className="btn btn-primary">
+                      <Link to="/cart" className="btn btn-primary">
                         View Cart
-                      </a>
-                      <a
-                        href="checkout.html"
+                      </Link>
+                      <Link
+                        to="/checkout"
                         className="btn btn-outline-primary-2"
                       >
                         <span>Checkout</span>
                         <i className="icon-long-arrow-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

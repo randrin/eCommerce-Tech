@@ -9,6 +9,7 @@ import {
   Product,
   Products,
   Faqs,
+  Checkout,
 } from "../../pages";
 import { ComingSoon, Temoignages, Blogs, Favoris } from "../../components";
 
@@ -22,6 +23,7 @@ const Routes = (props) => (
     <Route exact path="/product/:id" component={Product} />
     <Route exact path="/contact" component={Contact} />
     <Route exact path="/cart" component={Cart} />
+    <Route exact path="/checkout" component={Checkout} />
     <Route exact path="/coming-soon" component={ComingSoon} />
     <Route exact path="/temoignages" component={Temoignages} />
     <Route exact path="/blogs" component={Blogs} />
