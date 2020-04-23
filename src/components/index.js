@@ -21,4 +21,4 @@ export { default as ComingSoon } from "./web/pages/coming-soon/ComingSoon";
 export { default as Temoignages } from "./web/pages/temoignages/Temoignages";
 export { default as Abonnement } from "./web/pages/abonnement/Abonnement";
 export { default as Blogs } from "./web/pages/blogs/Blogs";
-
+export { default as Favoris } from "./web/pages/favoris/Favoris";
