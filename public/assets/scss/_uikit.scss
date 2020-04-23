@@ -27,12 +27,14 @@
         }
     }
 }
+
 .notification {
     position: relative;
     display: flex;
     justify-content: center;
     padding: 1.3rem 0;
 }
+
 .notification .notify-content h3 {
     font-size: 1.3rem;
     font-weight: 400;
@@ -40,18 +42,39 @@
     color: #fff;
     margin-bottom: 0;
 }
+
 .notification .notify-action {
     position: absolute;
     right: 19%;
     top: 17%;
 }
+
 .notification .notify-action a {
     font-size: 1.6rem;
     letter-spacing: -.01em;
     color: #fff;
     line-height: 0;
 }
+
 .notifications-close {
     color: #fff;
     cursor: pointer;
+}
+
+//Fixed Scroll
+.stop-fixed {
+    position: relative !important;
+}
+
+.new-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 !important;
+    z-index: 1040;
+    animation-name: fixedHeader;
+    animation-duration: .4s;
+    background-color: var(--orange-tangerine) !important;
+    box-shadow: 0 3px 6px rgba(51, 51, 51, 0.05);
 }
