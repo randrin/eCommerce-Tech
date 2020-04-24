@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CategoriesHeaderList } from "../../../components";
+import { CategoriesHeaderList } from "../../..";
 
 export default class HeaderBottom extends Component {
     render() {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Login } from "../..";
+import { Login } from "../../..";
 
 export default class HeaderTop extends Component {
   render() {

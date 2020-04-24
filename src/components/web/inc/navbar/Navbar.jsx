@@ -4,7 +4,7 @@ import {
   HeaderMiddle,
   HeaderBottom,
   Annonces,
-} from "../../../components";
+} from "../../../../components";
 
 export default class Navbar extends Component {
   render() {

@@ -1,12 +1,13 @@
 
-export { default as Footer } from "./web/inc/Footer";
-export { default as Navbar } from "./web/inc/Navbar";
+export { default as Footer } from "./web/inc/footer/Footer";
+export { default as Navbar } from "./web/inc/navbar/Navbar";
 export { default as Sidebar } from "./web/Sidebar";
 export { default as Sidecart } from "./web/Sidecart";
-export { default as HeaderTop } from "./web/inc/HeaderTop";
-export { default as HeaderMiddle } from "./web/inc/HeaderMiddle";
-export { default as HeaderBottom } from "./web/inc/HeaderBottom";
+export { default as HeaderTop } from "./web/inc/header/HeaderTop";
+export { default as HeaderMiddle } from "./web/inc/header/HeaderMiddle";
+export { default as HeaderBottom } from "./web/inc/header/HeaderBottom";
 export { default as Login } from "./auth/Login";
+export { default as Logout } from "./auth/Logout";
 export { default as Dashboard } from "./auth/dashboard/Dashboard";
 export { default as Services } from "./web/pages/services/Services";
 export { default as Categories } from "./web/pages/categories/Categories";
@@ -22,3 +23,5 @@ export { default as Temoignages } from "./web/pages/temoignages/Temoignages";
 export { default as Abonnement } from "./web/pages/abonnement/Abonnement";
 export { default as Blogs } from "./web/pages/blogs/Blogs";
 export { default as Favoris } from "./web/pages/favoris/Favoris";
+export { default as HeaderProductsCart } from "./web/inc/header/inc/HeaderProductsCart";
+export { default as HeaderCartEmpty } from "./web/inc/header/inc/HeaderCartEmpty";

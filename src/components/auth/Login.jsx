@@ -1,6 +1,38 @@
 import React, { Component } from "react";
 
 export default class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      email: "",
+      password: "",
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleLogin(e) {
+    e.preventDefault();
+    var login = {
+      username: 'admin',
+      password: this.state.password,
+      email: this.state.email,
+    };
+    if (
+      (login.username === "admin" && login.password === "1234") ||
+      (login.email === "test@gmail.com" && login.password === "1234")
+    ) {
+      var expires = 24 * 60 * 60 * 1000;
+      var user = { value: login, tokenTime: new Date().getTime() + expires };
+      localStorage.setItem("user", JSON.stringify(user));
+      window.location.replace(`/`);
+    }
+  }
   render() {
     return (
       <div
@@ -63,26 +95,30 @@ export default class Login extends Component {
                       role="tabpanel"
                       aria-labelledby="signin-tab"
                     >
-                      <form action="#">
+                      <form action="#" onSubmit={this.handleLogin}>
                         <div className="form-group">
-                          <label htmlFor="singin-email">
+                          <label htmlFor="email">
                             Username or email address *
                           </label>
                           <input
                             type="text"
                             className="form-control"
-                            id="singin-email"
-                            name="singin-email"
+                            id="email"
+                            name="email"
+                            onChange={this.handleChange}
+                            value={this.state.email}
                             required
                           />
                         </div>
                         <div className="form-group">
-                          <label htmlFor="singin-password">Password *</label>
+                          <label htmlFor="password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
-                            id="singin-password"
-                            name="singin-password"
+                            id="password"
+                            name="password"
+                            onChange={this.handleChange}
+                            value={this.state.password}
                             required
                           />
                         </div>
