@@ -6,9 +6,11 @@ export default class Login extends Component {
       username: "",
       email: "",
       password: "",
+      confirmation_password: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
+    this.handleRegister = this.handleRegister.bind(this);
   }
 
   handleChange(e) {
@@ -18,7 +20,7 @@ export default class Login extends Component {
   handleLogin(e) {
     e.preventDefault();
     var login = {
-      username: 'admin',
+      username: "admin",
       password: this.state.password,
       email: this.state.email,
     };
@@ -27,10 +29,16 @@ export default class Login extends Component {
       (login.email === "test@gmail.com" && login.password === "1234")
     ) {
       var expires = 24 * 60 * 60 * 1000;
-      var user = { value: login, tokenTime: new Date().getTime() + expires };
+      var user = {
+        value: login,
+        tokenTime: new Date().getTime() + expires,
+      };
       localStorage.setItem("user", JSON.stringify(user));
       window.location.replace(`/`);
     }
+  }
+  handleRegister(e) {
+    e.preventDefault();
   }
   render() {
     return (
@@ -171,51 +179,81 @@ export default class Login extends Component {
                       role="tabpanel"
                       aria-labelledby="register-tab"
                     >
-                      <form action="#">
+                      <form onSubmit={this.handleRegister}>
                         <div className="form-group">
-                          <label htmlFor="register-email">
-                            Your email address *
+                          <label for="username">
+                            First Name and Last Name *
                           </label>
                           <input
-                            type="email"
+                            type="text"
                             className="form-control"
-                            id="register-email"
-                            name="register-email"
+                            id="username"
+                            name="username"
+                            onChange={this.handleChange}
+                            value={this.state.username}
                             required
                           />
                         </div>
                         <div className="form-group">
-                          <label htmlFor="register-password">Password *</label>
+                          <label for="email">Email address *</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="email"
+                            name="email"
+                            onChange={this.handleChange}
+                            value={this.state.email}
+                            required
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label for="password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
-                            id="register-password"
-                            name="register-password"
+                            id="password"
+                            name="password"
+                            onChange={this.handleChange}
+                            value={this.state.password}
                             required
                           />
+                        </div>
+                        <div className="form-group">
+                          <label for="confirmation_password">
+                            Confirmation Password *
+                          </label>
+                          <input
+                            type="password"
+                            className="form-control"
+                            id="confirmation_password"
+                            name="confirmation_password"
+                            onChange={this.handleChange}
+                            value={this.state.confirmation_password}
+                            required
+                          />
+                        </div>
+                        <div className="custom-control custom-checkbox mt-2 mb-3">
+                          <input
+                            type="checkbox"
+                            className="custom-control-input"
+                            id="register-policy"
+                            required
+                          />
+                          <label
+                            className="custom-control-label"
+                            htmlFor="register-policy"
+                          >
+                            I agree to the <a href="#">privacy policy</a> *
+                          </label>
                         </div>
                         <div className="form-footer">
                           <button
                             type="submit"
                             className="btn btn-outline-primary-2"
                           >
-                            <span>SIGN UP</span>
+                            <span>REGISTER</span>
                             <i className="icon-long-arrow-right"></i>
                           </button>
-                          <div className="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              id="register-policy"
-                              required
-                            />
-                            <label
-                              className="custom-control-label"
-                              htmlFor="register-policy"
-                            >
-                              I agree to the <a href="#">privacy policy</a> *
-                            </label>
-                          </div>
                         </div>
                       </form>
                       <div className="form-choice">

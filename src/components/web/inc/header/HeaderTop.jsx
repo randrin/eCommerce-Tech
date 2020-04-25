@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { LoginModal } from "../../../../components";
-
 export default class HeaderTop extends Component {
   render() {
     const { isLogged, username } = this.props;

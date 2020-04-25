@@ -19,6 +19,7 @@ import {
   Dashboard,
   Logout,
   LoginPage,
+  Register
 } from "../../components";
 
 const Routes = (props) => (
@@ -39,6 +40,7 @@ const Routes = (props) => (
     <Route exact path="/profil" component={Dashboard} />
     <Route exact path="/logout" component={withRouter(Logout)} />
     <Route exact path="/login" component={LoginPage} />
+    <Route exact path="/register" component={Register} />
     <Route component={Error404} />
   </Switch>
 );

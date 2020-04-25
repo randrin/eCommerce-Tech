@@ -80,7 +80,8 @@ a.btn-primary {
 }
 .cart-dropdown .cart-count,
 .wishlist a .wishlist-count,
-.store-create-account .btn-g:hover {
+.store-create-account .btn-g:hover,
+.store-favoris .btn-g:hover {
   background-color: #fff !important;
   color: var(--blue-cello) !important;
 }
@@ -120,5 +121,6 @@ a.btn-primary {
   display: block;
 }
 .logo {
-  margin: 1rem 0;
+  //margin: 1rem 0;
+  margin: -20px 0rem 5px;
 }

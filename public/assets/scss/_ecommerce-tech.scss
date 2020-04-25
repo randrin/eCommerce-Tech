@@ -54,24 +54,36 @@
 .store-logo-container {
     display: flex;
 }
+
 .store-logo-flag-green {
     background-color: green;
     width: 35px;
     height: 5px;
 }
+
 .store-logo-flag-red {
     background-color: red;
     width: 35px;
     height: 5px;
 }
+
 .store-logo-flag-yellow {
     background-color: yellow;
     width: 35px;
     height: 5px;
 }
+
 .store-create-account {
     display: inline-grid;
 }
+
 .store-logout {
     display: grid;
+}
+
+.store-logo-page {
+    text-align: -webkit-center;
+    .store-logo-container {
+        display: inline-flex;
+    }
 }

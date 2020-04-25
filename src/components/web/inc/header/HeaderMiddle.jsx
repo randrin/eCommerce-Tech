@@ -14,7 +14,7 @@ export default class HeaderMiddle extends Component {
             </button>
             <Link to="/" className="logo">
               <img
-                src="/assets/images/demos/demo-4/logo.png"
+                src="/assets/images/shopping.png"
                 alt="Molla Logo"
                 width="105"
                 height="25"
@@ -161,7 +161,7 @@ export default class HeaderMiddle extends Component {
                       </Link>
                     </div>
                     <span>Nouveau client ? </span>
-                    <Link to="/login" className="btn btn-link">
+                    <Link to="/register" className="btn btn-link">
                       <span>Créez votre compte</span>
                       <i class="icon-long-arrow-right"></i>
                     </Link>

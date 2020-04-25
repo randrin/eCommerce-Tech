@@ -2,41 +2,25 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../../../components";
 
-export default class LoginPage extends Component {
+export default class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
       username: "",
       email: "",
       password: "",
+      confirmation_password: "",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
+    this.handleRegister = this.handleRegister.bind(this);
   }
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleLogin(e) {
+  handleRegister(e) {
     e.preventDefault();
-    var login = {
-      username: "admin",
-      password: this.state.password,
-      email: this.state.email,
-    };
-    if (
-      (login.username === "admin" && login.password === "1234") ||
-      (login.email === "test@gmail.com" && login.password === "1234")
-    ) {
-      var expires = 24 * 60 * 60 * 1000;
-      var user = {
-        value: login,
-        tokenTime: new Date().getTime() + expires,
-      };
-      localStorage.setItem("user", JSON.stringify(user));
-      window.location.replace(`/`);
-    }
   }
   render() {
     return (
@@ -49,7 +33,7 @@ export default class LoginPage extends Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  Login
+                  Nouveau Client
                 </li>
               </ol>
             </div>
@@ -90,9 +74,23 @@ export default class LoginPage extends Component {
                       role="tabpanel"
                       aria-labelledby="signin-tab"
                     >
-                      <form onSubmit={this.handleLogin}>
+                      <form onSubmit={this.handleRegister}>
                         <div className="form-group">
-                          <label for="email">Username or email address *</label>
+                          <label for="username">
+                            First Name and Last Name *
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="username"
+                            name="username"
+                            onChange={this.handleChange}
+                            value={this.state.username}
+                            required
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label for="email">Email address *</label>
                           <input
                             type="text"
                             className="form-control"
@@ -103,7 +101,6 @@ export default class LoginPage extends Component {
                             required
                           />
                         </div>
-
                         <div className="form-group">
                           <label for="password">Password *</label>
                           <input
@@ -116,44 +113,52 @@ export default class LoginPage extends Component {
                             required
                           />
                         </div>
+                        <div className="form-group">
+                          <label for="confirmation_password">
+                            Confirmation Password *
+                          </label>
+                          <input
+                            type="password"
+                            className="form-control"
+                            id="confirmation_password"
+                            name="confirmation_password"
+                            onChange={this.handleChange}
+                            value={this.state.confirmation_password}
+                            required
+                          />
+                        </div>
+                        <div className="custom-control custom-checkbox mt-2 mb-3">
+                          <input
+                            type="checkbox"
+                            className="custom-control-input"
+                            id="register-policy"
+                            required
+                          />
+                          <label
+                            className="custom-control-label"
+                            htmlFor="register-policy"
+                          >
+                            I agree to the <a href="#">privacy policy</a> *
+                          </label>
+                        </div>
                         <div className="form-footer">
                           <button
                             type="submit"
                             className="btn btn-outline-primary-2"
                           >
-                            <span>LOG IN</span>
+                            <span>REGISTER</span>
                             <i className="icon-long-arrow-right"></i>
                           </button>
-
-                          <div className="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              id="signin-remember"
-                            />
-                            <label
-                              className="custom-control-label"
-                              for="signin-remember"
-                            >
-                              Remember Me
-                            </label>
-                          </div>
-                          <a href="#" className="btn btn-link forgot-link">
-                            Forgot Your Password ?
-                          </a>
                         </div>
                       </form>
                       <div className="form-choice mt-5">
                         <h6 className="text-center">
-                          Vous êtes nouveau sur le site ?
+                          Déjà client chez XXXXX ?
                         </h6>
                         <div className="row">
                           <div className="col-sm-12 store-create-account">
-                            <Link
-                              to="/register"
-                              className="btn btn-primary btn-g"
-                            >
-                              <span>Créer mon compte</span>
+                            <Link to="/login" className="btn btn-primary btn-g">
+                              <span>Se connecter</span>
                               <i className="icon-long-arrow-right"></i>
                             </Link>
                           </div>
