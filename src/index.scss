@@ -28,7 +28,9 @@ body {
 .nav.nav-pills .nav-link:hover,
 .nav.nav-pills .nav-link:focus,
 .form-tab .form-footer a:hover,
-.form-tab .form-footer a:focus {
+.form-tab .form-footer a:focus,
+.btn-link,
+.form-tab .form-footer a {
   color: var(--orange-tangerine) !important;
 }
 .category-dropdown .dropdown-toggle:hover,
@@ -37,11 +39,20 @@ body {
 .header-bottom .menu>li>a:before,
 .nav.nav-border-anim .nav-link:before,
 .header,
-.header-bottom.fixed {
+.header-bottom.fixed,
+.btn-outline-primary-2:hover,
+.btn-primary:hover,
+.btn-outline-primary:hover {
   background-color: var(--orange-tangerine) !important;
+  color: #fff !important;
 }
 .btn-outline-primary-2,
-.btn-primary {
+.btn-primary,
+.btn-outline-primary,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link .btn-link-dark:hover,
+.btn-link .btn-link-dark:focus {
   color: var(--orange-tangerine) !important;
   border-color: var(--orange-tangerine) !important;
 }
@@ -68,7 +79,8 @@ a.btn-primary {
   border: .2rem solid #39f !important;
 }
 .cart-dropdown .cart-count,
-.wishlist a .wishlist-count {
+.wishlist a .wishlist-count,
+.store-create-account .btn-g:hover {
   background-color: #fff !important;
   color: var(--orange-tangerine) !important;
 }
@@ -83,9 +95,6 @@ a.btn-primary {
 .header-right-login a {
   color: #fff !important;
 }
-.header-4 .header-bottom {
-  background-color: inherit;
-}
 .header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
 .header-intro-clearance .header-bottom .container::after {
   background-color: #fff !important;
@@ -95,6 +104,21 @@ a.btn-primary {
 .header-bottom .menu li.active>a:before {
   border-top: 1px solid #fff;
 }
+
+//Ovveride Styles
+.header-4 .header-bottom {
+  background-color: inherit;
+}
 .header-4 .header-middle {
   margin: 2rem 0;
+}
+.cart-dropdown .dropdown-menu,
+.compare-dropdown .dropdown-menu {
+  width: 336px;
+}
+.header-intro-clearance .header-middle .header-left {
+  display: block;
+}
+.logo {
+  margin: 1rem 0;
 }

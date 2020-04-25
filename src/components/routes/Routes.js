@@ -11,7 +11,15 @@ import {
   Faqs,
   Checkout,
 } from "../../pages";
-import { ComingSoon, Temoignages, Blogs, Favoris, Dashboard, Logout } from "../../components";
+import {
+  ComingSoon,
+  Temoignages,
+  Blogs,
+  Favoris,
+  Dashboard,
+  Logout,
+  LoginPage,
+} from "../../components";
 
 const Routes = (props) => (
   <Switch>
@@ -30,6 +38,7 @@ const Routes = (props) => (
     <Route exact path="/favoris" component={Favoris} />
     <Route exact path="/profil" component={Dashboard} />
     <Route exact path="/logout" component={Logout} />
+    <Route exact path="/login" component={LoginPage} />
     <Route component={Error404} />
   </Switch>
 );

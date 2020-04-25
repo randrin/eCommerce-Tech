@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Login } from "../../..";
+import { LoginModal } from "../../../../components";
 
 export default class HeaderTop extends Component {
   render() {
@@ -61,7 +61,7 @@ export default class HeaderTop extends Component {
             </div>
           </div>
         </div>
-        <Login />
+        <LoginModal />
       </header>
     );
   }

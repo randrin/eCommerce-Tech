@@ -49,6 +49,11 @@ export default class HeaderMiddle extends Component {
                 height="25"
               />
             </Link>
+            <div className="store-logo-container">
+              <span className="store-logo-flag-green"></span>
+              <span className="store-logo-flag-red"></span>
+              <span className="store-logo-flag-yellow"></span>
+            </div>
           </div>
           <div className="header-center">
             <div className="header-search header-search-extended header-search-visible d-none d-lg-block">
@@ -68,7 +73,7 @@ export default class HeaderMiddle extends Component {
                     className="form-control"
                     name="q"
                     id="q"
-                    placeholder="Search product ..."
+                    placeholder="« Que souhaitez-vous? »"
                     required
                   />
                 </div>
@@ -173,17 +178,48 @@ export default class HeaderMiddle extends Component {
                 <p>{isLogged ? `Bonjour ${username}` : "Mon Compte"}</p>
               </a>
               <div className="dropdown-menu dropdown-menu-right">
+                {!isLogged && (
+                  <>
+                    <div className="text-center">
+                      <Link
+                        to="/login"
+                        className="btn btn-outline-primary btn-rounded mb-2"
+                      >
+                        <span>Identifiez-vous</span>
+                        <i className="icon-long-arrow-right"></i>
+                      </Link>
+                    </div>
+                    <span>Nouveau client ? </span>
+                    <Link to="/login" className="btn btn-link">
+                      <span>Créez votre compte</span>
+                      <i class="icon-long-arrow-right"></i>
+                    </Link>
+                    <hr className="store-separator" />
+                  </>
+                )}
                 <ul className="compare-products">
+                  {isLogged && (
+                    <>
+                      <li className="compare-product">
+                        <h4 className="compare-product-title">
+                          <i className="icon-user"></i>
+                          <Link to="/profil">My Account</Link>
+                        </h4>
+                      </li>
+                    </>
+                  )}
                   <li className="compare-product">
                     <h4 className="compare-product-title">
-                      <i className="icon-user"></i>
-                      <Link to="/profil">My Account</Link>
+                      <i className="icon-close"></i>
+                      <a href="product.html">
+                        Suivre, Annuller ou retourner une commande
+                      </a>
                     </h4>
                   </li>
                   <li className="compare-product">
                     <h4 className="compare-product-title">
                       <i className="icon-close"></i>
-                      <a href="product.html">Mes Commandes</a>
+                      <a href="product.html">Mes Listes d'envies</a>
                     </h4>
                   </li>
                   <li className="compare-product">
@@ -199,13 +235,18 @@ export default class HeaderMiddle extends Component {
                     </h4>
                   </li>
                 </ul>
-                <hr />
-                <div className="">
-                  <Link to="/logout" className="btn btn-outline-primary-2">
-                    <span>Logout</span>
-                    <i className="icon-long-arrow-right"></i>
-                  </Link>
-                </div>
+                {isLogged && (
+                  <>
+                    {" "}
+                    <hr />
+                    <div className="">
+                      <Link to="/logout" className="btn btn-outline-primary-2">
+                        <span>Logout</span>
+                        <i className="icon-long-arrow-right"></i>
+                      </Link>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
             <div className="dropdown cart-dropdown">

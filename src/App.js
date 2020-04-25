@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 import Routes from "./components/routes/Routes";
+import ScrollToTop from "./ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <>
-        <BrowserRouter>
+        <BrowserRouter forceRefresh="true">
+          <ScrollToTop />
           <Route component={Routes} />
         </BrowserRouter>
       </>

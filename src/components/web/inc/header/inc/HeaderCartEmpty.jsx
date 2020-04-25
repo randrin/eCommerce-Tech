@@ -9,7 +9,7 @@ export default class HeaderCartEmpty extends Component {
             <i className="icon-shopping-cart"></i>
           </span>
           <div className="icon-box-content">
-            <h3 className="icon-box-title">Votre panier est vide</h3>
+            <h3 className="icon-box-title">Aucun article dans votre panier.</h3>
           </div>
         </div>
       </>

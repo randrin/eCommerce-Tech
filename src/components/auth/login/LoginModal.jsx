@@ -143,7 +143,7 @@ export default class Login extends Component {
                               Remember Me
                             </label>
                           </div>
-                          <a href="#" className="forgot-link">
+                          <a href="#" className="btn btn-link forgot-link">
                             Forgot Your Password?
                           </a>
                         </div>

@@ -1,4 +1,3 @@
-
 @import './uikit';
 @import './variables';
 
@@ -46,4 +45,32 @@
 
 .store-text-black {
     color: var(--black);
+}
+
+.store-separator {
+    margin: 2rem 0;
+}
+
+.store-logo-container {
+    display: flex;
+}
+.store-logo-flag-green {
+    background-color: green;
+    width: 35px;
+    height: 5px;
+    margin: 0 5px 0 0;
+}
+.store-logo-flag-red {
+    background-color: red;
+    width: 35px;
+    height: 5px;
+    margin: 0 5px 0 0;
+}
+.store-logo-flag-yellow {
+    background-color: yellow;
+    width: 35px;
+    height: 5px;
+}
+.store-create-account {
+    display: inline-grid;
 }

@@ -11,7 +11,7 @@ export default class Logout extends Component {
 
   restoreInformationsUser() {
     localStorage.removeItem("user");
-    window.location.replace(`/`);
+    //window.location.replace(`/`);
   }
 
   componentDidMount() {
