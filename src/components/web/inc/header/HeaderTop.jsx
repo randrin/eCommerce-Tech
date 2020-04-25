@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { LoginModal } from "../../../../components";
 
 export default class HeaderTop extends Component {
   render() {
+    const { isLogged, username } = this.props;
     return (
       <header className="header header-intro-clearance header-4">
         <div className="header-top">
@@ -51,9 +53,15 @@ export default class HeaderTop extends Component {
                       </div>
                     </li>
                     <li>
-                      <a href="#signin-modal" data-toggle="modal">
-                        <i className="icon-user"></i> Sign in / Sign up
-                      </a>
+                      {isLogged ? (
+                        <Link to="/profil">
+                          <i className="icon-user"></i> Bonjour {username}
+                        </Link>
+                      ) : (
+                        <a href="#signin-modal" data-toggle="modal">
+                          <i className="icon-user"></i> Sign in / Sign up
+                        </a>
+                      )}
                     </li>
                   </ul>
                 </li>

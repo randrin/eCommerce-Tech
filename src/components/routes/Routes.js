@@ -31,13 +31,13 @@ const Routes = (props) => (
     <Route exact path="/product/:id" component={Product} />
     <Route exact path="/contact" component={Contact} />
     <Route exact path="/cart" component={Cart} />
-    <Route exact path="/checkout" component={Checkout} />
+    <Route exact path="/checkout" component={withRouter(Checkout)} />
     <Route exact path="/coming-soon" component={ComingSoon} />
     <Route exact path="/temoignages" component={Temoignages} />
     <Route exact path="/blogs" component={Blogs} />
     <Route exact path="/favoris" component={Favoris} />
     <Route exact path="/profil" component={Dashboard} />
-    <Route exact path="/logout" component={Logout} />
+    <Route exact path="/logout" component={withRouter(Logout)} />
     <Route exact path="/login" component={LoginPage} />
     <Route component={Error404} />
   </Switch>

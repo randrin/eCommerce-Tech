@@ -58,13 +58,11 @@
     background-color: green;
     width: 35px;
     height: 5px;
-    margin: 0 5px 0 0;
 }
 .store-logo-flag-red {
     background-color: red;
     width: 35px;
     height: 5px;
-    margin: 0 5px 0 0;
 }
 .store-logo-flag-yellow {
     background-color: yellow;
@@ -73,4 +71,7 @@
 }
 .store-create-account {
     display: inline-grid;
+}
+.store-logout {
+    display: grid;
 }

@@ -1,38 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { HeaderProductsCart, HeaderCartEmpty } from "../../../../components";
-
 export default class HeaderMiddle extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      username: "",
-      email: "",
-      isLogged: false,
-    };
-  }
-
-  retrieveInformationsUser() {
-    var user = JSON.parse(localStorage.getItem("user"));
-    var now = new Date().getTime().toString();
-    if (user) {
-      var tokenTime = user.tokenTime;
-      if (now < tokenTime) {
-        this.setState({
-          username: user.value.username,
-          email: user.value.email,
-          isLogged: true,
-        });
-      }
-    }
-  }
-  componentDidMount() {
-    this.retrieveInformationsUser();
-  }
-
   render() {
-    const { username, email, isLogged } = this.state;
-    console.log(this.state);
+    const { username, email, isLogged } = this.props;
     return (
       <div className="header-middle">
         <div className="container">
@@ -239,7 +210,7 @@ export default class HeaderMiddle extends Component {
                   <>
                     {" "}
                     <hr />
-                    <div className="">
+                    <div className="store-logout">
                       <Link to="/logout" className="btn btn-outline-primary-2">
                         <span>Logout</span>
                         <i className="icon-long-arrow-right"></i>

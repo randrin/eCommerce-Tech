@@ -1,8 +1,43 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer } from "../../../components";
+import { Footer } from "../../../components";
 
 export default class LoginPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      email: "",
+      password: "",
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleLogin(e) {
+    e.preventDefault();
+    var login = {
+      username: "admin",
+      password: this.state.password,
+      email: this.state.email,
+    };
+    if (
+      (login.username === "admin" && login.password === "1234") ||
+      (login.email === "test@gmail.com" && login.password === "1234")
+    ) {
+      var expires = 24 * 60 * 60 * 1000;
+      var user = {
+        value: login,
+        tokenTime: new Date().getTime() + expires,
+      };
+      localStorage.setItem("user", JSON.stringify(user));
+      window.location.replace(`/`);
+    }
+  }
   render() {
     return (
       <>
@@ -47,31 +82,35 @@ export default class LoginPage extends Component {
                   <div className="tab-content">
                     <div
                       className="tab-pane fade show active"
-                      id="signin-2"
+                      id="signin"
                       role="tabpanel"
-                      aria-labelledby="signin-tab-2"
+                      aria-labelledby="signin-tab"
                     >
-                      <form action="#">
+                      <form onSubmit={this.handleLogin}>
                         <div className="form-group">
-                          <label for="singin-email-2">
+                          <label for="email">
                             Username or email address *
                           </label>
                           <input
                             type="text"
                             className="form-control"
-                            id="singin-email-2"
-                            name="singin-email"
+                            id="email"
+                            name="email"
+                            onChange={this.handleChange}
+                            value={this.state.email}
                             required
                           />
                         </div>
 
                         <div className="form-group">
-                          <label for="singin-password-2">Password *</label>
+                          <label for="password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
-                            id="singin-password-2"
-                            name="singin-password"
+                            id="password"
+                            name="password"
+                            onChange={this.handleChange}
+                            value={this.state.password}
                             required
                           />
                         </div>
@@ -88,11 +127,11 @@ export default class LoginPage extends Component {
                             <input
                               type="checkbox"
                               className="custom-control-input"
-                              id="signin-remember-2"
+                              id="signin-remember"
                             />
                             <label
                               className="custom-control-label"
-                              for="signin-remember-2"
+                              for="signin-remember"
                             >
                               Remember Me
                             </label>

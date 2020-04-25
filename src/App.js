@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <BrowserRouter>
+        <BrowserRouter forceRefresh="false">
           <ScrollToTop />
           <Route component={Routes} />
         </BrowserRouter>
