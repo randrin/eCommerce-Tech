@@ -178,7 +178,7 @@ export default class HeaderMiddle extends Component {
                       <>
                         <li className="compare-product">
                           <h4 className="compare-product-title">
-                            <i className="icon-user"></i> 
+                            <i className="icon-user"></i>
                             <Link to="/profil">My Account</Link>
                           </h4>
                         </li>
@@ -186,7 +186,7 @@ export default class HeaderMiddle extends Component {
                     )}
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-gift"></i> 
+                        <i className="icon-gift store-icon-padding-right"></i>
                         <Link to="/">
                           Suivre, Annuller ou retourner une commande
                         </Link>
@@ -194,19 +194,19 @@ export default class HeaderMiddle extends Component {
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-heart-o"></i> 
+                        <i className="icon-heart-o store-icon-padding-right"></i>
                         <Link to="/">Mes Listes d'envies</Link>
                       </h4>
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-tags"></i> 
+                        <i className="icon-tags store-icon-padding-right"></i>
                         <Link to="/">Mes Avantages</Link>
                       </h4>
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-envelope"></i> 
+                        <i className="icon-envelope store-icon-padding-right"></i>
                         <Link to="/">Mes Préférences</Link>
                       </h4>
                     </li>
