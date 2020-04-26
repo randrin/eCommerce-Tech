@@ -19,7 +19,8 @@ import {
   Dashboard,
   Logout,
   LoginPage,
-  Register
+  Register,
+  ResetPassword
 } from "../../components";
 
 const Routes = (props) => (
@@ -41,6 +42,7 @@ const Routes = (props) => (
     <Route exact path="/logout" component={withRouter(Logout)} />
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/register" component={Register} />
+    <Route exact path="/reset-password" component={ResetPassword} />
     <Route component={Error404} />
   </Switch>
 );

@@ -23,7 +23,6 @@ body {
 .menu li:hover>a,
 .header-3 .header-search-extended .btn:hover,
 .header-3 .header-search-extended .btn:focus,
-.header-4 .header-search-extended .btn:hover,
 .header-4 .header-search-extended .btn:focus,
 .nav.nav-pills .nav-link:hover,
 .nav.nav-pills .nav-link:focus,
@@ -41,8 +40,9 @@ body {
 .header,
 .header-bottom.fixed,
 .btn-outline-primary-2:hover,
-.btn-primary:hover,
-.btn-outline-primary:hover {
+//.btn-primary:hover,
+.btn-outline-primary:hover,
+button[type="submit"].store-btn {
   background-color: var(--blue-cello) !important;
   color: #fff !important;
 }

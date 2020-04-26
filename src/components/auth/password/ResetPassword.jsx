@@ -2,43 +2,25 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../../../components";
 
-export default class LoginPage extends Component {
+export default class ResetPassword extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
       email: "",
-      password: "",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
+    this.handleReset = this.handleReset.bind(this);
   }
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleLogin(e) {
+  handleReset(e) {
     e.preventDefault();
-    console.log(this.state);
-    var login = {
-      username: "admin",
-      password: this.state.password,
-      email: this.state.email,
-    };
-    if (
-      (login.username === "admin" && login.password === "1234") ||
-      (login.email === "test@gmail.com" && login.password === "1234")
-    ) {
-      var expires = 24 * 60 * 60 * 1000;
-      var user = {
-        value: login,
-        tokenTime: new Date().getTime() + expires,
-      };
-      localStorage.setItem("user", JSON.stringify(user));
-      window.location.replace(`/`);
-    }
+    console.log(e);
   }
+
   render() {
     return (
       <>
@@ -50,7 +32,7 @@ export default class LoginPage extends Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  Login
+                  Initialisation Mot de Passe
                 </li>
               </ol>
             </div>
@@ -91,11 +73,17 @@ export default class LoginPage extends Component {
                       role="tabpanel"
                       aria-labelledby="signin-tab"
                     >
-                      <form onSubmit={this.handleLogin}>
+                      <div className="text-center mb-3">
+                        <h4>Vous avez oublié votre mot de passe ?</h4>
+                        <p>
+                          Saisissez l'adresse mail que vous nous avez indiquée
+                          lors de votre inscription, afin de recevoir un lien de
+                          réinitialisation de votre mot de passe.{" "}
+                        </p>
+                      </div>
+                      <form onSubmit={this.handleReset}>
                         <div className="form-group">
-                          <label htmlFor="email">
-                            Username or email address *
-                          </label>
+                          <label htmlFor="email">Email Address *</label>
                           <input
                             type="text"
                             className="form-control"
@@ -106,61 +94,31 @@ export default class LoginPage extends Component {
                             required
                           />
                         </div>
-
-                        <div className="form-group">
-                          <label htmlFor="password">Password *</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="password"
-                            name="password"
-                            onChange={this.handleChange}
-                            value={this.state.password}
-                            required
-                          />
-                        </div>
                         <div className="form-footer">
-                          <button
-                            type="submit"
-                            className="btn btn-outline-primary-2"
-                          >
-                            <span>LOG IN</span>
-                            <i className="icon-long-arrow-right"></i>
-                          </button>
-
-                          <div className="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              id="signin-remember"
-                            />
-                            <label
-                              className="custom-control-label"
-                              htmlFor="signin-remember"
-                            >
-                              Remember Me
-                            </label>
+                          <div className="container">
+                            <div className="row">
+                              <div className="col-sm-12 store-create-account">
+                                <button
+                                  type="submit"
+                                  className="btn btn-primary btn-g
+                                  store-btn"
+                                >
+                                  <span>VALIDER</span>
+                                  <i className="icon-long-arrow-right"></i>
+                                </button>
+                              </div>
+                            </div>
                           </div>
-                          <Link
-                            to="/reset-password"
-                            className="btn btn-link forgot-link"
-                          >
-                            Forgot Your Password ?
-                          </Link>
                         </div>
                       </form>
                       <div className="form-choice mt-3">
-                        <h6 className="text-center">
-                          Vous êtes nouveau sur le site ?
-                        </h6>
-                        <div className="row">
-                          <div className="col-sm-12 store-create-account">
-                            <Link
-                              to="/register"
-                              className="btn btn-primary btn-g"
-                            >
-                              <span>Créer mon compte</span>
-                              <i className="icon-long-arrow-right"></i>
+                        <div className="container">
+                          <div className="row">
+                            <Link to="/" className="btn btn-outline-primary-2">
+                              <i className="icon-long-arrow-left"></i>
+                              <span className="store-text-cta">
+                                Retour à l'accueil
+                              </span>
                             </Link>
                           </div>
                         </div>

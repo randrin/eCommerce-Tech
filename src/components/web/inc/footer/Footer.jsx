@@ -9,7 +9,7 @@ export default class Footer extends Component {
           <div className="footer-middle">
             <div className="container">
               <div className="row widget">
-                <div className="col-sm-6 col-lg-3">
+                <div className="col-sm-12 col-lg-3">
                   <img
                     src="assets/images/demos/demo-4/logo-footer.png"
                     className="footer-logo"
@@ -22,7 +22,7 @@ export default class Footer extends Component {
                     egestas augue, eu vulputate magna eros eu erat.{" "}
                   </p>
                 </div>
-                <div className="col-sm-6 col-lg-6">
+                <div className="col-sm-12 col-lg-6">
                   <ul className="widget-list store-footer-link">
                     <li>
                       <Link to="/link">Link name 1</Link>
@@ -35,7 +35,7 @@ export default class Footer extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col-sm-6 col-lg-3">
+                <div className="col-sm-12 col-lg-3">
                   <div className="widget-call">
                     <i className="icon-phone"></i>
                     Got Question? Call us 24/7

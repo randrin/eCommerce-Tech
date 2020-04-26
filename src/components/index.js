@@ -30,3 +30,4 @@ export { default as FavorisEmpty } from "./web/pages/favoris/inc/FavorisEmpty";
 export { default as FavorisProducts } from "./web/pages/favoris/inc/FavorisProducts";
 export { default as HeaderProductsCart } from "./web/inc/header/inc/HeaderProductsCart";
 export { default as HeaderCartEmpty } from "./web/inc/header/inc/HeaderCartEmpty";
+export { default as ResetPassword } from "./auth/password/ResetPassword";

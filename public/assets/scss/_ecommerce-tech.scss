@@ -90,8 +90,6 @@
     }
 }
 
-
-
 .store-footer-link {
     float: right;
     display: flex;
@@ -103,7 +101,7 @@
     li:before {
         color: #e72e00;
         content: "\00A0 \2022";
-        padding: 0 5px;
+        padding: 0px 10px 0px 0px;
     }
 
     li:first-child:before {
@@ -114,4 +112,7 @@
 
 .store-icon-large {
     font-size: 70px;
+}
+.store-text-cta {
+    text-transform: uppercase;
 }
