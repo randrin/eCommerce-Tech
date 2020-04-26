@@ -102,7 +102,7 @@ export default class Login extends Component {
                       role="tabpanel"
                       aria-labelledby="signin-tab"
                     >
-                      <form action="#" onSubmit={this.handleLogin}>
+                      <form onSubmit={this.handleLogin}>
                         <div className="form-group">
                           <label htmlFor="email">
                             Username or email address *

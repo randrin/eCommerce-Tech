@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Footer } from "../../components";
+import { Navbar, Footer } from "../..";
 
 export default class Logout extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ export default class Logout extends Component {
 
   restoreInformationsUser() {
     localStorage.removeItem("user");
-    //window.location.replace(`/`);
+    window.location.replace(`/`);
   }
 
   componentDidMount() {
@@ -19,11 +19,7 @@ export default class Logout extends Component {
   }
   render() {
     return (
-      <>
-        <Navbar />
-        <p> Merci de votre visite</p>
-        <Footer />
-      </>
+      <></>
     );
   }
 }

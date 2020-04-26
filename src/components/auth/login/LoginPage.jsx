@@ -20,6 +20,7 @@ export default class LoginPage extends Component {
 
   handleLogin(e) {
     e.preventDefault();
+    console.log(this.state);
     var login = {
       username: "admin",
       password: this.state.password,
@@ -92,7 +93,7 @@ export default class LoginPage extends Component {
                     >
                       <form onSubmit={this.handleLogin}>
                         <div className="form-group">
-                          <label for="email">Username or email address *</label>
+                          <label htmlFor="email">Username or email address *</label>
                           <input
                             type="text"
                             className="form-control"
@@ -105,7 +106,7 @@ export default class LoginPage extends Component {
                         </div>
 
                         <div className="form-group">
-                          <label for="password">Password *</label>
+                          <label htmlFor="password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
@@ -133,7 +134,7 @@ export default class LoginPage extends Component {
                             />
                             <label
                               className="custom-control-label"
-                              for="signin-remember"
+                              htmlFor="signin-remember"
                             >
                               Remember Me
                             </label>
