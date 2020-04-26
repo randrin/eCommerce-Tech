@@ -181,7 +181,7 @@ export default class Login extends Component {
                     >
                       <form onSubmit={this.handleRegister}>
                         <div className="form-group">
-                          <label for="username">
+                          <label htmlFor="username">
                             First Name and Last Name *
                           </label>
                           <input
@@ -195,7 +195,7 @@ export default class Login extends Component {
                           />
                         </div>
                         <div className="form-group">
-                          <label for="email">Email address *</label>
+                          <label htmlFor="email">Email address *</label>
                           <input
                             type="text"
                             className="form-control"
@@ -207,7 +207,7 @@ export default class Login extends Component {
                           />
                         </div>
                         <div className="form-group">
-                          <label for="password">Password *</label>
+                          <label htmlFor="password">Password *</label>
                           <input
                             type="password"
                             className="form-control"
@@ -219,7 +219,7 @@ export default class Login extends Component {
                           />
                         </div>
                         <div className="form-group">
-                          <label for="confirmation_password">
+                          <label htmlFor="confirmation_password">
                             Confirmation Password *
                           </label>
                           <input

@@ -163,7 +163,7 @@ export default class HeaderMiddle extends Component {
                     <span>Nouveau client ? </span>
                     <Link to="/register" className="btn btn-link">
                       <span>Créez votre compte</span>
-                      <i class="icon-long-arrow-right"></i>
+                      <i className="icon-long-arrow-right"></i>
                     </Link>
                     <hr className="store-separator" />
                   </>
