@@ -178,7 +178,7 @@ export default class HeaderMiddle extends Component {
                       <>
                         <li className="compare-product">
                           <h4 className="compare-product-title">
-                            <i className="icon-user"></i>
+                            <i className="icon-user"></i> 
                             <Link to="/profil">My Account</Link>
                           </h4>
                         </li>
@@ -186,28 +186,28 @@ export default class HeaderMiddle extends Component {
                     )}
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-close"></i>
-                        <a href="product.html">
+                        <i className="icon-gift"></i> 
+                        <Link to="/">
                           Suivre, Annuller ou retourner une commande
-                        </a>
+                        </Link>
                       </h4>
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-close"></i>
-                        <a href="product.html">Mes Listes d'envies</a>
+                        <i className="icon-heart-o"></i> 
+                        <Link to="/">Mes Listes d'envies</Link>
                       </h4>
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-close"></i>
-                        <a href="product.html">Mes Avantages</a>
+                        <i className="icon-tags"></i> 
+                        <Link to="/">Mes Avantages</Link>
                       </h4>
                     </li>
                     <li className="compare-product">
                       <h4 className="compare-product-title">
-                        <i className="icon-close"></i>
-                        <a href="product.html">Mes Préférences</a>
+                        <i className="icon-envelope"></i> 
+                        <Link to="/">Mes Préférences</Link>
                       </h4>
                     </li>
                   </ul>

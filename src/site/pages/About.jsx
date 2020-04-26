@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer, Temoignages } from "../components";
+import { Navbar, Footer, Temoignages } from "../../components";
 
 export default class About extends Component {   
   render() {

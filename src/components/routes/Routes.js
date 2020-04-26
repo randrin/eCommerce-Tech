@@ -10,7 +10,7 @@ import {
   Products,
   Faqs,
   Checkout,
-} from "../../pages";
+} from "../../site";
 import {
   ComingSoon,
   Temoignages,

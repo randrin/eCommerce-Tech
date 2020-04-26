@@ -11,7 +11,7 @@ import {
   Recommandations,
   Services,
   Abonnement,
-} from "../components";
+} from "../../components";
 
 export default class Home extends Component {
   render() {

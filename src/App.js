@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 import Routes from "./components/routes/Routes";
-import ScrollToTop from "./ScrollToTop";
+import { ScrollToTop, ButtonGoToTop } from "./site";
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
         <BrowserRouter>
           <ScrollToTop />
           <Route component={Routes} />
+          <ButtonGoToTop />
         </BrowserRouter>
       </>
     );

@@ -45,9 +45,6 @@ export default class Navbar extends Component {
             <HeaderBottom />
           </header>
         </div>
-        <button id="scroll-top" title="Back to Top">
-          <i className="icon-arrow-up"></i>
-        </button>
       </>
     );
   }
