@@ -108,9 +108,9 @@ export default class Dashboard extends Component {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <Link className="nav-link" to="/logout">
                           Sign Out
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </aside>

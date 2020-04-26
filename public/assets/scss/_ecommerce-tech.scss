@@ -83,7 +83,31 @@
 
 .store-logo-page {
     text-align: -webkit-center;
+    text-align: -moz-center;
+
     .store-logo-container {
         display: inline-flex;
+    }
+}
+
+
+
+.store-footer-link {
+    float: right;
+    display: flex;
+
+    li {
+        margin: 0px 5px;
+    }
+
+    li:before {
+        color: #e72e00;
+        content: "\00A0 \2022";
+        padding: 0 5px;
+    }
+
+    li:first-child:before {
+        content: "";
+        padding-right: 0;
     }
 }

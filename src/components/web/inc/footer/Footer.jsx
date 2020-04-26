@@ -8,30 +8,68 @@ export default class Footer extends Component {
         <footer className="footer">
           <div className="footer-middle">
             <div className="container">
-              <div className="row">
+              <div className="row widget">
                 <div className="col-sm-6 col-lg-3">
-                  <div className="widget widget-about">
-                    <img
-                      src="assets/images/demos/demo-4/logo-footer.png"
-                      className="footer-logo"
-                      alt="Footer Logo"
-                      width="105"
-                      height="25"
-                    />
-                    <p>
-                      Praesent dapibus, neque id cursus ucibus, tortor neque
-                      egestas augue, eu vulputate magna eros eu erat.{" "}
-                    </p>
-                    <div className="widget-call">
-                      <i className="icon-phone"></i>
-                      Got Question? Call us 24/7
-                      <a href="tel:#">+0123 456 789</a>
-                    </div>
+                  <img
+                    src="assets/images/demos/demo-4/logo-footer.png"
+                    className="footer-logo"
+                    alt="Footer Logo"
+                    width="105"
+                    height="25"
+                  />
+                  <p>
+                    Praesent dapibus, neque id cursus ucibus, tortor neque
+                    egestas augue, eu vulputate magna eros eu erat.{" "}
+                  </p>
+                </div>
+                <div className="col-sm-6 col-lg-6">
+                  <ul className="widget-list store-footer-link">
+                    <li>
+                      <Link to="/link">Link name 1</Link>
+                    </li>
+                    <li>
+                      <Link to="/link">Link name 2</Link>
+                    </li>
+                    <li>
+                      <Link to="/link">Link name 3</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-lg-3">
+                  <div className="widget-call">
+                    <i className="icon-phone"></i>
+                    Got Question? Call us 24/7
+                    <a href="tel:#">+0123 456 789</a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className="row store-footer">
+                <div className="col-sm-6 col-lg-3">
+                  <div className="widget">
+                    <h4 className="widget-title">Mon Compte</h4>
+                    <ul className="widget-list">
+                      <li>
+                        <a href="#">Sign In</a>
+                      </li>
+                      <li>
+                        <Link to="/cart">View Cart</Link>
+                      </li>
+                      <li>
+                        <Link to="/favoris">My Wishlist</Link>
+                      </li>
+                      <li>
+                        <a href="#">Track My Order</a>
+                      </li>
+                      <li>
+                        <a href="#">Help</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Useful Links</h4>
+                    <h4 className="widget-title">Qui sommes-nous?</h4>
                     <ul className="widget-list">
                       <li>
                         <Link to="/about">About Molla</Link>
@@ -59,7 +97,35 @@ export default class Footer extends Component {
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Customer Service</h4>
+                    <h4 className="widget-title">Services Client</h4>
+                    <ul className="widget-list">
+                      <li>
+                        <Link to="/about">About Molla</Link>
+                      </li>
+                      <li>
+                        <a href="#">Our Services</a>
+                      </li>
+                      <li>
+                        <a href="#">How to shop on Molla</a>
+                      </li>
+                      <li>
+                        <Link to="/faqs">FAQ</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact">Contact us</Link>
+                      </li>
+                      <li>
+                        <Link to="/coming-soon">Coming Soon</Link>
+                      </li>
+                      <li>
+                        <Link to="/temoignages">Temoignages</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-3">
+                  <div className="widget">
+                    <h4 className="widget-title">Notre Boutique</h4>
                     <ul className="widget-list">
                       <li>
                         <a href="#">Payment Methods</a>
@@ -81,28 +147,6 @@ export default class Footer extends Component {
                       </li>
                       <li>
                         <Link to="/blogs">Our Blogs</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-sm-6 col-lg-3">
-                  <div className="widget">
-                    <h4 className="widget-title">My Account</h4>
-                    <ul className="widget-list">
-                      <li>
-                        <a href="#">Sign In</a>
-                      </li>
-                      <li>
-                        <Link to="/cart">View Cart</Link>
-                      </li>
-                      <li>
-                        <Link to="/favoris">My Wishlist</Link>
-                      </li>
-                      <li>
-                        <a href="#">Track My Order</a>
-                      </li>
-                      <li>
-                        <a href="#">Help</a>
                       </li>
                     </ul>
                   </div>
