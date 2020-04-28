@@ -6,7 +6,8 @@ export default class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
+      firstname: "",
+      lastname: "",
       email: "",
       password: "",
       confirmation_password: "",
@@ -75,19 +76,35 @@ export default class Register extends Component {
                       aria-labelledby="signin-tab"
                     >
                       <form onSubmit={this.handleRegister}>
-                        <div className="form-group">
-                          <label htmlFor="username">
-                            First Name and Last Name *
-                          </label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="username"
-                            name="username"
-                            onChange={this.handleChange}
-                            value={this.state.username}
-                            required
-                          />
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <label htmlFor="firstname">First Name *</label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                id="firstname"
+                                name="firstname"
+                                onChange={this.handleChange}
+                                value={this.state.firstname}
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <label htmlFor="lastname">Last Name *</label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                id="lastname"
+                                name="lastname"
+                                onChange={this.handleChange}
+                                value={this.state.lastname}
+                                required
+                              />
+                            </div>
+                          </div>
                         </div>
                         <div className="form-group">
                           <label htmlFor="email">Email address *</label>

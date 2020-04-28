@@ -46,8 +46,15 @@ $(document).ready(function () {
 
   // Fix Modal logout
   var $clickLogout = $("#logout-modal");
+  var $clickResetPassword = $("#reset-password");
   $clickLogout.on("click", function () {
     var $modal = $(".modal-open").find(".modal-backdrop");
+    $modal.removeClass("modal-backdrop");
+  });
+
+  $clickResetPassword.on("click", function () {
+    console.log("browser refresh .....");
+    var $modal = $(".modal-backdrop");
     $modal.removeClass("modal-backdrop");
   });
 

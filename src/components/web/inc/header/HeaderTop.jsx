@@ -40,7 +40,7 @@ class HeaderTop extends Component {
                         <div className="header-menu">
                           <ul>
                             <li>
-                              <a href="#">FCFA Fcfa</a>
+                              <a href="#">Franc CFA</a>
                             </li>
                             <li>
                               <a href="#">€ EURO</a>

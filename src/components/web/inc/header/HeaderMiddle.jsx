@@ -42,17 +42,20 @@ export default class HeaderMiddle extends Component {
                     <label htmlFor="q" className="sr-only">
                       Search
                     </label>
-                    <button className="btn btn-primary" type="submit">
-                      <i className="icon-search"></i>
-                    </button>
                     <input
                       type="search"
-                      className="form-control"
+                      className="form-control store-form-control"
                       name="q"
                       id="q"
                       placeholder="« Que souhaitez-vous? »"
                       required
                     />
+                    <button
+                      className="btn btn-primary store-search"
+                      type="submit"
+                    >
+                      <i className="icon-search"></i>
+                    </button>
                   </div>
                 </form>
               </div>
