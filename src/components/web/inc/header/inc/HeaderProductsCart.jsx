@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Translation } from "react-i18next";
 
 export default class HeaderProductsCart extends Component {
   render() {
@@ -50,17 +51,27 @@ export default class HeaderProductsCart extends Component {
           </div>
         </div>
         <div className="dropdown-cart-total">
-          <span>Total</span>
+          <Translation>
+            {(t) => <span>{t("HEADER-MIDDLE.TOTAL_CART")}</span>}
+          </Translation>
           <span className="cart-total-price">$160.00</span>
         </div>
-        <div className="dropdown-cart-action">
-          <Link to="/cart" className="btn btn-primary">
-            View Cart
-          </Link>
-          <Link to="/checkout" className="btn btn-outline-primary-2">
-            <span>Checkout</span>
-            <i className="icon-long-arrow-right"></i>
-          </Link>
+        <div className="dropdown-cart-action store-btn">
+          <Translation>
+            {(t) => (
+              <Link to="/cart" className="btn btn-primary btn-g">
+                {t("HEADER-MIDDLE.VIEW_CART")}
+              </Link>
+            )}
+          </Translation>
+          <Translation>
+            {(t) => (
+              <Link to="/checkout" className="btn btn-outline-primary-2">
+                <span>{t("HEADER-MIDDLE.CHECKOUT")}</span>
+                <i className="icon-long-arrow-right"></i>
+              </Link>
+            )}
+          </Translation>
         </div>
       </>
     );

@@ -67,6 +67,7 @@ export default class LogoutModal extends Component {
                             <div className="col-md-6 store-create-account">
                               <div className="store-logout">
                                 <Link
+                                  id="logout-modal"
                                   to="/logout"
                                   className="btn btn-primary btn-g"
                                 >

@@ -1,0 +1,29 @@
+{
+    "HEADER-TOP": {
+        "CALL": "Appelez le : ",
+        "MORNING": "Bonjour",
+        "SIGN_IN_UP": "Se Connecter / S'Enregistrer"
+    },
+    "HEADER-MIDDLE": {
+        "WISHLIST": "Mes Favoris",
+        "COMPARATOR": "Comparateur",
+        "COMPARE": "Comparer",
+        "CLEAR_ALL": "Effacer Tous",
+        "CART": "Mon Panier",
+        "EMPTY_CART": "Aucun article dans votre panier",
+        "USER_IDENTIFY": "Identifiez-vous",
+        "NEW_USER": "Nouveau client ?",
+        "CREATE_ACCOUNT": "Créez votre compte",
+        "MY_ACCOUNT": "Mon Compte",
+        "SHIPPING_ORDERS":"Suivre, Annuler ou retourner une commande",
+        "MY_WISHLIST": "Mes Listes d'envies",
+        "MY_ADVANTAGES": "Mes Avantages",
+        "LOGOUT": "Se Déconnecter",
+        "TOTAL_CART": "TOTAL",
+        "VIEW_CART": "Voir le Panier",
+        "CHECKOUT": "Payer"
+    },
+    "ANNONCES": {
+        "TITLE": "LIVRAISON GRATUITE POUR TOUTES LES COMMANDES DE PLUS DE 50$"
+    }
+}

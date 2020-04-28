@@ -20,7 +20,6 @@ export default class LoginPage extends Component {
 
   handleLogin(e) {
     e.preventDefault();
-    console.log(this.state);
     var login = {
       username: "admin",
       password: this.state.password,

@@ -19,7 +19,6 @@ export default class ResetPassword extends Component {
 
   handleReset(e) {
     e.preventDefault();
-    console.log(e);
     this.setState({ confirmation: true });
   }
 

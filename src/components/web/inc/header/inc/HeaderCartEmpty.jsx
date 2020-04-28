@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class HeaderCartEmpty extends Component {
   render() {
@@ -9,7 +10,13 @@ export default class HeaderCartEmpty extends Component {
             <i className="icon-shopping-cart"></i>
           </span>
           <div className="icon-box-content">
-            <h3 className="icon-box-title">Aucun article dans votre panier.</h3>
+            <Translation>
+              {(t) => (
+                <h3 className="icon-box-title">
+                  {t("HEADER-MIDDLE.EMPTY_CART")}
+                </h3>
+              )}
+            </Translation>
           </div>
         </div>
       </>

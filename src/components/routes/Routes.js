@@ -25,7 +25,7 @@ import {
 
 const Routes = (props) => (
   <Switch>
-    <Route exact path="/" component={withRouter(Home)} />
+    <Route exact path="/" strict component={Home} />
     <Route exact path="/home" component={withRouter(Home)} />
     <Route exact path="/about" component={About} />
     <Route exact path="/faqs" component={Faqs} />
