@@ -43,4 +43,16 @@ $(document).ready(function () {
       $categoryDropdown.removeClass("category-dropdown-scroll");
     }
   });
+
+  // Fix Modal logout
+  var $clickLogout = $("#logout-modal");
+  $clickLogout.on("click", function () {
+    var $modal = $(".modal-open").find(".modal-backdrop");
+    $modal.removeClass("modal-backdrop");
+  });
+
+  $("#reloadBrowser").on('click', function () {
+    console.log('browser refresh .....');
+    window.location.replace('/');
+  })
 });

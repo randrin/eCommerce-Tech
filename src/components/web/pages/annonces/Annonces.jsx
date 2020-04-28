@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class Annonces extends Component {
   render() {
@@ -12,7 +13,9 @@ export default class Annonces extends Component {
           }}
         >
           <div className="notify-content">
-            <h3>FREE SHIPPING FOR ALL ORDERS OVER $50</h3>
+            <Translation>
+              {(t) => <h3>{t("ANNONCES.TITLE")}</h3>}
+            </Translation>
           </div>
           <div className="notify-action">
             <span className="notifications-close">

@@ -77,6 +77,10 @@
     display: inline-grid;
 }
 
+.store-btn {
+    display: flex;
+}
+
 .store-logout {
     display: grid;
 }
@@ -115,7 +119,7 @@
 }
 
 .store-icon-padding-right {
-    padding-right : 10px;
+    padding-right: 10px;
 }
 
 .store-text-cta {
@@ -124,4 +128,23 @@
 
 .store-reset-confirmation {
     border-bottom: .1rem solid #ebebeb;
+}
+
+.store-img-flag {
+    width: 25px;
+    height: 25px;
+}
+
+.store-selected-lang {
+    display: flex;
+    cursor: pointer;
+    left: 10px;
+    position: relative;
+    p {
+        padding-left: 5px;
+    }
+}
+
+.store-full-width {
+    width: 100%;
 }

@@ -1,0 +1,29 @@
+{
+    "HEADER-TOP": {
+        "CALL": "Call: ",
+        "MORNING": "Good Morning",
+        "SIGN_IN_UP": "Sign In / Sign Up"
+    },
+    "HEADER-MIDDLE": {
+        "WISHLIST": "Wishlist",
+        "COMPARATOR": "Comparator",
+        "COMPARE": "Compare",
+        "CLEAR_ALL": "Clear All",
+        "CART": "My Shopping Cart",
+        "EMPTY_CART": "No items in your cart",
+        "USER_IDENTIFY": "Identify yourself",
+        "NEW_USER": "New User?",
+        "CREATE_ACCOUNT": "Create my Account",
+        "MY_ACCOUNT": "My Account",
+        "SHIPPING_ORDERS": "Track, Cancel or Return an Order",
+        "MY_WISHLIST": "My Wishlist",
+        "MY_ADVANTAGES": "My Advantages",
+        "LOGOUT": "Logout",
+        "TOTAL_CART": "TOTAL",
+        "VIEW_CART": "View Cart",
+        "CHECKOUT": "Checkout"
+    },
+    "ANNONCES": {
+        "TITLE": "FREE SHIPPING FOR ALL ORDERS OVER $50"
+    }
+}

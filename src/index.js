@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./index.scss";
+import App from "./App";
+import "./i18next";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Suspense fallback={<span className="slider-loader"></span>}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Suspense>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
