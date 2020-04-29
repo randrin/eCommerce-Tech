@@ -103,7 +103,7 @@
     }
 
     li:before {
-        color: #e72e00;
+        color: var(--yellow-amber);
         content: "\00A0 \2022";
         padding: 0px 10px 0px 0px;
     }
