@@ -1,4 +1,19 @@
 {
+    "HOME": {
+        "BREADCRUMB": "Home"
+    },
+    "LOGIN": {
+        "BREADCRUMB": "Login"
+    },
+    "LOGOUT": {
+        "BREADCRUMB": "Logout"
+    },
+    "RESET-PASSWORD": {
+        "BREADCRUMB": "Password Reset"
+    },
+    "REGISTER": {
+        "BREADCRUMB": "New User"
+    },
     "HEADER-TOP": {
         "CALL": "Call: ",
         "MORNING": "Good Morning",
@@ -32,5 +47,23 @@
         "SUBTITLE": "Subscribe to the xxxxx eCommerce newsletter to receive timely updates from your favorite products.",
         "BUTTON_TEXT": "Do not show this popup again",
         "BUTTON": "GO"
+    },
+    "ABOUT": {
+        "BREADCRUMB": "About Us"
+    },
+    "CHECKOUT": {
+        "BREADCRUMB": "Checkout"
+    },
+    "CART": {
+        "BREADCRUMB": "Shopping Cart"
+    },
+    "CONTACT": {
+        "BREADCRUMB": "Contact Us"
+    },
+    "ERROR404": {
+        "BREADCRUMB": "Error 404"
+    },
+    "FAQS": {
+        "BREADCRUMB": "FAQS"
     }
 }

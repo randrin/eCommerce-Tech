@@ -1,4 +1,19 @@
 {
+    "HOME": {
+        "BREADCRUMB": "Accueil"
+    },
+    "LOGIN": {
+        "BREADCRUMB": "S'identifier"
+    },
+    "LOGOUT": {
+        "BREADCRUMB": "Se déconnecter"
+    },
+    "RESET-PASSWORD": {
+        "BREADCRUMB": "Réinitialisation Mot de Passe"
+    },
+    "REGISTER": {
+        "BREADCRUMB": "Nouveau Client"
+    },
     "HEADER-TOP": {
         "CALL": "Appelez le : ",
         "MORNING": "Bonjour",
@@ -15,7 +30,7 @@
         "NEW_USER": "Nouveau client ?",
         "CREATE_ACCOUNT": "Créez votre compte",
         "MY_ACCOUNT": "Mon Compte",
-        "SHIPPING_ORDERS":"Suivre, Annuler ou retourner une commande",
+        "SHIPPING_ORDERS": "Suivre, Annuler ou retourner une commande",
         "MY_WISHLIST": "Mes Listes d'envies",
         "MY_ADVANTAGES": "Mes Avantages",
         "LOGOUT": "Se Déconnecter",
@@ -28,9 +43,27 @@
     },
     "NEWSLETTERS": {
         "TITLE_1": "OBTENEZ ",
-        "TITLE_2": " DE RABAIS",
+        "TITLE_2": " DE REMISE",
         "SUBTITLE": "Abonnez-vous à la newsletter xxxxx eCommerce pour recevoir des mises à jour en temps opportun de vos produits préférés.",
         "BUTTON_TEXT": "Ne plus afficher ce popup",
         "BUTTON": "ALLEZ"
+    },
+    "ABOUT": {
+        "BREADCRUMB": "A' Propos de nous"
+    },
+    "CHECKOUT": {
+        "BREADCRUMB": "Allez à la caisse"
+    },
+    "CART": {
+        "BREADCRUMB": "Panier"
+    },
+    "CONTACT": {
+        "BREADCRUMB": "Nous Contactez"
+    },
+    "ERROR404": {
+        "BREADCRUMB": "Erreur 404"
+    },
+    "FAQS": {
+        "BREADCRUMB": "FAQS"
     }
 }

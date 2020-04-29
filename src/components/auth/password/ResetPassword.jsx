@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../../../components";
+import { Translation } from "react-i18next";
+import { Breadcrumb } from "../../../site";
 
 export default class ResetPassword extends Component {
   constructor(props) {
@@ -27,18 +29,13 @@ export default class ResetPassword extends Component {
     return (
       <>
         <main className="main">
-          <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-0">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Initialisation Mot de Passe
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("RESET-PASSWORD.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div
             className="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
             style={{

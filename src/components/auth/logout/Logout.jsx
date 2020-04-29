@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../../components";
+import { Breadcrumb } from "../../../site";
+import { Translation } from "react-i18next";
 
 export default class Logout extends Component {
   constructor(props) {
@@ -23,20 +24,13 @@ export default class Logout extends Component {
       <>
         <Navbar />
         <main className="main">
-          <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-0">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link id="reloadBrowser" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Logout
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("LOGOUT.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="container">
             <p>Merci de votre visite sur le site.</p>
           </div>

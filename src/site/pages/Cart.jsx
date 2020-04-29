@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../components";
+import { Breadcrumb } from "./../../site";
+import { Translation } from "react-i18next";
 
 export default class Cart extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <>
@@ -21,18 +27,13 @@ export default class Cart extends Component {
               </h1>
             </div>
           </div>
-          <nav aria-label="breadcrumb" className="breadcrumb-nav">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Shopping Cart
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("CART.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="page-content">
             <div className="cart">
               <div className="container">

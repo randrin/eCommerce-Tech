@@ -1,25 +1,24 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Footer, Temoignages } from "../../components";
-
-export default class About extends Component {   
+import { Navbar, Footer } from "../../components";
+import { Breadcrumb } from "./../../site";
+import { Translation } from "react-i18next";
+export default class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <>
         <Navbar />
         <main className="main">
-          <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-0">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  About us
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("ABOUT.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="container">
             <div
               className="page-header page-header-big text-center"

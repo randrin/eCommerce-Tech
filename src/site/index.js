@@ -9,3 +9,4 @@ export { default as Products } from "./pages/Products";
 export { default as Faqs } from "./pages/Faqs";
 export { default as ScrollToTop } from "./pages/ScrollToTop";
 export { default as ButtonGoToTop } from "./pages/inc/ButtonGoToTop";
+export { default as Breadcrumb } from "./pages/inc/Breadcrumb";
