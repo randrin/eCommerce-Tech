@@ -31,7 +31,7 @@ body {
 .btn-link,
 .form-tab .form-footer a,
 .compare-product-title a:hover {
-  color: var(--blue-cello) !important;
+  color: var(--blue-dodger) !important;
 }
 
 .category-dropdown .dropdown-toggle:hover,
@@ -45,7 +45,7 @@ body {
 //.btn-primary:hover,
 .btn-outline-primary:hover,
 button[type="submit"].store-btn {
-  background-color: var(--blue-cello) !important;
+  background-color: var(--blue-dodger) !important;
   color: #fff !important;
 }
 
@@ -56,8 +56,8 @@ button[type="submit"].store-btn {
 .btn-link:focus,
 .btn-link .btn-link-dark:hover,
 .btn-link .btn-link-dark:focus {
-  color: var(--blue-cello) !important;
-  border-color: var(--blue-cello) !important;
+  color: var(--blue-dodger) !important;
+  border-color: var(--blue-dodger) !important;
 }
 
 .btn-outline-primary-2:hover,
@@ -68,18 +68,18 @@ button[type="submit"].store-btn {
 .show>.btn-outline-primary-2.dropdown-toggle,
 a.btn-primary {
   color: #fff !important;
-  background-color: var(--blue-cello) !important;
-  border-color: var(--blue-cello) !important;
+  background-color: var(--blue-dodger) !important;
+  border-color: var(--blue-dodger) !important;
 }
 
 .nav.nav-pills .nav-item.show .nav-link,
 .nav.nav-pills .nav-item .nav-link.active {
-  color: var(--blue-cello) !important;
-  border-bottom-color: var(--blue-cello) !important;
+  color: var(--blue-dodger) !important;
+  border-bottom-color: var(--blue-dodger) !important;
 }
 
 .form-control:focus {
-  border-color: var(--blue-cello) !important;
+  border-color: var(--blue-dodger) !important;
 }
 
 .icon-box-side {
@@ -93,7 +93,7 @@ a.btn-primary {
 .store-logout .btn-g:hover,
 .store-favoris .btn-g:hover {
   background-color: #fff !important;
-  color: var(--blue-cello) !important;
+  color: var(--blue-dodger) !important;
 }
 
 .header-intro-clearance .header-middle .header-right p {
@@ -164,7 +164,7 @@ a.btn-primary {
   bottom: 0;
   width: 100%;
   height: .1rem;
-  background-color: var(--blue-cello) !important;
+  background-color: var(--blue-dodger) !important;
   transform-origin: right center;
   transform: scale(0, 1);
   transition: transform .3s ease;
@@ -176,4 +176,13 @@ a.btn-primary {
 }
 .header-menu ul li {
   padding: 5px;
+}
+.footer {
+  background-color: #333;
+  p, li a, i {
+    color: white;
+  }
+  .widget h4 {
+    color: #39f;
+  }
 }

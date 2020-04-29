@@ -11,7 +11,7 @@ export default class Footer extends Component {
               <div className="row widget">
                 <div className="col-sm-12 col-lg-3">
                   <img
-                    src="assets/images/demos/demo-4/logo-footer.png"
+                    src="assets/images/logo-footer.png"
                     className="footer-logo"
                     alt="Footer Logo"
                     width="105"
@@ -160,6 +160,7 @@ export default class Footer extends Component {
                 Copyright © 2019 Molla Store. All Rights Reserved.
               </p>
               <figure className="footer-payments">
+                <p className="text-right mb-1">Payment Methods</p>
                 <img
                   src="/assets/images/payments.png"
                   alt="Payment methods"

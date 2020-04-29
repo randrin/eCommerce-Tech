@@ -5,6 +5,7 @@ import {
   HeaderProductsCart,
   HeaderCartEmpty,
   LogoutModal,
+  HeaderMobile,
 } from "../../../../components";
 export default class HeaderMiddle extends Component {
   render() {
@@ -20,7 +21,7 @@ export default class HeaderMiddle extends Component {
               </button>
               <Link to="/" className="logo">
                 <img
-                  src="/assets/images/shopping.png"
+                  src="/assets/images/logo.png"
                   alt="Molla Logo"
                   width="105"
                   height="25"
@@ -320,6 +321,7 @@ export default class HeaderMiddle extends Component {
           </div>
         </div>
         <LogoutModal />
+        <HeaderMobile />
       </>
     );
   }
