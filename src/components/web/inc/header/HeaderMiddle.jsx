@@ -4,8 +4,7 @@ import { Translation } from "react-i18next";
 import {
   HeaderProductsCart,
   HeaderCartEmpty,
-  LogoutModal,
-  HeaderMobile,
+  LogoutModal
 } from "../../../../components";
 export default class HeaderMiddle extends Component {
   render() {
@@ -321,7 +320,6 @@ export default class HeaderMiddle extends Component {
           </div>
         </div>
         <LogoutModal />
-        <HeaderMobile />
       </>
     );
   }

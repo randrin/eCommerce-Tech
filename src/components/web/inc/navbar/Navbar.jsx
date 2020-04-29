@@ -37,14 +37,14 @@ export default class Navbar extends Component {
     const { username, email, isLogged } = this.state;
     return (
       <>
-        <div className="page-wrapper">
+        <>
           <Annonces />
           <header className="header header-intro-clearance header-4">
             <HeaderTop isLogged={isLogged} username={username} />
             <HeaderMiddle isLogged={isLogged} username={username} />
             <HeaderBottom />
           </header>
-        </div>
+        </>
       </>
     );
   }

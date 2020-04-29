@@ -7,7 +7,7 @@ class HeaderTop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectLang: "fr",
+      selectLang: localStorage.getItem("i18nextLng"),
     };
     this.handleChangeLanguage = this.handleChangeLanguage.bind(this);
   }

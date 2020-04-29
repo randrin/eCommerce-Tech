@@ -32,3 +32,4 @@ export { default as HeaderProductsCart } from "./web/inc/header/inc/HeaderProduc
 export { default as HeaderCartEmpty } from "./web/inc/header/inc/HeaderCartEmpty";
 export { default as ResetPassword } from "./auth/password/ResetPassword";
 export { default as HeaderMobile } from "./web/inc/header/inc/HeaderMobile";
+export { default as NewLetters } from "./web/pages/popup/NewLetters";

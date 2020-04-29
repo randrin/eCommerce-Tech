@@ -11,27 +11,33 @@ import {
   Recommandations,
   Services,
   Abonnement,
+  HeaderMobile,
+  NewLetters,
 } from "../../components";
 
 export default class Home extends Component {
   render() {
     return (
       <>
-        <Navbar />
-        <main className="main">
-          <div className="intro-slider-container mb-5">
-            <Sidebar />
-          </div>
-          <Categories />
-          <Nouveautes />
-          <Deals />
-          <Partenaires />
-          <Produits />
-          <Recommandations />
-        </main>
-        <Services />
-        <Abonnement />
-        <Footer />
+        <div className="page-wrapper">
+          <Navbar />
+          <main className="main">
+            <div className="intro-slider-container mb-5">
+              <Sidebar />
+            </div>
+            <Categories />
+            <Nouveautes />
+            <Deals />
+            <Partenaires />
+            <Produits />
+            <Recommandations />
+            <Services />
+            <Abonnement />
+            <Footer />
+          </main>
+        </div>
+        <HeaderMobile />
+        <NewLetters />
       </>
     );
   }

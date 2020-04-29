@@ -11,9 +11,8 @@ export default class HeaderMobile extends Component {
             <span className="mobile-menu-close">
               <i className="icon-close"></i>
             </span>
-
             <form action="#" method="get" className="mobile-search">
-              <label for="mobile-search" className="sr-only">
+              <label htmlFor="mobile-search" className="sr-only">
                 Search
               </label>
               <input
@@ -28,7 +27,6 @@ export default class HeaderMobile extends Component {
                 <i className="icon-search"></i>
               </button>
             </form>
-
             <ul className="nav nav-pills-mobile nav-border-anim" role="tablist">
               <li className="nav-item">
                 <a
@@ -57,7 +55,6 @@ export default class HeaderMobile extends Component {
                 </a>
               </li>
             </ul>
-
             <div className="tab-content">
               <div
                 className="tab-pane fade show active"
@@ -470,7 +467,6 @@ export default class HeaderMobile extends Component {
                 </nav>
               </div>
             </div>
-
             <div className="social-icons">
               <a href="#" className="social-icon" target="_blank" title="Facebook">
                 <i className="icon-facebook-f"></i>

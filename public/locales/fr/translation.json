@@ -25,5 +25,12 @@
     },
     "ANNONCES": {
         "TITLE": "LIVRAISON GRATUITE POUR TOUTES LES COMMANDES DE PLUS DE 50$"
+    },
+    "NEWSLETTERS": {
+        "TITLE_1": "OBTENEZ ",
+        "TITLE_2": " DE RABAIS",
+        "SUBTITLE": "Abonnez-vous à la newsletter xxxxx eCommerce pour recevoir des mises à jour en temps opportun de vos produits préférés.",
+        "BUTTON_TEXT": "Ne plus afficher ce popup",
+        "BUTTON": "ALLEZ"
     }
 }

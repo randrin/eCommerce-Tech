@@ -25,5 +25,12 @@
     },
     "ANNONCES": {
         "TITLE": "FREE SHIPPING FOR ALL ORDERS OVER $50"
+    },
+    "NEWSLETTERS": {
+        "TITLE_1": "GET ",
+        "TITLE_2": " OFF",
+        "SUBTITLE": "Subscribe to the xxxxx eCommerce newsletter to receive timely updates from your favorite products.",
+        "BUTTON_TEXT": "Do not show this popup again",
+        "BUTTON": "GO"
     }
 }
