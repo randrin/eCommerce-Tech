@@ -1,4 +1,7 @@
 {
+    "DASHBOARD": {
+        "BREADCRUMB": "Mon Compte"
+    },
     "HOME": {
         "BREADCRUMB": "Accueil"
     },
@@ -61,9 +64,20 @@
         "BREADCRUMB": "Nous Contactez"
     },
     "ERROR404": {
-        "BREADCRUMB": "Erreur 404"
+        "BREADCRUMB": "Erreur 404",
+        "TITLE": "Nous sommes désolés, la page que vous avez demandée n'est pas disponible.",
+        "BUTTON": "RETOUR ACCUEIL"
     },
     "FAQS": {
         "BREADCRUMB": "FAQS"
+    },
+    "BLOGS": {
+        "BREADCRUMB": "Notre Blog"
+    },
+    "TESTIMONIALS": {
+        "BREADCRUMB": "Nos Temoignages"
+    },
+    "WISHLIST": {
+        "BREADCRUMB": "Ma Liste d'envies"
     }
 }

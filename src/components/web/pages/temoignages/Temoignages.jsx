@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../../../components";
+import { Translation } from "react-i18next";
+import { Breadcrumb } from "../../../../site";
 
 export default class Temoignages extends Component {
   render() {
@@ -21,19 +22,13 @@ export default class Temoignages extends Component {
               </h1>
             </div>
           </div>
-          <nav aria-label="breadcrumb" className="breadcrumb-nav">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Testimonials
-                </li>
-              </ol>
-            </div>
-          </nav>
-
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("TESTIMONIALS.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="page-content">
             <div className="container">
               <h2 className="title text-center mb-3">

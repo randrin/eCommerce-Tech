@@ -6,6 +6,8 @@ import {
   FavorisProducts,
   FavorisEmpty,
 } from "../../../../components";
+import { Translation } from "react-i18next";
+import { Breadcrumb } from "../../../../site";
 
 export default class Favoris extends Component {
   constructor(props) {
@@ -53,18 +55,13 @@ export default class Favoris extends Component {
               </h1>
             </div>
           </div>
-          <nav aria-label="breadcrumb" class="breadcrumb-nav">
-            <div class="container">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Wishlist
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("WISHLIST.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           {isLogged ? <FavorisProducts /> : <FavorisEmpty />}
         </main>
         <Footer />

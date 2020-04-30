@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../../components";
+import { Translation } from "react-i18next";
+import { Breadcrumb } from "../../../site";
 
 export default class Dashboard extends Component {
   render() {
@@ -21,18 +23,13 @@ export default class Dashboard extends Component {
               </h1>
             </div>
           </div>
-          <nav aria-label="breadcrumb" className="breadcrumb-nav mb-3">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  My Account
-                </li>
-              </ol>
-            </div>
-          </nav>
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("DASHBOARD.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="page-content">
             <div className="dashboard">
               <div className="container">

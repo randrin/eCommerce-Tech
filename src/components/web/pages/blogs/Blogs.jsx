@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../../../components";
+import { Translation } from "react-i18next";
+import { Breadcrumb } from "../../../../site";
 
 export default class Blogs extends Component {
   render() {
@@ -21,19 +22,13 @@ export default class Blogs extends Component {
               </h1>
             </div>
           </div>
-          <nav aria-label="breadcrumb" className="breadcrumb-nav mb-2">
-            <div className="container">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  <a href="#">Blog</a>
-                </li>
-              </ol>
-            </div>
-          </nav>
-
+          <Breadcrumb
+            title={
+              <Translation>
+                {(t) => <span>{t("BLOGS.BREADCRUMB")}</span>}
+              </Translation>
+            }
+          />
           <div className="page-content">
             <div className="container">
               <nav className="blog-nav">

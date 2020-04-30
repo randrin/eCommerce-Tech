@@ -28,13 +28,19 @@ export default class Error404 extends Component {
             }}
           >
             <div className="container">
-              <h1 className="error-title">Error 404</h1>
-              <p>We are sorry, the page you've requested is not available.</p>
+              <Translation>
+                {(t) => (
+                  <h1 className="error-title">{t("ERROR404.BREADCRUMB")}</h1>
+                )}
+              </Translation>
+              <Translation>{(t) => <p>{t("ERROR404.TITLE")}</p>}</Translation>
               <Link
                 to="/"
                 className="btn btn-outline-primary-2 btn-minwidth-lg"
               >
-                <span>BACK TO HOMEPAGE</span>
+                <Translation>
+                  {(t) => <span>{t("ERROR404.BUTTON")}</span>}
+                </Translation>
                 <i className="icon-long-arrow-right"></i>
               </Link>
             </div>

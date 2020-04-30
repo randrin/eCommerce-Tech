@@ -6,7 +6,7 @@ export default class Breadcrumb extends Component {
   render() {
     const { title } = this.props;
     return (
-      <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-0">
+      <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-2 mt-2">
         <div className="container">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
