@@ -79,5 +79,10 @@
     },
     "WISHLIST": {
         "BREADCRUMB": "Ma Liste d'envies"
+    },
+    "FOOTER": {
+        "PAIMENT_METHOD": "Méthodes de Payement",
+        "COPYRIGHT": "Tous les droits sont réservés.",
+        "CALL_HELP": "Vous avez une question? Appelez-nous 24/7"
     }
 }

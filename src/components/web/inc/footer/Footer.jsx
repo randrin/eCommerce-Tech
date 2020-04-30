@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Translation } from "react-i18next";
 
 export default class Footer extends Component {
   render() {
@@ -21,6 +22,48 @@ export default class Footer extends Component {
                     Praesent dapibus, neque id cursus ucibus, tortor neque
                     egestas augue, eu vulputate magna eros eu erat.{" "}
                   </p>
+                  <div className="social-icons mt-2">
+                    <Link
+                      to="/"
+                      className="social-icon"
+                      target="_blank"
+                      title="Facebook"
+                    >
+                      <i className="icon-facebook-f"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon"
+                      target="_blank"
+                      title="Twitter"
+                    >
+                      <i className="icon-twitter"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i className="icon-instagram"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon"
+                      target="_blank"
+                      title="Youtube"
+                    >
+                      <i className="icon-youtube"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon"
+                      target="_blank"
+                      title="Pinterest"
+                    >
+                      <i className="icon-pinterest"></i>
+                    </Link>
+                  </div>
                 </div>
                 <div className="col-sm-12 col-lg-6">
                   <ul className="widget-list store-footer-link">
@@ -34,11 +77,33 @@ export default class Footer extends Component {
                       <Link to="/link">Link name 3</Link>
                     </li>
                   </ul>
+                  <div className="store-app-stores mt-1">
+                    <Link to="/coming-soon">
+                      <img
+                        src="./assets/images/appstores/Google_Play.png"
+                        alt="Google Play Store"
+                      />
+                    </Link>
+                    <Link to="/coming-soon">
+                      <img
+                        src="./assets/images/appstores/App_Store.png"
+                        alt="Apple Play Store"
+                      />
+                    </Link>
+                    <Link to="/coming-soon">
+                      <img
+                        src="./assets/images/appstores/Windows_Store.png"
+                        alt="Windows Play Store"
+                      />
+                    </Link>
+                  </div>
                 </div>
                 <div className="col-sm-12 col-lg-3">
                   <div className="widget-call">
                     <i className="icon-phone"></i>
-                    Got Question? Call us 24/7
+                    <Translation>
+                      {(t) => <span>{t("FOOTER.CALL_HELP")}</span>}
+                    </Translation>
                     <a href="tel:#">+0123 456 789</a>
                   </div>
                 </div>
@@ -157,10 +222,17 @@ export default class Footer extends Component {
           <div className="footer-bottom">
             <div className="container">
               <p className="footer-copyright">
-                Copyright © 2019 Molla Store. All Rights Reserved.
+                Copyright © 2019 Molla Store.{" "}
+                <Translation>{(t) => <>{t("FOOTER.COPYRIGHT")}</>}</Translation>
               </p>
               <figure className="footer-payments">
-                <p className="text-right mb-1">Payment Methods</p>
+                <Translation>
+                  {(t) => (
+                    <p className="text-right mb-1">
+                      {t("FOOTER.PAIMENT_METHOD")}
+                    </p>
+                  )}
+                </Translation>
                 <img
                   src="/assets/images/payments.png"
                   alt="Payment methods"

@@ -1,0 +1,172 @@
+.store-text-white {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--white);
+}
+
+.store-text-beige {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--beige);
+}
+
+.store-text-slate-grey {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--slate-grey);
+}
+
+.store-text-tomato {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--tomato);
+}
+
+.store-text-silver {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--silver);
+}
+
+.store-text-silver-two {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--silver-two);
+}
+
+.store-text-blue-sky {
+    font-family: "Montserrat",
+        sans-serif !important;
+    color: var(--blue-sky);
+}
+
+.store-text-black {
+    color: var(--black);
+}
+
+.store-separator {
+    margin: 2rem 0;
+}
+
+.store-logo-container {
+    display: flex;
+}
+
+.store-logo-flag-green {
+    background-color: green;
+    width: 35px;
+    height: 5px;
+}
+
+.store-logo-flag-red {
+    background-color: red;
+    width: 35px;
+    height: 5px;
+}
+
+.store-logo-flag-yellow {
+    background-color: yellow;
+    width: 35px;
+    height: 5px;
+}
+
+.store-create-account {
+    display: inline-grid;
+}
+
+.store-btn {
+    display: flex;
+}
+
+.store-logout {
+    display: grid;
+}
+
+.store-logo-page {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+
+    .store-logo-container {
+        display: inline-flex;
+    }
+}
+
+.store-footer-link {
+    float: right;
+    display: flex;
+
+    li {
+        margin: 0px 5px;
+    }
+
+    li:before {
+        color: var(--yellow-amber);
+        content: "\00A0 \2022";
+        padding: 0px 10px 0px 0px;
+    }
+
+    li:first-child:before {
+        content: "";
+        padding-right: 0;
+    }
+}
+
+.store-icon-large {
+    font-size: 70px;
+}
+
+.store-icon-padding-right {
+    padding-right: 10px;
+}
+
+.store-text-cta {
+    text-transform: uppercase;
+}
+
+.store-reset-confirmation {
+    border-bottom: .1rem solid #ebebeb;
+}
+
+.store-img-flag {
+    width: 25px;
+    height: 25px;
+}
+
+.store-selected-lang {
+    display: flex;
+    cursor: pointer;
+    left: 10px;
+    position: relative;
+
+    p {
+        padding-left: 5px;
+    }
+}
+
+.store-full-width {
+    width: 100%;
+}
+
+.store-search {
+    right: 30px;
+    position: relative;
+}
+
+.store-form-control {
+    padding: 1rem 2.4rem 1rem 2.5rem !important;
+}
+
+.store-app-stores {
+    display: inline-flex;
+    float: right;
+
+    a {
+        background: white;
+        border-radius: 5px;
+
+        img {
+            width: 120px;
+            height: 40px;
+        }
+    }
+}
