@@ -1,0 +1,12 @@
+.header-wrapper {
+    .header-middle {
+        .header-right p {
+            font-weight: 600;
+        }
+        .cart-dropdown:not(:hover):not(.show) .dropdown-toggle,
+        .compare-dropdown:not(:hover):not(.show) .dropdown-toggle,
+        .wishlist a {
+            color: #ffffff;
+        }
+    }
+}

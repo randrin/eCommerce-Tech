@@ -20,7 +20,7 @@ export default class HeaderMiddle extends Component {
               </button>
               <Link to="/" className="logo">
                 <img
-                  src="/assets/images/logo.png"
+                  src="/assets/images/logo-footer.png"
                   alt="Molla Logo"
                   width="105"
                   height="25"

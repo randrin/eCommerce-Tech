@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <>
-        <footer className="footer">
+        <footer className="footer store-footer-wrapper">
           <div className="footer-middle">
             <div className="container">
               <div className="row widget">
@@ -55,47 +55,43 @@ export default class Footer extends Component {
                     >
                       <i className="icon-youtube"></i>
                     </Link>
-                    <Link
-                      to="#"
-                      className="social-icon"
-                      target="_blank"
-                      title="Pinterest"
-                    >
-                      <i className="icon-pinterest"></i>
-                    </Link>
                   </div>
                 </div>
-                <div className="col-sm-12 col-lg-6">
-                  <ul className="widget-list store-footer-link">
-                    <li>
-                      <Link to="/link">Link name 1</Link>
-                    </li>
-                    <li>
-                      <Link to="/link">Link name 2</Link>
-                    </li>
-                    <li>
-                      <Link to="/link">Link name 3</Link>
-                    </li>
-                  </ul>
-                  <div className="store-app-stores mt-1">
-                    <Link to="/coming-soon">
-                      <img
-                        src="./assets/images/appstores/Google_Play.png"
-                        alt="Google Play Store"
-                      />
-                    </Link>
-                    <Link to="/coming-soon">
-                      <img
-                        src="./assets/images/appstores/App_Store.png"
-                        alt="Apple Play Store"
-                      />
-                    </Link>
-                    <Link to="/coming-soon">
+                <div className="col-sm-12 col-lg-6 store-footer-container">
+                  <div className="row">
+                    <ul className="widget-list store-footer-link">
+                      <li>
+                        <Link to="/link">Link name title 1</Link>
+                      </li>
+                      <li>
+                        <Link to="/link">Link name title 2</Link>
+                      </li>
+                      <li>
+                        <Link to="/link">Link name title 3</Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="row">
+                    <div className="store-footer-apps">
+                      <Link to="/coming-soon">
+                        <img
+                          src="./assets/images/appstores/Google_Play.png"
+                          alt="Google Play Store"
+                        />
+                      </Link>
+                      <Link to="/coming-soon">
+                        <img
+                          src="./assets/images/appstores/App_Store.png"
+                          alt="Apple Play Store"
+                        />
+                      </Link>
+                      {/* <Link to="/coming-soon">
                       <img
                         src="./assets/images/appstores/Windows_Store.png"
                         alt="Windows Play Store"
                       />
-                    </Link>
+                    </Link> */}
+                    </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-lg-3">

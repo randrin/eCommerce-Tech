@@ -6,13 +6,21 @@ export default class Breadcrumb extends Component {
   render() {
     const { title } = this.props;
     return (
-      <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-2 mt-2">
+      <nav
+        aria-label="breadcrumb"
+        className="store-breadcrumb-wrapper breadcrumb-nav border-0 mb-2 mt-2"
+      >
         <div className="container">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
               <Link to="/">
                 <Translation>
-                  {(t) => <span>{t("HOME.BREADCRUMB")}</span>}
+                  {(t) => (
+                    <span>
+                      <i className="fa fa-home store-breadcrumb-icon"></i>
+                      {t("HOME.BREADCRUMB")}
+                    </span>
+                  )}
                 </Translation>
               </Link>
             </li>
