@@ -11,9 +11,11 @@ export default class LoginPage extends Component {
       username: "",
       email: "",
       password: "",
+      remender: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
+    this.rememberMe = this.rememberMe.bind(this);
   }
 
   handleChange(e) {
@@ -39,6 +41,26 @@ export default class LoginPage extends Component {
       localStorage.setItem("user", JSON.stringify(user));
       window.location.replace(`/`);
     }
+  }
+  rememberMe() {
+    let user = {
+      email: this.state.email,
+      password: this.state.password,
+    };
+    localStorage.setItem("remember", JSON.stringify(user));
+  }
+  retrieveInformarionsUser() {
+    if (localStorage.getItem("remember")) {
+      let remember = JSON.parse(localStorage.getItem("remember"));
+      this.setState({
+        email: remember.email,
+        password: remember.password,
+        remember: true
+      });
+    }
+  }
+  componentDidMount() {
+    this.retrieveInformarionsUser();
   }
   render() {
     return (
@@ -129,10 +151,13 @@ export default class LoginPage extends Component {
                               type="checkbox"
                               className="custom-control-input"
                               id="signin-remember"
+                              value={this.state.remender}
+                              onChange={this.handleChange}
                             />
                             <label
                               className="custom-control-label"
                               htmlFor="signin-remember"
+                              onClick={this.rememberMe}
                             >
                               Remember Me
                             </label>

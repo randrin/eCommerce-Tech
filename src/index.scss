@@ -40,14 +40,13 @@ body {
 .header-bottom .menu>li>a:before,
 .nav.nav-border-anim .nav-link:before,
 .header,
-//.widget-list a:before,
 .header-bottom.fixed,
 .btn-outline-primary-2:hover,
 //.btn-primary:hover,
 .btn-outline-primary:hover,
 button[type="submit"].store-btn {
   background-color: var(--blue-bunting) !important;
-  color: #fff !important;
+  color: var(--yellow-amber) !important;
 }
 
 .btn-outline-primary-2,
@@ -97,17 +96,26 @@ a.btn-primary {
   color: var(--blue-bunting) !important;
 }
 
+.wishlist a:hover,
+.cart-dropdown:hover .dropdown-toggle,
+.compare-dropdown:hover .dropdown-toggle,
 .header-intro-clearance .header-bottom .menu>li>a,
 .header-intro-clearance .header-bottom .header-right p,
 .header-intro-clearance .header-bottom .header-right i,
 .header-intro-clearance .header-bottom .header-right .highlight,
 .header-intro-clearance .header-middle .header-right p {
-  color: #fff !important;
+  color: var(--yellow-amber) !important;
 }
 
-.wishlist a:hover,
-.cart-dropdown:hover .dropdown-toggle,
-.compare-dropdown:hover .dropdown-toggle,
+.social-icon:hover,
+.social-icon:focus {
+  border-color: var(--yellow-amber) !important;
+}
+
+.widget-list a:before {
+  background-color: var(--yellow-amber) !important;
+}
+
 //.header-intro-clearance .header-bottom .menu>li>a,
 //.header-intro-clearance .header-bottom .header-right p,
 .header-right-login a {
@@ -198,9 +206,10 @@ a.btn-primary {
   .widget-call a,
   a:hover,
   a:focus {
-    color: var(--blue-dodger);
+    color: var(--yellow-amber);
+
     i {
-      color: var(--blue-dodger);
+      color: var(--yellow-amber);
     }
   }
 }

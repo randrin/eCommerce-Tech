@@ -38,7 +38,7 @@ export default class Navbar extends Component {
     return (
       <>
         <>
-          <Annonces />
+          {/* <Annonces /> */}
           <header className="header-wrapper header header-intro-clearance header-4">
             <HeaderTop isLogged={isLogged} username={username} />
             <HeaderMiddle isLogged={isLogged} username={username} />
