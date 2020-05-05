@@ -46,7 +46,7 @@ body {
 .btn-outline-primary:hover,
 button[type="submit"].store-btn {
   background-color: var(--blue-bunting) !important;
-  color: var(--yellow-amber) !important;
+  color: #fff !important;
 }
 
 .btn-outline-primary-2,
@@ -96,6 +96,8 @@ a.btn-primary {
   color: var(--blue-bunting) !important;
 }
 
+.footer a:hover,
+.footer a:focus,
 .wishlist a:hover,
 .cart-dropdown:hover .dropdown-toggle,
 .compare-dropdown:hover .dropdown-toggle,
@@ -105,11 +107,6 @@ a.btn-primary {
 .header-intro-clearance .header-bottom .header-right .highlight,
 .header-intro-clearance .header-middle .header-right p {
   color: var(--yellow-amber) !important;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  border-color: var(--yellow-amber) !important;
 }
 
 .widget-list a:before {
@@ -203,9 +200,7 @@ a.btn-primary {
   }
 
   .widget h4,
-  .widget-call a,
-  a:hover,
-  a:focus {
+  .widget-call a {
     color: var(--yellow-amber);
 
     i {

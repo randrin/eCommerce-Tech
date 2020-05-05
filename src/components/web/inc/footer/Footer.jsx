@@ -24,8 +24,8 @@ export default class Footer extends Component {
                   </p>
                   <div className="social-icons mt-2">
                     <Link
-                      to="/"
-                      className="social-icon"
+                      to="#"
+                      className="social-icon store-btn-facebook"
                       target="_blank"
                       title="Facebook"
                     >
@@ -33,7 +33,7 @@ export default class Footer extends Component {
                     </Link>
                     <Link
                       to="#"
-                      className="social-icon"
+                      className="social-icon store-btn-twitter"
                       target="_blank"
                       title="Twitter"
                     >
@@ -41,7 +41,7 @@ export default class Footer extends Component {
                     </Link>
                     <Link
                       to="#"
-                      className="social-icon"
+                      className="social-icon store-btn-instagram"
                       target="_blank"
                       title="Instagram"
                     >
@@ -49,7 +49,7 @@ export default class Footer extends Component {
                     </Link>
                     <Link
                       to="#"
-                      className="social-icon"
+                      className="social-icon store-btn-youtube"
                       target="_blank"
                       title="Youtube"
                     >
