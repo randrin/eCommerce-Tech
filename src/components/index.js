@@ -1,4 +1,3 @@
-
 export { default as Footer } from "./web/inc/footer/Footer";
 export { default as Navbar } from "./web/inc/navbar/Navbar";
 export { default as Sidebar } from "./web/Sidebar";
@@ -33,3 +32,4 @@ export { default as HeaderCartEmpty } from "./web/inc/header/inc/HeaderCartEmpty
 export { default as ResetPassword } from "./auth/password/ResetPassword";
 export { default as HeaderMobile } from "./web/inc/header/inc/HeaderMobile";
 export { default as NewLetters } from "./web/pages/popup/NewLetters";
+export { default as HeaderMyAccount } from "./web/inc/header/inc/HeaderMyAccount";

@@ -103,7 +103,8 @@ class HeaderTop extends Component {
                         </div>
                       </div>
                     </li>
-                    <li>
+                    {/* On/Off user section */}
+                    {/* <li>
                       {isLogged ? (
                         <Link to="/profil">
                           <i className="icon-user"></i>{" "}
@@ -115,7 +116,7 @@ class HeaderTop extends Component {
                           {t("HEADER-TOP.SIGN_IN_UP")}
                         </a>
                       )}
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
               </ul>
