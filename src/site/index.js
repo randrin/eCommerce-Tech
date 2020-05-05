@@ -1,4 +1,4 @@
-export { default as About } from './pages/About';
+export { default as About } from "./pages/About";
 export { default as Cart } from "./pages/Cart";
 export { default as Checkout } from "./pages/Checkout";
 export { default as Contact } from "./pages/Contact";
@@ -10,3 +10,4 @@ export { default as Faqs } from "./pages/Faqs";
 export { default as ScrollToTop } from "./pages/ScrollToTop";
 export { default as ButtonGoToTop } from "./pages/inc/ButtonGoToTop";
 export { default as Breadcrumb } from "./pages/inc/Breadcrumb";
+export { default as MultiLanguages } from "./pages/inc/MultiLanguages";

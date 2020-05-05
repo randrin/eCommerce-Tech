@@ -35,6 +35,7 @@ export default class ResetPassword extends Component {
                 {(t) => <span>{t("RESET-PASSWORD.BREADCRUMB")}</span>}
               </Translation>
             }
+            showMultiLanguages="true"
           />
           <div
             className="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"

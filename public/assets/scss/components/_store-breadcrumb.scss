@@ -1,8 +1,16 @@
 .store-breadcrumb-wrapper {
+    @include small() {
+        margin: 0px 10px;
+    }
+
     .store-breadcrumb-icon {
         top: 5px;
         right: 5px;
         position: relative;
         font-size: 1.4rem;
+    }
+
+    .store-multi-languages {
+        top: -15px;
     }
 }

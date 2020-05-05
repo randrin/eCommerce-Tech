@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class ComingSoon extends Component {
   render() {
     return (
-      <div className="soon">
+      <div className="soon store-coming-soon-wrapper">
         <div className="container">
           <div className="row">
             <div className="col-md-9 col-lg-8">
@@ -23,7 +23,7 @@ export default class ComingSoon extends Component {
                     for more information. Subscribe to our newsletter to stay
                     updated on our progress.
                   </p>
-                  <form action="#">
+                  <form action="#" className="mt-2">
                     <div className="input-group mb-5">
                       <input
                         type="email"
@@ -43,6 +43,40 @@ export default class ComingSoon extends Component {
                     </div>
                   </form>
                   <div className="social-icons justify-content-center mb-0">
+                    <Link
+                      to="#"
+                      className="social-icon store-btn-facebook"
+                      target="_blank"
+                      title="Facebook"
+                    >
+                      <i className="icon-facebook-f"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon store-btn-twitter"
+                      target="_blank"
+                      title="Twitter"
+                    >
+                      <i className="icon-twitter"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon store-btn-instagram"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i className="icon-instagram"></i>
+                    </Link>
+                    <Link
+                      to="#"
+                      className="social-icon store-btn-youtube"
+                      target="_blank"
+                      title="Youtube"
+                    >
+                      <i className="icon-youtube"></i>
+                    </Link>
+                  </div>
+                  {/* <div className="social-icons justify-content-center mb-0">
                     <a
                       href="#"
                       className="social-icon"
@@ -83,7 +117,7 @@ export default class ComingSoon extends Component {
                     >
                       <i className="icon-pinterest"></i>
                     </a>
-                  </div>
+                  </div> */}
                   <div className="text-left mt-5">
                     <Link to="/" className="btn btn-outline-primary-2">
                       <i className="icon-long-arrow-left"></i>
