@@ -6,8 +6,8 @@ import {
   Contact,
   Error404,
   Home,
-  Product,
-  Products,
+  ProductSingle,
+  ProductsList,
   Faqs,
   Checkout,
 } from "../../site";
@@ -20,7 +20,7 @@ import {
   Logout,
   LoginPage,
   Register,
-  ResetPassword
+  ResetPassword,
 } from "../../components";
 
 const Routes = (props) => (
@@ -29,8 +29,8 @@ const Routes = (props) => (
     <Route exact path="/home" component={withRouter(Home)} />
     <Route exact path="/about" component={About} />
     <Route exact path="/faqs" component={Faqs} />
-    <Route exact path="/products" component={Products} />
-    <Route exact path="/product/:id" component={Product} />
+    <Route exact path="/products" component={ProductsList} />
+    <Route exact path="/product/:id" component={withRouter(ProductSingle)} />
     <Route exact path="/contact" component={Contact} />
     <Route exact path="/cart" component={Cart} />
     <Route exact path="/checkout" component={withRouter(Checkout)} />

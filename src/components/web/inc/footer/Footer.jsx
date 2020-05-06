@@ -12,7 +12,7 @@ export default class Footer extends Component {
               <div className="row widget">
                 <div className="col-sm-12 col-lg-3">
                   <img
-                    src="assets/images/logo-footer.png"
+                    src="/assets/images/logo-footer.png"
                     className="footer-logo"
                     alt="Footer Logo"
                     width="105"
@@ -75,13 +75,13 @@ export default class Footer extends Component {
                     <div className="store-footer-apps">
                       <Link to="/coming-soon">
                         <img
-                          src="./assets/images/appstores/Google_Play.png"
+                          src="/assets/images/appstores/Google_Play.png"
                           alt="Google Play Store"
                         />
                       </Link>
                       <Link to="/coming-soon">
                         <img
-                          src="./assets/images/appstores/App_Store.png"
+                          src="/assets/images/appstores/App_Store.png"
                           alt="Apple Play Store"
                         />
                       </Link>
@@ -118,6 +118,9 @@ export default class Footer extends Component {
                       </li>
                       <li>
                         <Link to="/favoris">My Wishlist</Link>
+                      </li>
+                      <li>
+                        <Link to="/products">Ours Products</Link>
                       </li>
                       <li>
                         <a href="#">Track My Order</a>
