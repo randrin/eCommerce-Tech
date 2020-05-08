@@ -49,7 +49,9 @@
         "TITLE_2": " DE REMISE",
         "SUBTITLE": "Abonnez-vous à la newsletter xxxxx eCommerce pour recevoir des mises à jour en temps opportun de vos produits préférés.",
         "BUTTON_TEXT": "Ne plus afficher ce popup",
-        "BUTTON": "ALLEZ"
+        "BUTTON": "ALLEZ",
+        "BANNER_TITLE": "Obtenez les dernières offres",
+        "BANNER_SUBTITLE": "et recevez un coupon de 20 $ pour vos premiers achats"
     },
     "ABOUT": {
         "BREADCRUMB": "A' Propos de nous"
@@ -84,5 +86,64 @@
         "PAIMENT_METHOD": "Méthodes de Payement",
         "COPYRIGHT": "Tous les droits sont réservés.",
         "CALL_HELP": "Vous avez une question? Appelez-nous 24/7"
+    },
+    "CATEGORY": {
+        "POPULAR": "Explorez nos Catégories populaires",
+        "NEW_ARRIVALS": "Nouveautés",
+        "OURS_CATEGORIES": "Tous Nos Catégories"
+    },
+    "ARRIVALS": {
+        "NEW": "Nouveautés",
+        "ALL": "TOUS"
+    },
+    "DEALS": {
+        "DEAL_OUTLET": "Offres & Nouveautés",
+        "TITLE": "Les Nouveautés d'aujourd'hui et plus",
+        "DAY": "Les Nouveautés d'aujourd'hui.",
+        "QUANTITY": "Quantités limitées.",
+        "OFFERS": "Vos offres exclusives.",
+        "SIGN_IN": "Connectez-vous pour voir des offres incroyables.",
+        "PROMOTIONS": "Offres et Promotions",
+        "TODAY": "Aujourd'hui"
+    },
+    "BUTTONS": {
+        "SHOW_NOW": "Achetez Maintenant",
+        "SHOW_MORE": "Achetez Plus",
+        "SHOW_DEALS": "Voir plus de nouveautés",
+        "SIGN_IN": "Connectez-vous et économisez de l'argent",
+        "SUBSCRIBE": "Souscrire"
+    },
+    "TIMESTAMP": {
+        "DAYS": "Jours",
+        "HOUR": "Heure",
+        "MINUTE": "Minutes",
+        "SECOND": "Secondes"
+    },
+    "PRODUCTS": {
+        "TRENDING": "Produits de Tendance",
+        "TOP": "MEILLEUR PRODUITS",
+        "SALE": "EN SOLDES",
+        "SELLING": "MEILLEURE VENTE",
+        "ADD_CART": "Ajouter au panier",
+        "QUICK_VIEW": "Aperçu rapide",
+        "REVIEWS": "commentaires",
+        "ADD_TO_WISHLIST": "Ajouter à la liste des envies",
+        "LABEL_SALE": "Solde",
+        "LABEL_TOP": "Top",
+        "LABEL_NEW": "Neuf"
+    },
+    "RECOMMENDATIONS": {
+        "TITLE": "Recommandation pour vous",
+        "LINK": "Voir toutes les recommandations"
+    },
+    "SERVICES": {
+        "SHIPPING_TITLE": "Livraison Gratuite",
+        "SHIPPING_SUBTITLE": "Commandes de 50$ ou plus",
+        "RETURNS_TITLE": "Retours sans frais",
+        "RETURNS_SUBTITLE": "Dans les 30 jours de votre commande",
+        "OFFER_TITLE": "20% de réduction",
+        "OFFER_SUBTITLE": "lorsque vous vous inscrivez",
+        "SUPPORT_TITLE": "Nous vous soutenons",
+        "SUPPORT_SUBTITLE": "Nous sommes disponible 24/7 pour vous"
     }
 }

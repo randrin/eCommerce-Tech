@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class Services extends Component {
   render() {
@@ -16,8 +17,16 @@ export default class Services extends Component {
                     <i className="icon-rocket"></i>
                   </span>
                   <div className="icon-box-content">
-                    <h3 className="icon-box-title">Free Shipping</h3>
-                    <p>Orders $50 or more</p>
+                    <Translation>
+                      {(t) => (
+                        <h3 className="icon-box-title">
+                          {t("SERVICES.SHIPPING_TITLE")}
+                        </h3>
+                      )}
+                    </Translation>
+                    <Translation>
+                      {(t) => <p>{t("SERVICES.SHIPPING_SUBTITLE")}</p>}
+                    </Translation>
                   </div>
                 </div>
               </div>
@@ -27,8 +36,16 @@ export default class Services extends Component {
                     <i className="icon-rotate-left"></i>
                   </span>
                   <div className="icon-box-content">
-                    <h3 className="icon-box-title">Free Returns</h3>
-                    <p>Within 30 days</p>
+                    <Translation>
+                      {(t) => (
+                        <h3 className="icon-box-title">
+                          {t("SERVICES.RETURNS_TITLE")}
+                        </h3>
+                      )}
+                    </Translation>
+                    <Translation>
+                      {(t) => <p>{t("SERVICES.RETURNS_SUBTITLE")}</p>}
+                    </Translation>
                   </div>
                 </div>
               </div>
@@ -38,8 +55,16 @@ export default class Services extends Component {
                     <i className="icon-info-circle"></i>
                   </span>
                   <div className="icon-box-content">
-                    <h3 className="icon-box-title">Get 20% Off 1 Item</h3>
-                    <p>when you sign up</p>
+                    <Translation>
+                      {(t) => (
+                        <h3 className="icon-box-title">
+                          {t("SERVICES.OFFER_TITLE")}
+                        </h3>
+                      )}
+                    </Translation>
+                    <Translation>
+                      {(t) => <p>{t("SERVICES.OFFER_SUBTITLE")}</p>}
+                    </Translation>
                   </div>
                 </div>
               </div>
@@ -49,8 +74,16 @@ export default class Services extends Component {
                     <i className="icon-life-ring"></i>
                   </span>
                   <div className="icon-box-content">
-                    <h3 className="icon-box-title">We Support</h3>
-                    <p>24/7 amazing services</p>
+                    <Translation>
+                      {(t) => (
+                        <h3 className="icon-box-title">
+                          {t("SERVICES.SUPPORT_TITLE")}
+                        </h3>
+                      )}
+                    </Translation>
+                    <Translation>
+                      {(t) => <p>{t("SERVICES.SUPPORT_SUBTITLE")}</p>}
+                    </Translation>
                   </div>
                 </div>
               </div>

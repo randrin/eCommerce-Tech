@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Translation } from "react-i18next";
 export default class extends Component {
   render() {
     return (
@@ -28,9 +28,13 @@ export default class extends Component {
             <div className="container intro-content">
               <div className="row justify-content-end">
                 <div className="col-auto col-sm-7 col-md-6 col-lg-5">
-                  <h3 className="intro-subtitle text-third">
-                    Deals and Promotions
-                  </h3>
+                  <Translation>
+                    {(t) => (
+                      <h3 className="intro-subtitle text-third">
+                        {t("DEALS.PROMOTIONS")}
+                      </h3>
+                    )}
+                  </Translation>
                   <h1 className="intro-title">Beats by</h1>
                   <h1 className="intro-title">Dre Studio 3</h1>
                   <div className="intro-price">
@@ -40,7 +44,9 @@ export default class extends Component {
                     </span>
                   </div>
                   <a href="category.html" className="btn btn-primary btn-round">
-                    <span>Shop More</span>
+                    <Translation>
+                      {(t) => <span>{t("BUTTONS.SHOW_MORE")}</span>}
+                    </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>
                 </div>
@@ -57,19 +63,29 @@ export default class extends Component {
             <div className="container intro-content">
               <div className="row justify-content-end">
                 <div className="col-auto col-sm-7 col-md-6 col-lg-5">
-                  <h3 className="intro-subtitle text-primary">New Arrival</h3>
+                  <Translation>
+                    {(t) => (
+                      <h3 className="intro-subtitle text-primary">
+                        {t("CATEGORY.NEW_ARRIVALS")}
+                      </h3>
+                    )}
+                  </Translation>
                   <h1 className="intro-title">
                     Apple iPad Pro <br />
                     12.9 Inch, 64GB{" "}
                   </h1>
                   <div className="intro-price">
-                    <sup>Today:</sup>
+                    <Translation>
+                      {(t) => <sup>{t("DEALS.TODAY")} :</sup>}
+                    </Translation>
                     <span className="text-primary">
                       $999<sup>.99</sup>
                     </span>
                   </div>
                   <a href="category.html" className="btn btn-primary btn-round">
-                    <span>Shop More</span>
+                    <Translation>
+                      {(t) => <span>{t("BUTTONS.SHOW_MORE")}</span>}
+                    </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>
                 </div>

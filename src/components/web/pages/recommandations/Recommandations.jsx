@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Translation } from "react-i18next";
 export default class Recommandations extends Component {
   render() {
     return (
@@ -7,13 +7,19 @@ export default class Recommandations extends Component {
         <div className="container for-you">
           <div className="heading heading-flex mb-3">
             <div className="heading-left">
-              <h2 className="title">Recommendation For You</h2>
+              <Translation>
+                {(t) => <h2 className="title">{t("RECOMMENDATIONS.TITLE")}</h2>}
+              </Translation>
             </div>
             <div className="heading-right">
-              <a href="#" className="title-link">
-                View All Recommendadion{" "}
-                <i className="icon-long-arrow-right"></i>
-              </a>
+              <Translation>
+                {(t) => (
+                  <a href="#" className="title-link">
+                    {t("RECOMMENDATIONS.LINK")}
+                    <i className="icon-long-arrow-right"></i>
+                  </a>
+                )}
+              </Translation>
             </div>
           </div>
 
@@ -22,9 +28,13 @@ export default class Recommandations extends Component {
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-sale">
-                      Sale
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-sale">
+                          {t("PRODUCTS.LABEL_SALE")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-10.jpg"
@@ -32,7 +42,6 @@ export default class Recommandations extends Component {
                         className="product-image"
                       />
                     </a>
-
                     <div className="product-action-vertical">
                       <a
                         href="#"
@@ -46,14 +55,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -72,28 +85,37 @@ export default class Recommandations extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '40%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "40%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>
+                        )
+                      </span>
                     </div>
                     <div className="product-nav product-nav-dots">
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#666666'}}
+                        style={{ background: "#666666" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#ff887f'}}>
+                      <a href="#" style={{ background: "#ff887f" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#6699cc'}}>
+                      <a href="#" style={{ background: "#6699cc" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#f3dbc1'}}>
+                      <a href="#" style={{ background: "#f3dbc1" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -123,14 +145,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -147,9 +173,18 @@ export default class Recommandations extends Component {
                     <div className="product-price">$349.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 2 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 2{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -158,9 +193,13 @@ export default class Recommandations extends Component {
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-new">
-                      New
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-new">
+                          {t("PRODUCTS.LABEL_NEW")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-12.jpg"
@@ -186,14 +225,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -209,22 +252,31 @@ export default class Recommandations extends Component {
                     <div className="product-price">$214.49</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '0%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "0%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 0 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 0{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                     <div className="product-nav product-nav-dots">
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#e2e2e2'}}
+                        style={{ background: "#e2e2e2" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#f2bc9e'}}>
+                      <a href="#" style={{ background: "#f2bc9e" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -254,14 +306,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -278,9 +334,18 @@ export default class Recommandations extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 11 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 11{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -308,14 +373,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -331,9 +400,18 @@ export default class Recommandations extends Component {
                     <div className="product-price">$499.99</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '50%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "50%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 11 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 11{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -361,14 +439,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -384,22 +466,31 @@ export default class Recommandations extends Component {
                     <div className="product-price">$49.00</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 24 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 24{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                     <div className="product-nav product-nav-dots">
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#ef837b'}}
+                        style={{ background: "#ef837b" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#333333'}}>
+                      <a href="#" style={{ background: "#333333" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#e2e2e2'}}>
+                      <a href="#" style={{ background: "#e2e2e2" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -409,9 +500,13 @@ export default class Recommandations extends Component {
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-sale">
-                      Sale
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-sale">
+                          {t("PRODUCTS.LABEL_SALE")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-16.jpg"
@@ -432,14 +527,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -458,28 +557,37 @@ export default class Recommandations extends Component {
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '40%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "40%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                     <div className="product-nav product-nav-dots">
                       <a
                         href="#"
                         className="active"
-                        style={{background: '#666666'}}
+                        style={{ background: "#666666" }}
                       >
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#ff887f'}}>
+                      <a href="#" style={{ background: "#ff887f" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#6699cc'}}>
+                      <a href="#" style={{ background: "#6699cc" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#f3dbc1'}}>
+                      <a href="#" style={{ background: "#f3dbc1" }}>
                         <span className="sr-only">Color name</span>
                       </a>
-                      <a href="#" style={{background: '#eaeaec'}}>
+                      <a href="#" style={{ background: "#eaeaec" }}>
                         <span className="sr-only">Color name</span>
                       </a>
                     </div>
@@ -510,14 +618,18 @@ export default class Recommandations extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>
@@ -533,9 +645,18 @@ export default class Recommandations extends Component {
                     <div className="product-price">$149.00</div>
                     <div className="ratings-container">
                       <div className="ratings">
-                        <div className="ratings-val" style={{width: '60%'}}></div>
+                        <div
+                          className="ratings-val"
+                          style={{ width: "60%" }}
+                        ></div>
                       </div>
-                      <span className="ratings-text">( 2 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 2{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>

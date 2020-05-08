@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class Produits extends Component {
   render() {
@@ -8,7 +9,9 @@ export default class Produits extends Component {
           <div className="container trending-products">
             <div className="heading heading-flex mb-3">
               <div className="heading-left">
-                <h2 className="title">Trending Products</h2>
+                <Translation>
+                  {(t) => <h2 className="title">{t("PRODUCTS.TRENDING")}</h2>}
+                </Translation>
               </div>
               <div className="heading-right">
                 <ul
@@ -25,7 +28,9 @@ export default class Produits extends Component {
                       aria-controls="trending-top-tab"
                       aria-selected="true"
                     >
-                      Top Rated
+                      <Translation>
+                        {(t) => <span>{t("PRODUCTS.TOP")}</span>}
+                      </Translation>
                     </a>
                   </li>
                   <li className="nav-item">
@@ -38,7 +43,9 @@ export default class Produits extends Component {
                       aria-controls="trending-best-tab"
                       aria-selected="false"
                     >
-                      Best Selling
+                      <Translation>
+                        {(t) => <span>{t("PRODUCTS.SELLING")}</span>}
+                      </Translation>
                     </a>
                   </li>
                   <li className="nav-item">
@@ -51,7 +58,9 @@ export default class Produits extends Component {
                       aria-controls="trending-sale-tab"
                       aria-selected="false"
                     >
-                      On Sale
+                      <Translation>
+                        {(t) => <span>{t("PRODUCTS.SALE")}</span>}
+                      </Translation>
                     </a>
                   </li>
                 </ul>
@@ -153,23 +162,29 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '100%'}}
+                                style={{ width: "100%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
 
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#69b4ff'}}>
+                            <a href="#" style={{ background: "#69b4ff" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#ff887f'}}>
+                            <a href="#" style={{ background: "#ff887f" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -227,10 +242,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '60%'}}
+                                style={{ width: "60%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 6 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 6{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -288,23 +309,29 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
 
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#edd2c8'}}>
+                            <a href="#" style={{ background: "#edd2c8" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -371,10 +398,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 10 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 10{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -432,23 +465,29 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
 
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#edd2c8'}}>
+                            <a href="#" style={{ background: "#edd2c8" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -540,23 +579,29 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
 
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#edd2c8'}}>
+                            <a href="#" style={{ background: "#edd2c8" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -614,10 +659,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '60%'}}
+                                style={{ width: "60%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 6 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 6{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -679,24 +730,30 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '100%'}}
+                                style={{ width: "100%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 10 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 10{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
 
                           <div className="product-nav product-nav-dots">
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#edd2c8'}}
+                              style={{ background: "#edd2c8" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#333333'}}>
+                            <a href="#" style={{ background: "#333333" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                           </div>
@@ -756,10 +813,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '60%'}}
+                                style={{ width: "60%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 5 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 5{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -816,10 +879,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '100%'}}
+                                style={{ width: "100%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -905,22 +974,28 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#edd2c8'}}>
+                            <a href="#" style={{ background: "#edd2c8" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -977,22 +1052,28 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '100%'}}
+                                style={{ width: "100%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#69b4ff'}}>
+                            <a href="#" style={{ background: "#69b4ff" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#ff887f'}}>
+                            <a href="#" style={{ background: "#ff887f" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>
@@ -1046,10 +1127,16 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '60%'}}
+                                style={{ width: "60%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 6 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 6{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -1103,22 +1190,28 @@ export default class Produits extends Component {
                             <div className="ratings">
                               <div
                                 className="ratings-val"
-                                style={{width: '80%'}}
+                                style={{ width: "80%" }}
                               ></div>
                             </div>
-                            <span className="ratings-text">( 4 Reviews )</span>
+                            <span className="ratings-text">
+                              ( 4{" "}
+                              <Translation>
+                                {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                              </Translation>{" "}
+                              )
+                            </span>
                           </div>
                           <div className="product-nav product-nav-dots">
-                            <a href="#" style={{background: '#edd2c8'}}>
+                            <a href="#" style={{ background: "#edd2c8" }}>
                               <span className="sr-only">Color name</span>
                             </a>
-                            <a href="#" style={{background: '#eaeaec'}}>
+                            <a href="#" style={{ background: "#eaeaec" }}>
                               <span className="sr-only">Color name</span>
                             </a>
                             <a
                               href="#"
                               className="active"
-                              style={{background: '#333333'}}
+                              style={{ background: "#333333" }}
                             >
                               <span className="sr-only">Color name</span>
                             </a>

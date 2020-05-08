@@ -9,7 +9,12 @@ export default class ProductSingle extends Component {
         <Navbar />
         <main className="main">
           <Breadcrumb title="Name Product" />
-          <nav aria-label="breadcrumb" className="breadcrumb-nav border-0 mb-0">
+          {/* Disable Previous - Next */}
+          <nav
+            aria-label="breadcrumb"
+            className="breadcrumb-nav border-0 mb-0"
+            style={{ display: "none" }}
+          >
             <nav className="product-pager ml-auto" aria-label="Product">
               <a
                 className="product-pager-link product-pager-prev"

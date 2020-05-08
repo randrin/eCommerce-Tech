@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class Nouveautes extends Component {
   render() {
@@ -7,7 +8,9 @@ export default class Nouveautes extends Component {
         <div className="container new-arrivals">
           <div className="heading heading-flex mb-3">
             <div className="heading-left">
-              <h2 className="title">New Arrivals</h2>
+              <Translation>
+                {(t) => <h2 className="title">{t("ARRIVALS.NEW")}</h2>}
+              </Translation>
             </div>
             <div className="heading-right">
               <ul
@@ -24,7 +27,9 @@ export default class Nouveautes extends Component {
                     aria-controls="new-all-tab"
                     aria-selected="true"
                   >
-                    All
+                    <Translation>
+                      {(t) => <span>{t("ARRIVALS.ALL")}</span>}
+                    </Translation>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -132,9 +137,13 @@ export default class Nouveautes extends Component {
               >
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-top">
-                      Top
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-top">
+                          {t("PRODUCTS.LABEL_TOP")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-1.jpg"
@@ -249,9 +258,13 @@ export default class Nouveautes extends Component {
 
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-new">
-                      New
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-new">
+                          {t("PRODUCTS.LABEL_NEW")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-3.jpg"
@@ -326,12 +339,20 @@ export default class Nouveautes extends Component {
 
                 <div className="product product-2">
                   <figure className="product-media">
-                    <span className="product-label label-circle label-top">
-                      Top
-                    </span>
-                    <span className="product-label label-circle label-sale">
-                      Sale
-                    </span>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-top">
+                          {t("PRODUCTS.LABEL_TOP")}
+                        </span>
+                      )}
+                    </Translation>
+                    <Translation>
+                      {(t) => (
+                        <span className="product-label label-circle label-sale">
+                          {t("PRODUCTS.LABEL_SALE")}
+                        </span>
+                      )}
+                    </Translation>
                     <a href="product.html">
                       <img
                         src="assets/images/demos/demo-4/products/product-4.jpg"
@@ -354,14 +375,18 @@ export default class Nouveautes extends Component {
                         className="btn-product btn-cart"
                         title="Add to cart"
                       >
-                        <span>add to cart</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.ADD_CART")}</span>}
+                        </Translation>
                       </a>
                       <a
                         href="popup/quickView.html"
                         className="btn-product btn-quickview"
                         title="Quick view"
                       >
-                        <span>quick view</span>
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.QUICK_VIEW")}</span>}
+                        </Translation>
                       </a>
                     </div>
                   </figure>

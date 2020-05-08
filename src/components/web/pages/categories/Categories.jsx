@@ -1,11 +1,17 @@
 import React, { Component } from "react";
-
+import { Translation } from "react-i18next";
 export default class Categories extends Component {
   render() {
     return (
       <>
         <div className="container">
-          <h2 className="title text-center mb-4">Explore Popular Categories</h2>
+          <Translation>
+            {(t) => (
+              <h2 className="title text-center mb-4">
+                {t("CATEGORY.POPULAR")}
+              </h2>
+            )}
+          </Translation>
           <div className="cat-blocks-container">
             <div className="row">
               <div className="col-6 col-sm-4 col-lg-2">
@@ -113,9 +119,14 @@ export default class Categories extends Component {
                       </strong>
                     </a>
                   </h3>
-                  <a href="#" className="banner-link">
-                    Shop Now<i className="icon-long-arrow-right"></i>
-                  </a>
+                  <Translation>
+                    {(t) => (
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
+                    )}
+                  </Translation>
                 </div>
               </div>
             </div>
@@ -137,9 +148,14 @@ export default class Categories extends Component {
                       Time Deal -30%
                     </a>
                   </h3>
-                  <a href="#" className="banner-link">
-                    Shop Now<i className="icon-long-arrow-right"></i>
-                  </a>
+                  <Translation>
+                    {(t) => (
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
+                    )}
+                  </Translation>
                 </div>
               </div>
             </div>
@@ -161,9 +177,14 @@ export default class Categories extends Component {
                       Save $70
                     </a>
                   </h3>
-                  <a href="#" className="banner-link">
-                    Shop Now<i className="icon-long-arrow-right"></i>
-                  </a>
+                  <Translation>
+                    {(t) => (
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
+                    )}
+                  </Translation>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Translation } from "react-i18next";
 export default class Abonnement extends Component {
   render() {
     return (
@@ -13,12 +13,20 @@ export default class Abonnement extends Component {
           <div className="row justify-content-center">
             <div className="col-sm-10 col-md-8 col-lg-6">
               <div className="cta-heading text-center">
-                <h3 className="cta-title text-white">Get The Latest Deals</h3>
-                <p className="cta-desc text-white">
-                  and receive{" "}
-                  <span className="font-weight-normal">$20 coupon</span> for
-                  first shopping
-                </p>
+                <Translation>
+                  {(t) => (
+                    <h3 className="cta-title text-white">
+                      {t("NEWSLETTERS.BANNER_TITLE")}
+                    </h3>
+                  )}
+                </Translation>
+                <Translation>
+                  {(t) => (
+                    <p className="cta-desc text-white">
+                      {t("NEWSLETTERS.BANNER_SUBTITLE")}
+                    </p>
+                  )}
+                </Translation>
               </div>
               <form action="#">
                 <div className="input-group input-group-round">

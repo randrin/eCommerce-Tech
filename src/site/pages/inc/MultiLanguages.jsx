@@ -24,7 +24,7 @@ class MultiLanguages extends Component {
                 className="store-img-flag"
                 src="/assets/images/flags/fr.png"
               />
-              <p>French</p>
+              <p>Français</p>
             </>
           ) : (
             <>
@@ -32,7 +32,7 @@ class MultiLanguages extends Component {
                 className="store-img-flag"
                 src="/assets/images/flags/en.png"
               />
-              <p>English</p>
+              <p>Anglais</p>
             </>
           )}
         </a>
@@ -47,7 +47,7 @@ class MultiLanguages extends Component {
                   className="store-img-flag"
                   src="/assets/images/flags/en.png"
                 />{" "}
-                <p>English</p>
+                <p>Anglais</p>
               </span>
             </li>
             <li>
@@ -59,7 +59,7 @@ class MultiLanguages extends Component {
                   className="store-img-flag"
                   src="/assets/images/flags/fr.png"
                 />
-                <p>French</p>
+                <p>Français</p>
               </span>
             </li>
           </ul>

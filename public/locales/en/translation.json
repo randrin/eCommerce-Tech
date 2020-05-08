@@ -49,7 +49,9 @@
         "TITLE_2": " OFF",
         "SUBTITLE": "Subscribe to the xxxxx eCommerce newsletter to receive timely updates from your favorite products.",
         "BUTTON_TEXT": "Do not show this popup again",
-        "BUTTON": "GO"
+        "BUTTON": "GO",
+        "BANNER_TITLE": "Get The Latest Deals",
+        "BANNER_SUBTITLE": "and receive $20 coupon for first shopping"
     },
     "ABOUT": {
         "BREADCRUMB": "About Us"
@@ -84,5 +86,64 @@
         "PAIMENT_METHOD": "Payment Methods",
         "COPYRIGHT": "All Rights Reserved.",
         "CALL_HELP": "Got Question? Call us 24/7"
+    },
+    "CATEGORY": {
+        "POPULAR": "Explore ours Popular Categories",
+        "NEW_ARRIVALS": "New Arrivals",
+        "OURS_CATEGORIES": "Ours Categories"
+    },
+    "ARRIVALS": {
+        "NEW": "New Arrivals",
+        "ALL": "ALL"
+    },
+    "DEALS": {
+        "DEAL_OUTLET": "Deals & Outlet",
+        "TITLE": "Today’s deal and more",
+        "DAY": "Deal of the Day.",
+        "QUANTITY": "Limited quantities.",
+        "OFFERS": "Your Exclusive Offers.",
+        "SIGN_IN": "Sign in to see amazing deals.",
+        "PROMOTIONS": "Deals and Promotions",
+        "TODAY": "Today"
+    },
+    "BUTTONS": {
+        "SHOW_NOW": "Shop Now",
+        "SHOW_MORE": "Shop More",
+        "SHOW_DEALS": "Shop more Outlet deals",
+        "SIGN_IN": "Sign In and Save money",
+        "SUBSCRIBE": "Subscribe"
+    },
+    "TIMESTAMP": {
+        "DAYS": "Days",
+        "HOUR": "Hour",
+        "MINUTE": "Minutes",
+        "SECOND": "Seconds"
+    },
+    "PRODUCTS": {
+        "TRENDING": "Trending Products",
+        "TOP": "TOP RATED",
+        "SALE": "ON SALE",
+        "SELLING": "BEST SELLING",
+        "ADD_CART": "Add to cart",
+        "QUICK_VIEW": "Quick view",
+        "ADD_TO_WISHLIST": "Add to Wishlist",
+        "REVIEWS": "reviews",
+        "LABEL_SALE": "Sale",
+        "LABEL_TOP": "Top",
+        "LABEL_NEW": "New"
+    },
+    "RECOMMENDATIONS": {
+        "TITLE": "Recommendation For You",
+        "LINK": "View All Recommendation"
+    },
+    "SERVICES": {
+        "SHIPPING_TITLE": "Free Shipping",
+        "SHIPPING_SUBTITLE": "Orders $50 or more",
+        "RETURNS_TITLE": "Free Returns",
+        "RETURNS_SUBTITLE": "Within 30 days",
+        "OFFER_TITLE": "Get 20 % Off 1 Item",
+        "OFFER_SUBTITLE": "when you sign up",
+        "SUPPORT_TITLE": "We Support",
+        "SUPPORT_SUBTITLE": "24/7 amazing services"
     }
 }

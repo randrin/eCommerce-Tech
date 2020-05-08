@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import { LoginModal } from "../../../../components";
+import { MultiLanguages } from "../../../../site/index";
 
 class HeaderTop extends Component {
   constructor(props) {
@@ -9,16 +10,10 @@ class HeaderTop extends Component {
     this.state = {
       selectLang: localStorage.getItem("i18nextLng"),
     };
-    this.handleChangeLanguage = this.handleChangeLanguage.bind(this);
   }
-  handleChangeLanguage(lang) {
-    this.props.i18n.changeLanguage(lang);
-    this.setState({ selectLang: lang });
-  }
+
   render() {
     const { isLogged, username, t } = this.props;
-    const { selectLang } = this.state;
-
     return (
       <header className="header header-intro-clearance header-4">
         <div className="header-top">
@@ -53,55 +48,7 @@ class HeaderTop extends Component {
                       </div>
                     </li>
                     <li>
-                      <div className="header-dropdown">
-                        <a href="#" className="store-selected-lang">
-                          {selectLang === "fr" ? (
-                            <>
-                              <img
-                                className="store-img-flag"
-                                src="/assets/images/flags/fr.png"
-                              />
-                              <p>French</p>
-                            </>
-                          ) : (
-                            <>
-                              <img
-                                className="store-img-flag"
-                                src="/assets/images/flags/en.png"
-                              />
-                              <p>English</p>
-                            </>
-                          )}
-                        </a>
-                        <div className="header-menu">
-                          <ul>
-                            <li>
-                              <span
-                                className="store-selected-lang"
-                                onClick={() => this.handleChangeLanguage("en")}
-                              >
-                                <img
-                                  className="store-img-flag"
-                                  src="/assets/images/flags/en.png"
-                                />{" "}
-                                <p>English</p>
-                              </span>
-                            </li>
-                            <li>
-                              <span
-                                className="store-selected-lang"
-                                onClick={() => this.handleChangeLanguage("fr")}
-                              >
-                                <img
-                                  className="store-img-flag"
-                                  src="/assets/images/flags/fr.png"
-                                />
-                                <p>French</p>
-                              </span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      <MultiLanguages />
                     </li>
                     {/* On/Off user section */}
                     {/* <li>
