@@ -123,28 +123,39 @@ export default class Produits extends Component {
                           </a>
 
                           <div className="product-action-vertical">
-                            <a
-                              href="#"
-                              className="btn-product-icon btn-wishlist"
-                              title="Add to wishlist"
-                            ></a>
+                            <Translation>
+                              {(t) => (
+                                <a
+                                  href="#"
+                                  className="btn-product-icon btn-wishlist"
+                                  title={t("PRODUCTS.ADD_TO_WISHLIST")}
+                                ></a>
+                              )}
+                            </Translation>
                           </div>
-
                           <div className="product-action">
-                            <a
-                              href="#"
-                              className="btn-product btn-cart"
-                              title="Add to cart"
-                            >
-                              <span>add to cart</span>
-                            </a>
-                            <a
-                              href="popup/quickView.html"
-                              className="btn-product btn-quickview"
-                              title="Quick view"
-                            >
-                              <span>quick view</span>
-                            </a>
+                            <Translation>
+                              {(t) => (
+                                <a
+                                  href="#"
+                                  className="btn-product btn-cart"
+                                  title={t("PRODUCTS.ADD_CART")}
+                                >
+                                  <span>add to cart</span>
+                                </a>
+                              )}
+                            </Translation>
+                            <Translation>
+                              {(t) => (
+                                <a
+                                  href="popup/quickView.html"
+                                  className="btn-product btn-quickview"
+                                  title={t("PRODUCTS.QUICK_VIEW")}
+                                >
+                                  <span>quick view</span>
+                                </a>
+                              )}
+                            </Translation>
                           </div>
                         </figure>
 

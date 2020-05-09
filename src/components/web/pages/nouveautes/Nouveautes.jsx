@@ -153,28 +153,40 @@ export default class Nouveautes extends Component {
                     </a>
 
                     <div className="product-action-vertical">
-                      <a
-                        href="#"
-                        className="btn-product-icon btn-wishlist"
-                        title="Add to wishlist"
-                      ></a>
+                      <Translation>
+                        {(t) => (
+                          <a
+                            href="#"
+                            className="btn-product-icon btn-wishlist"
+                            title={t("PRODUCTS.ADD_TO_WISHLIST")}
+                          ></a>
+                        )}
+                      </Translation>
                     </div>
 
                     <div className="product-action">
-                      <a
-                        href="#"
-                        className="btn-product btn-cart"
-                        title="Add to cart"
-                      >
-                        <span>add to cart</span>
-                      </a>
-                      <a
-                        href="popup/quickView.html"
-                        className="btn-product btn-quickview"
-                        title="Quick view"
-                      >
-                        <span>quick view</span>
-                      </a>
+                      <Translation>
+                        {(t) => (
+                          <a
+                            href="#"
+                            className="btn-product btn-cart"
+                            title={t("PRODUCTS.ADD_CART")}
+                          >
+                            <span>add to cart</span>
+                          </a>
+                        )}
+                      </Translation>
+                      <Translation>
+                        {(t) => (
+                          <a
+                            href="popup/quickView.html"
+                            className="btn-product btn-quickview"
+                            title={t("PRODUCTS.QUICK_VIEW")}
+                          >
+                            <span>quick view</span>
+                          </a>
+                        )}
+                      </Translation>
                     </div>
                   </figure>
 
@@ -193,7 +205,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -251,7 +269,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -316,7 +340,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -409,7 +439,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 10 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 10{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -486,7 +522,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 5 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 5{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -545,7 +587,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -640,7 +688,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -714,7 +768,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -779,7 +839,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 10 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 10{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -856,7 +922,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 5 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 5{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -915,7 +987,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1010,7 +1088,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 5 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 5{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1069,7 +1153,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1130,7 +1220,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -1204,7 +1300,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1269,7 +1371,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 10 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 10{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -1378,7 +1486,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1436,7 +1550,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1497,7 +1617,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -1574,7 +1700,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 5 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 5{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1633,7 +1765,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1698,7 +1836,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 10 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 10{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -1813,7 +1957,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 10 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 10{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -1888,7 +2038,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1946,7 +2102,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -2007,7 +2169,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
 
                     <div className="product-nav product-nav-dots">
@@ -2116,7 +2284,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -2177,7 +2351,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 5 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 5{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -2236,7 +2416,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "100%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -2294,7 +2480,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "60%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 6 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 6{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -2352,7 +2544,13 @@ export default class Nouveautes extends Component {
                           style={{ width: "80%" }}
                         ></div>
                       </div>
-                      <span className="ratings-text">( 4 Reviews )</span>
+                      <span className="ratings-text">
+                        ( 4{" "}
+                        <Translation>
+                          {(t) => <span>{t("PRODUCTS.REVIEWS")}</span>}
+                        </Translation>{" "}
+                        )
+                      </span>
                     </div>
                     <div className="product-nav product-nav-dots">
                       <a href="#" style={{ background: "#edd2c8" }}>
@@ -2393,13 +2591,23 @@ export default class Nouveautes extends Component {
               <div className="col-md-12">
                 <div className="cta-content">
                   <div className="cta-text text-right text-white">
-                    <p>
-                      Shop Today’s Deals <br />
-                      <strong>Awesome Made Easy. HERO7 Black</strong>
-                    </p>
+                    <Translation>
+                      {(t) => (
+                        <p>
+                          {t("DEALS.SHOP")} <br />
+                          <strong>Awesome Made Easy. HERO7 Black</strong>
+                        </p>
+                      )}
+                    </Translation>
                   </div>
                   <a href="#" className="btn btn-primary btn-round">
-                    <span>Shop Now - $429.99</span>
+                    <Translation>
+                      {(t) => (
+                        <span>
+                          {t("BUTTONS.SHOW_NOW")} - $429.99
+                        </span>
+                      )}
+                    </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>
                 </div>

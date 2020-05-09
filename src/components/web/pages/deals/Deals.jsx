@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Translation } from "react-i18next";
 
 export default class Deals extends Component {
   render() {
@@ -6,8 +7,12 @@ export default class Deals extends Component {
       <>
         <div className="container">
           <div className="heading text-center mb-3">
-            <h2 className="title">Deals & Outlet</h2>
-            <p className="title-desc">Today’s deal and more</p>
+            <Translation>
+              {(t) => <h2 className="title">{t("DEALS.DEAL_OUTLET")}</h2>}
+            </Translation>
+            <Translation>
+              {(t) => <p className="title-desc">{t("DEALS.TITLE")}</p>}
+            </Translation>
           </div>
           <div className="row">
             <div className="col-lg-6 deal-col">
@@ -19,8 +24,10 @@ export default class Deals extends Component {
                 }}
               >
                 <div className="deal-top">
-                  <h2>Deal of the Day.</h2>
-                  <h4>Limited quantities. </h4>
+                  <Translation>{(t) => <h2>{t("DEALS.DAY")}</h2>}</Translation>
+                  <Translation>
+                    {(t) => <h4>{t("DEALS.QUANTITY")}</h4>}
+                  </Translation>
                 </div>
                 <div className="deal-content">
                   <h3 className="product-title">
@@ -33,7 +40,9 @@ export default class Deals extends Component {
                     <span className="old-price">Was $150.99</span>
                   </div>
                   <a href="product.html" className="btn btn-link">
-                    <span>Shop Now</span>
+                    <Translation>
+                      {(t) => <span>{t("BUTTONS.SHOW_NOW")}</span>}
+                    </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>
                 </div>
@@ -55,8 +64,12 @@ export default class Deals extends Component {
                 }}
               >
                 <div className="deal-top">
-                  <h2>Your Exclusive Offers.</h2>
-                  <h4>Sign in to see amazing deals.</h4>
+                  <Translation>
+                    {(t) => <h2>{t("DEALS.OFFERS")}</h2>}
+                  </Translation>
+                  <Translation>
+                    {(t) => <h4>{t("DEALS.SIGN_IN")}</h4>}
+                  </Translation>
                 </div>
 
                 <div className="deal-content">
@@ -65,13 +78,14 @@ export default class Deals extends Component {
                       Certified Wireless Charging Pad for iPhone / Android
                     </a>
                   </h3>
-
                   <div className="product-price">
                     <span className="new-price">$29.99</span>
                   </div>
 
                   <a href="login.html" className="btn btn-link">
-                    <span>Sign In and Save money</span>
+                    <Translation>
+                      {(t) => <span>{t("BUTTONS.SIGN_IN")}</span>}
+                    </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>
                 </div>
@@ -87,7 +101,9 @@ export default class Deals extends Component {
           </div>
           <div className="more-container text-center mt-1 mb-5">
             <a href="#" className="btn btn-outline-dark-2 btn-round btn-more">
-              <span>Shop more Outlet deals</span>
+              <Translation>
+                {(t) => <span>{t("BUTTONS.SHOW_DEALS")}</span>}
+              </Translation>
               <i className="icon-long-arrow-right"></i>
             </a>
           </div>

@@ -104,13 +104,14 @@
         "OFFERS": "Vos offres exclusives.",
         "SIGN_IN": "Connectez-vous pour voir des offres incroyables.",
         "PROMOTIONS": "Offres et Promotions",
-        "TODAY": "Aujourd'hui"
+        "TODAY": "Aujourd'hui",
+        "SHOP": "Achetez les offres du jour"
     },
     "BUTTONS": {
         "SHOW_NOW": "Achetez Maintenant",
         "SHOW_MORE": "Achetez Plus",
         "SHOW_DEALS": "Voir plus de nouveautés",
-        "SIGN_IN": "Connectez-vous et économisez de l'argent",
+        "SIGN_IN": "Connectez-vous et économisez",
         "SUBSCRIBE": "Souscrire"
     },
     "TIMESTAMP": {
