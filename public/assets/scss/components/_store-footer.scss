@@ -10,13 +10,14 @@
             position: inherit;
             float: left;
             padding: 15px 0;
+            margin: 0;
         }
 
         display: flex;
         float: right;
         right: 0;
         position: absolute;
-        padding: 20px 0;
+        margin: 40px 0;
 
         a {
             background: white;
@@ -33,10 +34,13 @@
     .store-footer-link {
         float: right;
         display: flex;
+        position: absolute;
+        right: 0;
 
         @include small() {
             float: left;
             padding: 15px 0 15px 10px;
+            position: relative;
         }
 
         li {

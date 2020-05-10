@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
+import { LoginModal } from "../../../../components";
 
 export default class Footer extends Component {
   render() {
@@ -61,13 +62,30 @@ export default class Footer extends Component {
                   <div className="row">
                     <ul className="widget-list store-footer-link">
                       <li>
-                        <Link to="/link">Link name title 1</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.TERMS_CONDITIONS")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/link">Link name title 2</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.PRIVACY_POLICY")}</Link>
+                          )}
+                        </Translation>
                       </li>
+                      {/* <li>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.LEGAL_NOTICE")}</Link>
+                          )}
+                        </Translation>
+                      </li> */}
                       <li>
-                        <Link to="/link">Link name title 3</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.COOKIES")}</Link>}
+                        </Translation>
                       </li>
                     </ul>
                   </div>
@@ -108,109 +126,212 @@ export default class Footer extends Component {
               <div className="row store-footer">
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Mon Compte</h4>
+                    <Translation>
+                      {(t) => (
+                        <h4 className="widget-title">
+                          {t("FOOTER.OUR_STORY")}
+                        </h4>
+                      )}
+                    </Translation>
                     <ul className="widget-list">
                       <li>
-                        <a href="#">Sign In</a>
+                        <Translation>
+                          {(t) => <Link to="/about">{t("FOOTER.ABOUT")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/cart">View Cart</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.CAREERS_AT")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/favoris">My Wishlist</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.SELL_AT")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/products">Ours Products</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.OURS_SERVICES")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Track My Order</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.OURS_PARTNERS")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Help</a>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.OURS_NEWS")}</Link>}
+                        </Translation>
+                      </li>
+                      <li>
+                        <Translation>
+                          {(t) => (
+                            <Link to="/blogs">{t("FOOTER.OUR_BLOG")}</Link>
+                          )}
+                        </Translation>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Qui sommes-nous?</h4>
+                    <Translation>
+                      {(t) => (
+                        <h4 className="widget-title">
+                          {t("FOOTER.MY_ACCOUNT")}
+                        </h4>
+                      )}
+                    </Translation>
                     <ul className="widget-list">
                       <li>
-                        <Link to="/about">About Molla</Link>
+                        <Translation>
+                          {(t) => (
+                            <a href="#signin-modal" data-toggle="modal">
+                              {t("HEADER-TOP.SIGN_IN_UP")}
+                            </a>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Our Services</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.CREATE_ACCOUNT")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">How to shop on Molla</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="/cart">{t("HEADER-MIDDLE.CART")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/faqs">FAQ</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="/favoris">
+                              {t("HEADER-MIDDLE.MY_WISHLIST")}
+                            </Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/contact">Contact us</Link>
-                      </li>
-                      <li>
-                        <Link to="/coming-soon">Coming Soon</Link>
-                      </li>
-                      <li>
-                        <Link to="/temoignages">Temoignages</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.TRACK_ORDER")}</Link>}
+                        </Translation>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Services Client</h4>
+                    <Translation>
+                      {(t) => (
+                        <h4 className="widget-title">
+                          {t("FOOTER.SERVICES_CLIENT")}
+                        </h4>
+                      )}
+                    </Translation>
                     <ul className="widget-list">
                       <li>
-                        <Link to="/about">About Molla</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.HOW_TO_BUY")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Our Services</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.OURS_PAIMENTS")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">How to shop on Molla</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">{t("FOOTER.INFOS_DELIVERY")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/faqs">FAQ</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="/faqs">{t("FOOTER.OURS_FAQS")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/contact">Contact us</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="/contact">{t("CONTACT.BREADCRUMB")}</Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <Link to="/coming-soon">Coming Soon</Link>
-                      </li>
-                      <li>
-                        <Link to="/temoignages">Temoignages</Link>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.ANY_HELP")}</Link>}
+                        </Translation>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-sm-6 col-lg-3">
                   <div className="widget">
-                    <h4 className="widget-title">Notre Boutique</h4>
+                    <Translation>
+                      {(t) => (
+                        <h4 className="widget-title">{t("FOOTER.OUR_SHOP")}</h4>
+                      )}
+                    </Translation>
                     <ul className="widget-list">
                       <li>
-                        <a href="#">Payment Methods</a>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.OURS_OFFERS")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Money-back guarantee!</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">
+                              {t("FOOTER.OURS_NEWS_PROMOTIONS")}
+                            </Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Returns</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">
+                              {t("FOOTER.OURS_TREND_PRODUCTS")}
+                            </Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Shipping</a>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">
+                              {t("FOOTER.OURS_RECOMMANDATIONS")}
+                            </Link>
+                          )}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Terms and conditions</a>
+                        <Translation>
+                          {(t) => <Link to="#">{t("FOOTER.FLASH_SALE")}</Link>}
+                        </Translation>
                       </li>
                       <li>
-                        <a href="#">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <Link to="/blogs">Our Blogs</Link>
+                        <Translation>
+                          {(t) => (
+                            <Link to="#">
+                              {t("FOOTER.SELECTION_BY_CATEGORIES")}
+                            </Link>
+                          )}
+                        </Translation>
                       </li>
                     </ul>
                   </div>
@@ -241,6 +362,7 @@ export default class Footer extends Component {
               </figure>
             </div>
           </div>
+          <LoginModal />
         </footer>
       </>
     );

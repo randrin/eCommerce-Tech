@@ -18,6 +18,7 @@ export { default as Nouveautes } from "./web/pages/nouveautes/Nouveautes";
 export { default as Deals } from "./web/pages/deals/Deals";
 export { default as Partenaires } from "./web/pages/partenaires/Partenaires";
 export { default as Produits } from "./web/pages/produits/Produits";
+export { default as QuickView } from "./web/pages/produits/inc/QuickView";
 export { default as Recommandations } from "./web/pages/recommandations/Recommandations";
 export { default as Annonces } from "./web/pages/annonces/Annonces";
 export { default as ComingSoon } from "./web/pages/coming-soon/ComingSoon";

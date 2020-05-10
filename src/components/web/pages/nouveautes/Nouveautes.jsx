@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Translation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default class Nouveautes extends Component {
   render() {
@@ -178,13 +179,13 @@ export default class Nouveautes extends Component {
                       </Translation>
                       <Translation>
                         {(t) => (
-                          <a
-                            href="popup/quickView.html"
+                          <Link
+                            to="product/quick-view/1"
                             className="btn-product btn-quickview"
                             title={t("PRODUCTS.QUICK_VIEW")}
                           >
                             <span>quick view</span>
-                          </a>
+                          </Link>
                         )}
                       </Translation>
                     </div>

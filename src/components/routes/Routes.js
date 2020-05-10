@@ -21,6 +21,7 @@ import {
   LoginPage,
   Register,
   ResetPassword,
+  QuickView,
 } from "../../components";
 
 const Routes = (props) => (
@@ -31,6 +32,11 @@ const Routes = (props) => (
     <Route exact path="/faqs" component={Faqs} />
     <Route exact path="/products" component={ProductsList} />
     <Route exact path="/product/:id" component={withRouter(ProductSingle)} />
+    <Route
+      exact
+      path="/product/quick-view/:id"
+      component={withRouter(QuickView)}
+    />
     <Route exact path="/contact" component={Contact} />
     <Route exact path="/cart" component={Cart} />
     <Route exact path="/checkout" component={withRouter(Checkout)} />
