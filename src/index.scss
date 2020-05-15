@@ -105,7 +105,8 @@ a.btn-primary {
 .header-intro-clearance .header-bottom .header-right p,
 .header-intro-clearance .header-bottom .header-right i,
 .header-intro-clearance .header-bottom .header-right .highlight,
-.header-intro-clearance .header-middle .header-right p {
+.header-intro-clearance .header-middle .header-right p,
+.header-right-login a {
   color: var(--yellow-amber) !important;
 }
 
@@ -115,8 +116,8 @@ a.btn-primary {
 
 //.header-intro-clearance .header-bottom .menu>li>a,
 //.header-intro-clearance .header-bottom .header-right p,
-.header-right-login a {
-  color: var(--blue-dodger) !important;
+.header-right-login a:hover {
+  color: #fff !important;
 }
 
 .header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
