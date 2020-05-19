@@ -42,7 +42,7 @@ const Routes = (props) => (
     <Route exact path="/checkout" component={withRouter(Checkout)} />
     <Route exact path="/coming-soon" component={ComingSoon} />
     <Route exact path="/temoignages" component={Temoignages} />
-    <Route exact path="/blogs" component={Blogs} />
+    <Route exact path="/blogs" component={withRouter(Blogs)} />
     <Route exact path="/favoris" component={Favoris} />
     <Route exact path="/profil" component={Dashboard} />
     <Route exact path="/logout" component={withRouter(Logout)} />

@@ -1,0 +1,91 @@
+//Section to overwrite existing styles of Template
+
+/*******************/
+/* Header Section */
+/******************/
+.header-4 .header-bottom {
+    background-color: inherit;
+}
+.header-menu ul li {
+    padding: 5px;
+}
+.header-4 .header-middle {
+    margin: 2rem 0;
+}
+.header-intro-clearance .header-middle .header-left {
+    display: block;
+}
+.header-dropdown:hover>.header-menu,
+.header-dropdown:focus>.header-menu {
+    width: 120px;
+}
+.header-intro-clearance .header-menu ul {
+    width: 120px;
+}
+.logo {
+    margin: 1rem 0;
+    //margin: -20px 0rem 5px;
+}
+
+/***************************/
+/* Cart & Compare Section */
+/**************************/
+.cart-dropdown .dropdown-menu,
+.compare-dropdown .dropdown-menu {
+    width: 336px;
+}
+.compare-product-title a:hover:before {
+    transform-origin: left center;
+    transform: scale(1, 1);
+}
+.compare-product-title a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: var(--blue-bunting) !important;
+    transform-origin: right center;
+    transform: scale(0, 1);
+    transition: transform .3s ease;
+}
+
+/*******************/
+/* Footer Section */
+/******************/
+.footer .widget-title {
+    text-transform: uppercase;
+}
+.footer {
+    background-color: #333;
+    p,
+    li a,
+    i,
+    .widget-call {
+        color: white;
+    }
+    .widget h4,
+    .widget-call a {
+        color: var(--yellow-amber);
+        i {
+            color: var(--yellow-amber);
+        }
+    }
+}
+
+/********************/
+/* Product Section */
+/*******************/
+.product:hover {
+    box-shadow: rgb(61, 57, 61) 5px 5px 5px 0px;
+}
+
+/**************************/
+/* Scroll to Top section */
+/************************/
+#scroll-top {
+    background: #39f;
+    color: white;
+}

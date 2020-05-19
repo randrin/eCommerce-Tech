@@ -80,7 +80,8 @@
         "BREADCRUMB": "Ours Testimonials"
     },
     "WISHLIST": {
-        "BREADCRUMB": "My Wishlist"
+        "BREADCRUMB": "My Wishlist",
+        "TEXT": "You are not logged in to access your wishlist to you last visited in this site."
     },
     "FOOTER": {
         "PAIMENT_METHOD": "Payment Methods",

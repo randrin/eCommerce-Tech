@@ -80,7 +80,8 @@
         "BREADCRUMB": "Nos Temoignages"
     },
     "WISHLIST": {
-        "BREADCRUMB": "Ma Liste d'envies"
+        "BREADCRUMB": "Ma Liste d'envies",
+        "TEXT": "Vous n'êtes pas connecté pour avoir accès à votre liste d'envies lors de votre dernière navigation sur le site."
     },
     "FOOTER": {
         "PAIMENT_METHOD": "Méthodes de Payement",
