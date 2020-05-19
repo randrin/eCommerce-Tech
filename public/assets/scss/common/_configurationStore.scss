@@ -30,7 +30,9 @@ body {
 .form-tab .form-footer a:focus,
 .btn-link,
 .form-tab .form-footer a,
-.compare-product-title a:hover {
+.compare-product-title a:hover,
+.banner-link,
+.title-link {
     color: var(--blue-bunting) !important;
 }
 
@@ -55,7 +57,8 @@ button[type="submit"].store-btn {
 .btn-link:hover,
 .btn-link:focus,
 .btn-link .btn-link-dark:hover,
-.btn-link .btn-link-dark:focus {
+.btn-link .btn-link-dark:focus,
+.input-group-append .btn-primary:hover {
     color: var(--blue-bunting) !important;
     border-color: var(--blue-bunting) !important;
 }
@@ -66,7 +69,10 @@ button[type="submit"].store-btn {
 .btn-outline-primary-2:not(:disabled):not(.disabled):active,
 .btn-outline-primary-2:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary-2.dropdown-toggle,
-a.btn-primary {
+a.btn-primary,
+.owl-theme.owl-light .owl-nav [class*='owl-']:not(.disabled):hover,
+.banner-link:hover,
+.input-group-append .btn-primary {
     color: #fff !important;
     background-color: var(--blue-bunting) !important;
     border-color: var(--blue-bunting) !important;
@@ -83,7 +89,12 @@ a.btn-primary {
 }
 
 .icon-box-side {
-    border: .2rem solid #39f !important;
+    border: .2rem solid var(--blue-bunting) !important;
+}
+
+.title-link:hover,
+.title-link:focus {
+    box-shadow: 0 1px 0 0 var(--blue-bunting) !important;
 }
 
 .cart-dropdown .cart-count,
@@ -91,7 +102,8 @@ a.btn-primary {
 .store-create-account .btn-g:hover,
 .store-btn .btn-g:hover,
 .store-logout .btn-g:hover,
-.store-favoris .btn-g:hover {
+.store-favoris .btn-g:hover,
+.store-btn-hover .btn-g:hover {
     background-color: #fff !important;
     color: var(--blue-bunting) !important;
 }

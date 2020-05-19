@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Navbar, Footer } from "../../../components";
+import { Navbar, Footer, HeroBanner } from "../../../components";
 import {
   Breadcrumb,
-  SideBarPage,
   ProductsFilter,
   ProductsListFullWidth,
   ProductsList2Cols,
@@ -33,7 +32,7 @@ export default class ProductsList extends Component {
       <>
         <Navbar />
         <main className="main">
-          <SideBarPage title="List" subtitle="Shop" />
+          <HeroBanner title="List" subtitle="Shop" />
           <Breadcrumb title="Products List" />
           <div className="page-content">
             <div className="container">

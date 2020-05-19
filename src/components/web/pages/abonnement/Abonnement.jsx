@@ -37,8 +37,8 @@ export default class Abonnement extends Component {
                     aria-label="Email Adress"
                     required
                   />
-                  <div className="input-group-append">
-                    <button className="btn btn-primary" type="submit">
+                  <div className="input-group-append store-btn-hover">
+                    <button className="btn btn-primary btn-g" type="submit">
                       <span>Subscribe</span>
                       <i className="icon-long-arrow-right"></i>
                     </button>

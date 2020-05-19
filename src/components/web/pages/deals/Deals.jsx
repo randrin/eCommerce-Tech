@@ -99,8 +99,8 @@ export default class Deals extends Component {
               </div>
             </div>
           </div>
-          <div className="more-container text-center mt-1 mb-5">
-            <a href="#" className="btn btn-outline-dark-2 btn-round btn-more">
+          <div className="more-container store-btn-hover text-center mt-3 mb-5">
+            <a href="#" className="btn btn-primary btn-g btn-round btn-more">
               <Translation>
                 {(t) => <span>{t("BUTTONS.SHOW_DEALS")}</span>}
               </Translation>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Footer } from "../../../../components";
+import { Navbar, Footer, HeroBanner } from "../../../../components";
 import { Translation } from "react-i18next";
 import { Breadcrumb } from "../../../../site";
 
@@ -9,19 +9,14 @@ export default class Blogs extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                Blog Masonry 4 Columns<span>Blog</span>
-              </h1>
-            </div>
-          </div>
+          <Translation>
+            {(t) => (
+              <HeroBanner
+                title={t("BLOGS.HEROBANNER_TITLE")}
+                subtitle={t("BLOGS.HEROBANNER_SUBTITLE")}
+              />
+            )}
+          </Translation>
           <Breadcrumb
             title={
               <Translation>

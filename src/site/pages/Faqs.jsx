@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer } from "../../components";
+import { Navbar, Footer, HeroBanner } from "../../components";
 import { Breadcrumb } from "./../../site";
 import { Translation } from "react-i18next";
 
@@ -15,19 +15,14 @@ export default class Faqs extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                F.A.Q<span>Pages</span>
-              </h1>
-            </div>
-          </div>
+          <Translation>
+            {(t) => (
+              <HeroBanner
+                title={t("FAQS.HEROBANNER_TITLE")}
+                subtitle={t("FAQS.HEROBANNER_SUBTITLE")}
+              />
+            )}
+          </Translation>
           <Breadcrumb
             title={
               <Translation>

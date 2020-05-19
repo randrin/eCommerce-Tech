@@ -44,8 +44,8 @@ export default class NewLetters extends Component {
                           aria-label="Email Adress"
                           required
                         />
-                        <div className="input-group-append">
-                          <button className="btn" type="submit">
+                        <div className="input-group-append store-btn-hover">
+                          <button className="btn btn-g" type="submit">
                             <Translation>
                               {(t) => <span>{t("NEWSLETTERS.BUTTON")}</span>}
                             </Translation>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Footer } from "../../../../components";
+import { Navbar, Footer, HeroBanner } from "../../../../components";
 import { Translation } from "react-i18next";
 import { Breadcrumb } from "../../../../site";
 
@@ -9,19 +9,10 @@ export default class Temoignages extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                Testimonials<span>Elements</span>
-              </h1>
-            </div>
-          </div>
+          <HeroBanner
+            title="Nos Tèmoignages"
+            subtitle="Qu'est ce que la communauté dise de nous?"
+          />
           <Breadcrumb
             title={
               <Translation>

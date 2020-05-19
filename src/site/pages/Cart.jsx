@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer } from "../../components";
+import { Navbar, Footer, HeroBanner } from "../../components";
 import { Breadcrumb } from "./../../site";
 import { Translation } from "react-i18next";
 
@@ -14,19 +14,9 @@ export default class Cart extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                Shopping Cart<span>Shop</span>
-              </h1>
-            </div>
-          </div>
+          <HeroBanner
+            title="My Shopping Cart"
+          />
           <Breadcrumb
             title={
               <Translation>
@@ -142,9 +132,9 @@ export default class Cart extends Component {
                               required
                               placeholder="coupon code"
                             />
-                            <div className="input-group-append">
+                            <div className="input-group-append store-btn-hover">
                               <button
-                                className="btn btn-outline-primary-2"
+                                className="btn btn-outline-primary-2 btn-g"
                                 type="submit"
                               >
                                 <i className="icon-long-arrow-right"></i>

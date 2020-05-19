@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Footer } from "../../components";
+import { Navbar, Footer, HeroBanner } from "../../components";
 import { Breadcrumb } from "./../../site";
 import { Translation } from "react-i18next";
 
@@ -13,19 +13,10 @@ export default class Checkout extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                Checkout<span>Shop</span>
-              </h1>
-            </div>
-          </div>
+          <HeroBanner
+            title="Mon Panier"
+            subtitle="Validation commandes"
+          />
           <Breadcrumb
             title={
               <Translation>

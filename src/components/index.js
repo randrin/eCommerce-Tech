@@ -34,3 +34,4 @@ export { default as ResetPassword } from "./auth/password/ResetPassword";
 export { default as HeaderMobile } from "./web/inc/header/inc/HeaderMobile";
 export { default as NewLetters } from "./web/pages/popup/NewLetters";
 export { default as HeaderMyAccount } from "./web/inc/header/inc/HeaderMyAccount";
+export { default as HeroBanner } from "./web/inc/heroBanner/HeroBanner";

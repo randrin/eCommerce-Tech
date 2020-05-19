@@ -71,10 +71,14 @@
         "BUTTON": "BACK TO HOME"
     },
     "FAQS": {
-        "BREADCRUMB": "FAQS"
+        "BREADCRUMB": "FAQS",
+        "HEROBANNER_TITLE": "Our F.A.Q",
+        "HEROBANNER_SUBTITLE": "Frequently Asked Questions"
     },
     "BLOGS": {
-        "BREADCRUMB": "Our Blog"
+        "BREADCRUMB": "Our Blog",
+        "HEROBANNER_TITLE": "Our Blog",
+        "HEROBANNER_SUBTITLE": "Visit ours last informations"
     },
     "TESTIMONIALS": {
         "BREADCRUMB": "Ours Testimonials"

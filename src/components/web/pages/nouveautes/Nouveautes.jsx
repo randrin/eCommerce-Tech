@@ -2590,7 +2590,7 @@ export default class Nouveautes extends Component {
             />
             <div className="row justify-content-center">
               <div className="col-md-12">
-                <div className="cta-content">
+                <div className="cta-content store-btn-hover">
                   <div className="cta-text text-right text-white">
                     <Translation>
                       {(t) => (
@@ -2601,7 +2601,7 @@ export default class Nouveautes extends Component {
                       )}
                     </Translation>
                   </div>
-                  <a href="#" className="btn btn-primary btn-round">
+                  <a href="#" className="btn btn-primary btn-g btn-round">
                     <Translation>
                       {(t) => (
                         <span>

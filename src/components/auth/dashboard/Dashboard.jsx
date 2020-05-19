@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Footer } from "../../../components";
+import { Navbar, Footer, HeroBanner } from "../../../components";
 import { Translation } from "react-i18next";
 import { Breadcrumb } from "../../../site";
 
@@ -10,19 +10,7 @@ export default class Dashboard extends Component {
       <>
         <Navbar />
         <main className="main">
-          <div
-            className="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + " )",
-            }}
-          >
-            <div className="container">
-              <h1 className="page-title">
-                My Account<span>Shop</span>
-              </h1>
-            </div>
-          </div>
+          <HeroBanner title="My Account" subtitle="Shop" />
           <Breadcrumb
             title={
               <Translation>

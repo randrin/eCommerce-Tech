@@ -27,7 +27,7 @@ export default class extends Component {
           >
             <div className="container intro-content">
               <div className="row justify-content-end">
-                <div className="col-auto col-sm-7 col-md-6 col-lg-5">
+                <div className="col-auto col-sm-7 store-btn-hover col-md-6 col-lg-5">
                   <Translation>
                     {(t) => (
                       <h3 className="intro-subtitle text-third">
@@ -43,7 +43,10 @@ export default class extends Component {
                       $279<sup>.99</sup>
                     </span>
                   </div>
-                  <a href="category.html" className="btn btn-primary btn-round">
+                  <a
+                    href="category.html"
+                    className="btn btn-primary btn-g btn-round"
+                  >
                     <Translation>
                       {(t) => <span>{t("BUTTONS.SHOW_MORE")}</span>}
                     </Translation>
@@ -62,7 +65,7 @@ export default class extends Component {
           >
             <div className="container intro-content">
               <div className="row justify-content-end">
-                <div className="col-auto col-sm-7 col-md-6 col-lg-5">
+                <div className="col-auto col-sm-7 store-btn-hover col-md-6 col-lg-5">
                   <Translation>
                     {(t) => (
                       <h3 className="intro-subtitle text-primary">
@@ -82,7 +85,7 @@ export default class extends Component {
                       $999<sup>.99</sup>
                     </span>
                   </div>
-                  <a href="category.html" className="btn btn-primary btn-round">
+                  <a href="category.html" className="btn btn-primary btn-g btn-round">
                     <Translation>
                       {(t) => <span>{t("BUTTONS.SHOW_MORE")}</span>}
                     </Translation>
