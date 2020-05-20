@@ -146,11 +146,6 @@ export default class Footer extends Component {
                       </li>
                       <li>
                         <Translation>
-                          {(t) => <Link to="#">{t("FOOTER.SELL_AT")}</Link>}
-                        </Translation>
-                      </li>
-                      <li>
-                        <Translation>
                           {(t) => (
                             <Link to="#">{t("FOOTER.OURS_SERVICES")}</Link>
                           )}
@@ -327,9 +322,7 @@ export default class Footer extends Component {
                       <li>
                         <Translation>
                           {(t) => (
-                            <Link to="#">
-                              {t("FOOTER.SELECTION_BY_CATEGORIES")}
-                            </Link>
+                            <Link to="#">{t("FOOTER.BECOME_SELLER")}</Link>
                           )}
                         </Translation>
                       </li>

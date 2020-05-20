@@ -68,7 +68,9 @@
         "HEROBANNER_TITLE": "My Shopping Cart"
     },
     "CONTACT": {
-        "BREADCRUMB": "Contact Us"
+        "BREADCRUMB": "Contact Us",
+        "BANNER_TITLE": "If You Have More Questions",
+        "BANNER_SUBTITLE": "Please contact us"
     },
     "ERROR404": {
         "BREADCRUMB": "Error 404",
@@ -77,8 +79,10 @@
     },
     "FAQS": {
         "BREADCRUMB": "FAQS",
-        "HEROBANNER_TITLE": "Our F.A.Q",
-        "HEROBANNER_SUBTITLE": "Frequently Asked Questions"
+        "HEROBANNER_TITLE": "Our F.A.Q by Categories",
+        "HEROBANNER_SUBTITLE": "Frequently Asked Questions",
+        "ANY_HELP": "Have you other concerns ?",
+        "VISIT_BUTTON": "Visit Now"
     },
     "BLOGS": {
         "BREADCRUMB": "Our Blog",
@@ -131,7 +135,8 @@
         "OURS_TREND_PRODUCTS": "Our Trend Products",
         "OURS_RECOMMANDATIONS": "Our Recommandations",
         "FLASH_SALE": "Flash Sale",
-        "SELECTION_BY_CATEGORIES": "Our Selections by Category"
+        "SELECTION_BY_CATEGORIES": "Our Selections by Category",
+        "BECOME_SELLER": "Become Seller at xxxx"
     },
     "CATEGORY": {
         "POPULAR": "Explore ours Popular Categories",

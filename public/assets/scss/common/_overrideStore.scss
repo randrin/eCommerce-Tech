@@ -99,3 +99,11 @@
 .page-header {
     padding: 6rem 0 6rem;
 }
+
+/****************/
+/* Faqs section */
+/****************/
+.banner-badge .banner-link:hover .banner-link-text,
+.banner-badge .banner-link:focus .banner-link-text {
+    cursor: pointer;
+}

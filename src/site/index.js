@@ -1,7 +1,8 @@
 export { default as About } from "./pages/About";
 export { default as Cart } from "./pages/Cart";
 export { default as Checkout } from "./pages/Checkout";
-export { default as Contact } from "./pages/Contact";
+export { default as Contact } from "./pages/Contact/Contact";
+export { default as ContactBanner } from "./pages/Contact/ContactBanner";
 export { default as Error404 } from "./pages/Error-404";
 export { default as Home } from "./pages/Home";
 export { default as ProductSingle } from "./pages/Products/ProductSingle";
@@ -14,7 +15,8 @@ export { default as ProductsListFullWidth } from "./pages/Products/ProductsListF
 export { default as ProductsList2Cols } from "./pages/Products/ProductsList2Cols";
 export { default as ProductsList3Cols } from "./pages/Products/ProductsList3Cols";
 export { default as ProductsList4Cols } from "./pages/Products/ProductsList4Cols";
-export { default as Faqs } from "./pages/Faqs";
+export { default as Faqs } from "./pages/Faqs/Faqs";
+export { default as FaqsByCategories } from "./pages/Faqs/FaqsByCategories";
 export { default as ScrollToTop } from "./pages/ScrollToTop";
 export { default as ButtonGoToTop } from "./pages/inc/ButtonGoToTop";
 export { default as Breadcrumb } from "./pages/inc/Breadcrumb";

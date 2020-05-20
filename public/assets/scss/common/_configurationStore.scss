@@ -48,7 +48,9 @@ body {
 .btn-outline-primary-2:hover,
 //.btn-primary:hover,
 .btn-outline-primary:hover,
-button[type="submit"].store-btn {
+button[type="submit"].store-btn,
+.banner-badge .banner-link:hover .banner-link-text,
+.banner-badge .banner-link:focus .banner-link-text {
     background-color: var(--blue-bunting) !important;
     color: #fff !important;
 }
@@ -131,6 +133,7 @@ a.btn-primary,
 
 //.header-intro-clearance .header-bottom .menu>li>a,
 //.header-intro-clearance .header-bottom .header-right p,
+.header-4 .mobile-menu-toggler,
 .header-right-login a:hover,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-left:before,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-right:before

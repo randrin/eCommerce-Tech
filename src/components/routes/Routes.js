@@ -9,6 +9,7 @@ import {
   ProductSingle,
   ProductsList,
   Faqs,
+  FaqsByCategories,
   Checkout,
 } from "../../site";
 import {
@@ -29,7 +30,8 @@ const Routes = (props) => (
     <Route exact path="/" strict component={Home} />
     <Route exact path="/home" component={withRouter(Home)} />
     <Route exact path="/about" component={About} />
-    <Route exact path="/faqs" component={Faqs} />
+    <Route exact path="/faqs" component={FaqsByCategories} />
+    <Route exact path="/faqs/:description" component={Faqs} />
     <Route exact path="/products" component={ProductsList} />
     <Route exact path="/product/:id" component={withRouter(ProductSingle)} />
     <Route

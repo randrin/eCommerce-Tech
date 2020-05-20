@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Breadcrumb } from "./../../site";
-import { Navbar, Footer } from "../../components";
+import { Breadcrumb } from "../..";
+import { Navbar, Footer } from "../../../components";
 import { Translation } from "react-i18next";
 
 export default class Contact extends Component {

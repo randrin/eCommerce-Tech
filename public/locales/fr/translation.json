@@ -68,7 +68,9 @@
         "HEROBANNER_TITLE": "Mon Panier"
     },
     "CONTACT": {
-        "BREADCRUMB": "Nous Contactez"
+        "BREADCRUMB": "Nous Contactez",
+        "BANNER_TITLE": "Si vous avez d'autres questions",
+        "BANNER_SUBTITLE": "bien vouloir nous contactez"
     },
     "ERROR404": {
         "BREADCRUMB": "Erreur 404",
@@ -77,8 +79,10 @@
     },
     "FAQS": {
         "BREADCRUMB": "FAQS",
-        "HEROBANNER_TITLE": "Nos F.A.Q",
-        "HEROBANNER_SUBTITLE": "Foire Aux Questions"
+        "HEROBANNER_TITLE": "Nos F.A.Q par Catégories",
+        "HEROBANNER_SUBTITLE": "Foire Aux Questions",
+        "ANY_HELP": "Vous avez d'autres préoccupations ?",
+        "VISIT_BUTTON": "Allez à la page"
     },
     "BLOGS": {
         "BREADCRUMB": "Notre Blog",
@@ -125,13 +129,14 @@
         "OURS_PAIMENTS": "Nos Moyens de Paiements",
         "INFOS_DELIVERY": "Informations Livraison",
         "OURS_FAQS": "Nos FAQs",
-        "ANY_HELP": "Beésoin d'autres aides?",
+        "ANY_HELP": "Besoin d'autres aides?",
         "OURS_OFFERS": "Nos Offres du jour",
         "OURS_NEWS_PROMOTIONS": "Nos Nouveautés & Promotions",
         "OURS_TREND_PRODUCTS": "Nos Produits Tendance",
         "OURS_RECOMMANDATIONS": "Nos Recommandations",
         "FLASH_SALE": "Vente Flash",
-        "SELECTION_BY_CATEGORIES": "Nos Sélections par Catégories"
+        "SELECTION_BY_CATEGORIES": "Nos Sélections par Catégories",
+        "BECOME_SELLER": "Devinir Vendeur chez xxxx"
     },
     "CATEGORY": {
         "POPULAR": "Explorez nos Catégories populaires",
