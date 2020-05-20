@@ -13,17 +13,17 @@ export default class Checkout extends Component {
       <>
         <Navbar />
         <main className="main">
-          <HeroBanner
-            title="Mon Panier"
-            subtitle="Validation commandes"
-          />
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("CHECKOUT.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
+          <Translation>
+            {(t) => (
+              <>
+                <HeroBanner
+                  title={t("CHECKOUT.HEROBANNER_TITLE")}
+                  subtitle={t("CHECKOUT.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb title={<span>{t("CHECKOUT.BREADCRUMB")}</span>} />
+              </>
+            )}
+          </Translation>
           <div className="page-content">
             <div className="checkout">
               <div className="container">

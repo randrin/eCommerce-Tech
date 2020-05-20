@@ -1,6 +1,8 @@
 {
     "DASHBOARD": {
-        "BREADCRUMB": "Mon Compte"
+        "BREADCRUMB": "Mon Compte",
+        "HEROBANNER_TITLE": "Mon Compte",
+        "HEROBANNER_SUBTITLE": "Boutique"
     },
     "HOME": {
         "BREADCRUMB": "Accueil"
@@ -57,10 +59,13 @@
         "BREADCRUMB": "A' Propos de nous"
     },
     "CHECKOUT": {
-        "BREADCRUMB": "Allez à la caisse"
+        "BREADCRUMB": "Allez à la caisse",
+        "HEROBANNER_TITLE": "Mon Panier",
+        "HEROBANNER_SUBTITLE": "Validation Commandes"
     },
     "CART": {
-        "BREADCRUMB": "Panier"
+        "BREADCRUMB": "Mon Panier",
+        "HEROBANNER_TITLE": "Mon Panier"
     },
     "CONTACT": {
         "BREADCRUMB": "Nous Contactez"
@@ -81,7 +86,15 @@
         "HEROBANNER_SUBTITLE": "Visitez nos derrières informations"
     },
     "TESTIMONIALS": {
-        "BREADCRUMB": "Nos Temoignages"
+        "BREADCRUMB": "Nos Témoignages",
+        "HEROBANNER_TITLE": "Nos Témoignages",
+        "HEROBANNER_SUBTITLE": "Qu'est ce que la communauté disent de nous?",
+        "REPLY_TITLE": "Laissez un témoignage",
+        "REPLY_SUBTITLE": "Votre adresse email ne sera pas publiée. Les champs requis sont indiqués par *",
+        "REPLY_BUTTON": "ENVOYEZ",
+        "REPLY_TEXTAREA": "Témoignage Text *",
+        "REPLY_INPUT_NAME": "Nom et Prènom *",
+        "REPLY_INPUT_EMAIL": "Adresse Email *"
     },
     "WISHLIST": {
         "BREADCRUMB": "Ma Liste d'envies",
@@ -154,6 +167,7 @@
         "SECOND": "Secondes"
     },
     "PRODUCTS": {
+        "BREADCRUMB": "Tous nos produits",
         "TRENDING": "Produits de Tendance",
         "TOP": "MEILLEUR PRODUITS",
         "SALE": "EN SOLDES",
@@ -164,7 +178,9 @@
         "ADD_TO_WISHLIST": "Ajouter à la liste des envies",
         "LABEL_SALE": "Solde",
         "LABEL_TOP": "Top",
-        "LABEL_NEW": "Neuf"
+        "LABEL_NEW": "Neuf",
+        "HEROBANNER_TITLE": "Tous Nos Produits",
+        "HEROBANNER_SUBTITLE": "Boutique"
     },
     "RECOMMENDATIONS": {
         "TITLE": "Recommandation pour vous",

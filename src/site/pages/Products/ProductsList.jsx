@@ -32,8 +32,17 @@ export default class ProductsList extends Component {
       <>
         <Navbar />
         <main className="main">
-          <HeroBanner title="List" subtitle="Shop" />
-          <Breadcrumb title="Products List" />
+          <Translation>
+            {(t) => (
+              <>
+                <HeroBanner
+                  title={t("PRODUCTS.HEROBANNER_TITLE")}
+                  subtitle={t("PRODUCTS.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb title={t("PRODUCTS.BREADCRUMB")} />
+              </>
+            )}
+          </Translation>
           <div className="page-content">
             <div className="container">
               <div className="row mt-3">

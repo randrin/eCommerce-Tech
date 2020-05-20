@@ -1,6 +1,8 @@
 {
     "DASHBOARD": {
-        "BREADCRUMB": "My Account"
+        "BREADCRUMB": "My Account",
+        "HEROBANNER_TITLE": "My Account",
+        "HEROBANNER_SUBTITLE": "Shop"
     },
     "HOME": {
         "BREADCRUMB": "Home"
@@ -57,10 +59,13 @@
         "BREADCRUMB": "About Us"
     },
     "CHECKOUT": {
-        "BREADCRUMB": "Checkout"
+        "BREADCRUMB": "Checkout",
+        "HEROBANNER_TITLE": "My Shopping Cart",
+        "HEROBANNER_SUBTITLE": "Orders Validation"
     },
     "CART": {
-        "BREADCRUMB": "Shopping Cart"
+        "BREADCRUMB": "My Shopping Cart",
+        "HEROBANNER_TITLE": "My Shopping Cart"
     },
     "CONTACT": {
         "BREADCRUMB": "Contact Us"
@@ -81,7 +86,15 @@
         "HEROBANNER_SUBTITLE": "Visit ours last informations"
     },
     "TESTIMONIALS": {
-        "BREADCRUMB": "Ours Testimonials"
+        "BREADCRUMB": "Ours Testimonials",
+        "HEROBANNER_TITLE": "Ours Testimonials",
+        "HEROBANNER_SUBTITLE": "What does the community say about us?",
+        "REPLY_TITLE": "Leave a reply",
+        "REPLY_SUBTITLE": "Your email address will not be published. Required fields are marked *",
+        "REPLY_BUTTON": "SEND",
+        "REPLY_TEXTAREA": "Testimonial Text *",
+        "REPLY_INPUT_NAME": "Firstname and Lastname *",
+        "REPLY_INPUT_EMAIL": "Email Address *"
     },
     "WISHLIST": {
         "BREADCRUMB": "My Wishlist",
@@ -154,6 +167,7 @@
         "SECOND": "Seconds"
     },
     "PRODUCTS": {
+        "BREADCRUMB": "All our products",
         "TRENDING": "Trending Products",
         "TOP": "TOP RATED",
         "SALE": "ON SALE",
@@ -164,7 +178,9 @@
         "REVIEWS": "reviews",
         "LABEL_SALE": "Sale",
         "LABEL_TOP": "Top",
-        "LABEL_NEW": "New"
+        "LABEL_NEW": "New",
+        "HEROBANNER_TITLE": "All Our Products",
+        "HEROBANNER_SUBTITLE": "Shop"
     },
     "RECOMMENDATIONS": {
         "TITLE": "Recommendation For You",

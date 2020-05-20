@@ -11,19 +11,15 @@ export default class Blogs extends Component {
         <main className="main">
           <Translation>
             {(t) => (
-              <HeroBanner
-                title={t("BLOGS.HEROBANNER_TITLE")}
-                subtitle={t("BLOGS.HEROBANNER_SUBTITLE")}
-              />
+              <>
+                <HeroBanner
+                  title={t("BLOGS.HEROBANNER_TITLE")}
+                  subtitle={t("BLOGS.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb title={<span>{t("BLOGS.BREADCRUMB")}</span>} />
+              </>
             )}
           </Translation>
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("BLOGS.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
           <div className="page-content">
             <div className="container">
               <nav className="blog-nav">

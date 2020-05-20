@@ -7,8 +7,7 @@ import { Translation } from "react-i18next";
 export default class Faqs extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
   render() {
     return (
@@ -17,19 +16,17 @@ export default class Faqs extends Component {
         <main className="main">
           <Translation>
             {(t) => (
-              <HeroBanner
-                title={t("FAQS.HEROBANNER_TITLE")}
-                subtitle={t("FAQS.HEROBANNER_SUBTITLE")}
-              />
+              <>
+                <HeroBanner
+                  title={t("FAQS.HEROBANNER_TITLE")}
+                  subtitle={t("FAQS.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb
+                  title={<span>{t("FAQS.BREADCRUMB")}</span>}
+                />
+              </>
             )}
           </Translation>
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("FAQS.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
           <div className="page-content">
             <div className="container">
               <h2 className="title text-center mb-3">Shipping Information</h2>

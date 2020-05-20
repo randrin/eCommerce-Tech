@@ -9,23 +9,21 @@ export default class Temoignages extends Component {
       <>
         <Navbar />
         <main className="main">
-          <HeroBanner
-            title="Nos Tèmoignages"
-            subtitle="Qu'est ce que la communauté dise de nous?"
-          />
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("TESTIMONIALS.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
+          <Translation>
+            {(t) => (
+              <>
+                <HeroBanner
+                  title={t("TESTIMONIALS.HEROBANNER_TITLE")}
+                  subtitle={t("TESTIMONIALS.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb
+                  title={<span>{t("TESTIMONIALS.BREADCRUMB")}</span>}
+                />
+              </>
+            )}
+          </Translation>
           <div className="page-content">
-            <div className="container">
-              <h2 className="title text-center mb-3">
-                Quote Sign <span className="title-separator">/</span> Centered
-                Align <span className="title-separator">/</span> 3 Columns
-              </h2>
+            <div className="container mt-7">
               <div
                 className="owl-carousel owl-theme owl-testimonials"
                 data-toggle="owl"
@@ -99,6 +97,75 @@ export default class Temoignages extends Component {
                     <span>Customer</span>
                   </cite>
                 </blockquote>
+              </div>
+              <div className="store-divider-line"></div>
+              {/** Post your testimonial here **/}
+              <div className="reply">
+                <div className="heading">
+                  <Translation>
+                    {(t) => (
+                      <>
+                        <h3 className="title">
+                          {t("TESTIMONIALS.REPLY_TITLE")}
+                        </h3>
+                        <p className="title-desc mb-3">
+                          {t("TESTIMONIALS.REPLY_SUBTITLE")}
+                        </p>
+                        <form action="#">
+                          <label for="reply-message" className="sr-only">
+                            Comment
+                          </label>
+                          <textarea
+                            name="reply-message"
+                            id="reply-message"
+                            cols="30"
+                            rows="4"
+                            className="form-control"
+                            required
+                            placeholder={t("TESTIMONIALS.REPLY_TEXTAREA")}
+                          ></textarea>
+                          <div className="row">
+                            <div className="col-md-6">
+                              <label for="reply-name" className="sr-only">
+                                Name
+                              </label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                id="reply-name"
+                                name="reply-name"
+                                required
+                                placeholder={t("TESTIMONIALS.REPLY_INPUT_NAME")}
+                              />
+                            </div>
+                            <div className="col-md-6">
+                              <label for="reply-email" className="sr-only">
+                                Email
+                              </label>
+                              <input
+                                type="email"
+                                className="form-control"
+                                id="reply-email"
+                                name="reply-email"
+                                required
+                                placeholder={t(
+                                  "TESTIMONIALS.REPLY_INPUT_EMAIL"
+                                )}
+                              />
+                            </div>
+                          </div>
+                          <button
+                            type="submit"
+                            className="btn btn-outline-primary-2 mt-3"
+                          >
+                            <span>{t("TESTIMONIALS.REPLY_BUTTON")}</span>
+                            <i className="icon-long-arrow-right"></i>
+                          </button>
+                        </form>
+                      </>
+                    )}
+                  </Translation>
+                </div>
               </div>
             </div>
           </div>

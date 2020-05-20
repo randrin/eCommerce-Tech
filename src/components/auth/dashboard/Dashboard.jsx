@@ -10,14 +10,19 @@ export default class Dashboard extends Component {
       <>
         <Navbar />
         <main className="main">
-          <HeroBanner title="My Account" subtitle="Shop" />
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("DASHBOARD.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
+          <Translation>
+            {(t) => (
+              <>
+                <HeroBanner
+                  title={t("DASHBOARD.HEROBANNER_TITLE")}
+                  subtitle={t("DASHBOARD.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb
+                  title={<span>{t("DASHBOARD.BREADCRUMB")}</span>}
+                />
+              </>
+            )}
+          </Translation>
           <div className="page-content">
             <div className="dashboard">
               <div className="container">

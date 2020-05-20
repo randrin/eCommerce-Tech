@@ -14,16 +14,14 @@ export default class Cart extends Component {
       <>
         <Navbar />
         <main className="main">
-          <HeroBanner
-            title="My Shopping Cart"
-          />
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("CART.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
+          <Translation>
+            {(t) => (
+              <>
+                <HeroBanner title={t("CART.HEROBANNER_TITLE")} />
+                <Breadcrumb title={<span>{t("CART.BREADCRUMB")}</span>} />
+              </>
+            )}
+          </Translation>
           <div className="page-content">
             <div className="cart">
               <div className="container">

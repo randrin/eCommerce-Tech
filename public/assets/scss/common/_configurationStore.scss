@@ -32,7 +32,9 @@ body {
 .form-tab .form-footer a,
 .compare-product-title a:hover,
 .banner-link,
-.title-link {
+.title-link,
+.owl-testimonials.owl-theme .owl-nav [class*='owl-'] .icon-angle-left:before,
+.owl-testimonials.owl-theme .owl-nav [class*='owl-'] .icon-angle-right:before {
     color: var(--blue-bunting) !important;
 }
 
@@ -71,6 +73,7 @@ button[type="submit"].store-btn {
 .show>.btn-outline-primary-2.dropdown-toggle,
 a.btn-primary,
 .owl-theme.owl-light .owl-nav [class*='owl-']:not(.disabled):hover,
+.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover,
 .banner-link:hover,
 .input-group-append .btn-primary {
     color: #fff !important;
@@ -128,7 +131,10 @@ a.btn-primary,
 
 //.header-intro-clearance .header-bottom .menu>li>a,
 //.header-intro-clearance .header-bottom .header-right p,
-.header-right-login a:hover {
+.header-right-login a:hover,
+.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-left:before,
+.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-right:before
+{
     color: #fff !important;
 }
 
