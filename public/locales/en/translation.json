@@ -102,6 +102,8 @@
     },
     "WISHLIST": {
         "BREADCRUMB": "My Wishlist",
+        "HEROBANNER_TITLE": "My Wishlist",
+        "HEROBANNER_SUBTITLE": "Shop",
         "TEXT": "You are not logged in to access your wishlist to you last visited in this site."
     },
     "FOOTER": {

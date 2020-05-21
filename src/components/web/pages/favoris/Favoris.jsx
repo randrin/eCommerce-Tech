@@ -5,6 +5,7 @@ import {
   Footer,
   FavorisProducts,
   FavorisEmpty,
+  HeroBanner,
 } from "../../../../components";
 import { Translation } from "react-i18next";
 import { Breadcrumb } from "../../../../site";
@@ -41,29 +42,20 @@ export default class Favoris extends Component {
     return (
       <>
         <Navbar />
-        <main class="main">
-          <div
-            class="page-header text-center"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/page-header-bg.jpg" + ")",
-            }}
-          >
-            <div class="container">
-              <h1 class="page-title">
-                Wishlist<span>Shop</span>
-              </h1>
-            </div>
-          </div>
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("WISHLIST.BREADCRUMB")}</span>}
-              </Translation>
-            }
-          />
-          {isLogged ? <FavorisProducts /> : <FavorisEmpty />}
-        </main>
+        <Translation>
+          {(t) => (
+            <>
+              <main class="main">
+                <HeroBanner
+                  title={t("WISHLIST.HEROBANNER_TITLE")}
+                  subtitle={t("WISHLIST.HEROBANNER_SUBTITLE")}
+                />
+                <Breadcrumb title={<span>{t("WISHLIST.BREADCRUMB")}</span>} />
+                {isLogged ? <FavorisProducts /> : <FavorisEmpty />}
+              </main>
+            </>
+          )}
+        </Translation>
         <Footer />
       </>
     );

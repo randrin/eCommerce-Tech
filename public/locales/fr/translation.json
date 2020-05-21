@@ -102,6 +102,8 @@
     },
     "WISHLIST": {
         "BREADCRUMB": "Ma Liste d'envies",
+        "HEROBANNER_TITLE": "Ma Liste d'envies",
+        "HEROBANNER_SUBTITLE": "Boutique",
         "TEXT": "Vous n'êtes pas connecté pour avoir accès à votre liste d'envies lors de votre dernière navigation sur le site."
     },
     "FOOTER": {
