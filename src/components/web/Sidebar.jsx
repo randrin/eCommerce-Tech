@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Translation } from "react-i18next";
-export default class extends Component {
+export default class SideBar extends Component {
   render() {
     return (
       <>

@@ -117,14 +117,10 @@ export default class Categories extends Component {
                           </strong>
                         </a>
                       </h3>
-                      <Translation>
-                        {(t) => (
-                          <a href="#" className="banner-link">
-                            {t("BUTTONS.SHOW_NOW")}
-                            <i className="icon-long-arrow-right"></i>
-                          </a>
-                        )}
-                      </Translation>
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -146,14 +142,10 @@ export default class Categories extends Component {
                           Time Deal -30%
                         </a>
                       </h3>
-                      <Translation>
-                        {(t) => (
-                          <a href="#" className="banner-link">
-                            {t("BUTTONS.SHOW_NOW")}
-                            <i className="icon-long-arrow-right"></i>
-                          </a>
-                        )}
-                      </Translation>
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -175,14 +167,10 @@ export default class Categories extends Component {
                           Save $70
                         </a>
                       </h3>
-                      <Translation>
-                        {(t) => (
-                          <a href="#" className="banner-link">
-                            {t("BUTTONS.SHOW_NOW")}
-                            <i className="icon-long-arrow-right"></i>
-                          </a>
-                        )}
-                      </Translation>
+                      <a href="#" className="banner-link">
+                        {t("BUTTONS.SHOW_NOW")}
+                        <i className="icon-long-arrow-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
