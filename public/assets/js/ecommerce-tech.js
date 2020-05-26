@@ -58,8 +58,16 @@ $(document).ready(function () {
     $modal.removeClass("modal-backdrop");
   });
 
-  $("#reloadBrowser").on('click', function () {
-    console.log('browser refresh .....');
-    window.location.replace('/');
-  })
+  $("#reloadBrowser").on("click", function () {
+    console.log("browser refresh .....");
+    window.location.replace("/");
+  });
+
+  // Disable Popup Newletter if checkox is checked
+  if (localStorage.getItem("newsletter-popup")) {
+    console.log("enter Disable ..... ");
+    setTimeout(() => {
+      var $popup = $(".mfp-bg").addClass("d-none");
+    }, 10000);
+  }
 });

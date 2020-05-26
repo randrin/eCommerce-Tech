@@ -6,29 +6,37 @@
 .header-4 .header-bottom {
     background-color: inherit;
 }
+
 .header-menu ul li {
     padding: 5px;
 }
+
 .header-4 .header-middle {
     margin: 2rem 0;
 }
+
 .header-intro-clearance .header-middle .header-left {
     display: block;
 }
+
 .header-dropdown:hover>.header-menu,
 .header-dropdown:focus>.header-menu {
     width: 120px;
 }
+
 .header-intro-clearance .header-menu ul {
     width: 120px;
 }
+
 .logo {
     margin: 1rem 0;
     //margin: -20px 0rem 5px;
 }
+
 .header-intro-clearance .wishlist {
     padding-left: 2rem;
 }
+
 .header-4 .header-search-extended {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -41,10 +49,12 @@
 .compare-dropdown .dropdown-menu {
     width: 336px;
 }
+
 .compare-product-title a:hover:before {
     transform-origin: left center;
     transform: scale(1, 1);
 }
+
 .compare-product-title a::before {
     content: '';
     display: block;
@@ -65,17 +75,21 @@
 .footer .widget-title {
     text-transform: uppercase;
 }
+
 .footer {
-    background-color: #333;
+    background-color: var(--blue-bunting) !important;
+
     p,
     li a,
     i,
     .widget-call {
         color: white;
     }
+
     .widget h4,
     .widget-call a {
         color: var(--yellow-amber);
+
         i {
             color: var(--yellow-amber);
         }
@@ -87,6 +101,24 @@
 /*******************/
 .product:hover {
     box-shadow: rgb(61, 57, 61) 5px 5px 5px 0px;
+}
+
+.product-details-tab .nav.nav-pills .nav-link:hover,
+.product-details-tab .nav.nav-pills .nav-link:focus {
+    border-bottom-color: var(--blue-bunting) !important;
+}
+
+.product .btn-product:hover,
+.product .btn-product:focus {
+    background-color: var(--blue-bunting) !important;
+    border-bottom-color: var(--blue-bunting) !important;
+    span {
+        color: #fff !important;
+    }
+}
+
+.product .btn-product span {
+    color: var(--blue-bunting) !important;
 }
 
 /**************************/

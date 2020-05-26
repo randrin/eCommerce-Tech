@@ -2,6 +2,28 @@ import React, { Component } from "react";
 import { Translation } from "react-i18next";
 
 export default class NewLetters extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      flagAccepted: false,
+    };
+    this.handelChange = this.handelChange.bind(this);
+  }
+
+  handelChange(event) {
+    console.log(event);
+    localStorage.setItem("newsletter-popup", true);
+    this.setState({
+      flagAccepted: true,
+    });
+  }
+  componentDidMount() {
+    if (localStorage.getItem("newsletter-popup")) {
+      this.setState({
+        flagAccepted: localStorage.getItem("newsletter-popup"),
+      });
+    }
+  }
   render() {
     return (
       <div
@@ -45,7 +67,6 @@ export default class NewLetters extends Component {
                           <div className="input-group-append store-btn-hover">
                             <button className="btn btn-g" type="submit">
                               <span>{t("NEWSLETTERS.BUTTON")}</span>
-
                               <i className="icon-long-arrow-right"></i>
                             </button>
                           </div>
@@ -56,6 +77,8 @@ export default class NewLetters extends Component {
                           type="checkbox"
                           className="custom-control-input"
                           id="register-policy-2"
+                          onChange={this.handelChange}
+                          value={this.state.flagAccepted}
                           required
                         />
                         <label
