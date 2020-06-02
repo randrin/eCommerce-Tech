@@ -95,7 +95,7 @@ export default class Contact extends Component {
                   <form action="#" className="contact-form mb-3">
                     <div className="row">
                       <div className="col-sm-6">
-                        <label for="cname" className="sr-only">
+                        <label htmlFor="cname" className="sr-only">
                           Name
                         </label>
                         <input
@@ -107,7 +107,7 @@ export default class Contact extends Component {
                         />
                       </div>
                       <div className="col-sm-6">
-                        <label for="cemail" className="sr-only">
+                        <label htmlFor="cemail" className="sr-only">
                           Email
                         </label>
                         <input
@@ -121,7 +121,7 @@ export default class Contact extends Component {
                     </div>
                     <div className="row">
                       <div className="col-sm-6">
-                        <label for="cphone" className="sr-only">
+                        <label htmlFor="cphone" className="sr-only">
                           Phone
                         </label>
                         <input
@@ -132,7 +132,7 @@ export default class Contact extends Component {
                         />
                       </div>
                       <div className="col-sm-6">
-                        <label for="csubject" className="sr-only">
+                        <label htmlFor="csubject" className="sr-only">
                           Subject
                         </label>
                         <input
@@ -143,7 +143,7 @@ export default class Contact extends Component {
                         />
                       </div>
                     </div>
-                    <label for="cmessage" className="sr-only">
+                    <label htmlFor="cmessage" className="sr-only">
                       Message
                     </label>
                     <textarea

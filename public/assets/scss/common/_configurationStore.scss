@@ -36,7 +36,10 @@ body {
 .banner-link,
 .title-link,
 .owl-testimonials.owl-theme .owl-nav [class*='owl-'] .icon-angle-left:before,
-.owl-testimonials.owl-theme .owl-nav [class*='owl-'] .icon-angle-right:before {
+.owl-testimonials.owl-theme .owl-nav [class*='owl-'] .icon-angle-right:before,
+.icon-angle-right:before,
+.icon-angle-left:before,
+.menu-vertical i::before {
     color: var(--blue-bunting) !important;
 }
 
@@ -52,7 +55,8 @@ body {
 .btn-outline-primary:hover,
 button[type="submit"].store-btn,
 .banner-badge .banner-link:hover .banner-link-text,
-.banner-badge .banner-link:focus .banner-link-text {
+.banner-badge .banner-link:focus .banner-link-text,
+.owl-full .owl-dots .owl-dot:hover span {
     background-color: var(--blue-bunting) !important;
     color: #fff !important;
 }
@@ -79,7 +83,8 @@ a.btn-primary,
 .owl-theme.owl-light .owl-nav [class*='owl-']:not(.disabled):hover,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover,
 .banner-link:hover,
-.input-group-append .btn-primary {
+.input-group-append .btn-primary,
+.owl-full .owl-dots .owl-dot.active span {
     color: #fff !important;
     background-color: var(--blue-bunting) !important;
     border-color: var(--blue-bunting) !important;
@@ -91,7 +96,8 @@ a.btn-primary,
     border-bottom-color: var(--blue-bunting) !important;
 }
 
-.form-control:focus {
+.form-control:focus,
+.owl-full .owl-dots .owl-dot span {
     border-color: var(--blue-bunting) !important;
 }
 

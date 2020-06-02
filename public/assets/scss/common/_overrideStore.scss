@@ -110,16 +110,88 @@
 
 .product .btn-product:hover,
 .product .btn-product:focus {
-    background-color: var(--blue-bunting) !important;
-    border-bottom-color: var(--blue-bunting) !important;
+    background-color: #fff !important;
+    border: 1px solid var(--blue-bunting) !important;
+
     span {
         color: #fff !important;
     }
 }
 
-.product .btn-product span {
+.btn-product-icon {
+    color: var(--blue-bunting) !important;
+    border-color: var(--blue-bunting) !important;
+    background-color: transparent;
+    border: 0.1rem solid var(--blue-bunting) !important;
+
+    span {
+        background-color: var(--blue-bunting) !important;
+    }
+}
+
+.product.product-7 .btn-product:hover,
+.product.product-7 .btn-product:focus,
+.product .btn-product:hover span,
+.product .btn-product:focus span,
+.product.product-list .btn-wishlist:hover,
+.product.product-list .btn-wishlist:focus {
     color: var(--blue-bunting) !important;
 }
+
+.product.product-list .btn-wishlist:hover,
+.product.product-list .btn-wishlist:focus {
+    border: none !important;
+}
+
+.product.product-2 .product-action {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.product.product-2 .product-action {
+    a {
+        padding: 0.75rem !important;
+
+        &:hover,
+        &:focus {
+            color: var(--blue-bunting) !important;
+        }
+    }
+
+}
+
+.product-action:not(.product-action-dark) .btn-product:not(:hover):not(:focus),
+.product.product-list .btn-product.btn-cart:hover,
+.product.product-list .btn-product.btn-cart:focus {
+    background: var(--blue-bunting) !important;
+    color: #fff !important;
+
+    &:before,
+    span {
+        color: #fff !important;
+    }
+}
+
+.product.product-list .btn-product.btn-cart,
+.product.product-list .btn-quickview:hover,
+.product.product-list .btn-quickview:focus,
+.product.product-list .btn-compare:hover,
+.product.product-list .btn-compare:focus {
+    border: 1px solid var(--blue-bunting) !important;
+
+    &:before,
+    span {
+        color: var(--blue-bunting) !important;
+        box-shadow: none;
+    }
+}
+
+.product.product-2 .btn-product:hover {
+    span {
+        box-shadow: none;
+    }
+}
+
 
 /**************************/
 /* Scroll to Top section */

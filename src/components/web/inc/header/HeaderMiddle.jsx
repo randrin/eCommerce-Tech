@@ -7,6 +7,7 @@ import {
   LogoutModal,
   HeaderMyAccount,
 } from "../../../../components";
+import { CategoriesHeaderList } from "../../../index";
 export default class HeaderMiddle extends Component {
   render() {
     const { username, email, isLogged } = this.props;
@@ -19,18 +20,39 @@ export default class HeaderMiddle extends Component {
                 <span className="sr-only">Toggle mobile menu</span>
                 <i className="icon-bars"></i>
               </button>
-              <Link to="/" className="logo">
-                <img
-                  src="/assets/images/logo-footer.png"
-                  alt="Molla Logo"
-                  width="105"
-                  height="25"
-                />
-              </Link>
-              <div className="store-logo-container">
-                <span className="store-logo-flag-green"></span>
-                <span className="store-logo-flag-red"></span>
-                <span className="store-logo-flag-yellow"></span>
+              <div className="row">
+                <div className="col-2">
+                  <div className="dropdown category-dropdown store-display-none">
+                    <a
+                      href="#"
+                      className="dropdown-toggle store-dropdown-toggle"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      data-display="static"
+                      title="Browse Categories"
+                    >
+                      <span></span>
+                    </a>
+                    <CategoriesHeaderList />
+                  </div>
+                </div>
+                <div className="col-8">
+                  <Link to="/" className="logo">
+                    <img
+                      src="/assets/images/logo-footer.png"
+                      alt="Molla Logo"
+                      width="105"
+                      height="25"
+                    />
+                  </Link>
+                  <div className="store-logo-container">
+                    <span className="store-logo-flag-green"></span>
+                    <span className="store-logo-flag-red"></span>
+                    <span className="store-logo-flag-yellow"></span>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="header-center">

@@ -84,6 +84,12 @@
 }
 
 .category-dropdown-scroll {
-    top: 55px;
+    left: -5px;
+    top: 5px;
     position: relative;
+}
+
+.category-dropdown-scroll .dropdown-menu .side-nav ul {
+    background: white;
+    width: 270px;
 }

@@ -33,14 +33,18 @@ $(document).ready(function () {
         $newScroll.addClass("new-fixed");
       }
       if ($categoryDropdown.length && $(window).width() >= 992) {
-        $categoryDropdown.addClass("category-dropdown-scroll");
+        $categoryDropdown
+          .removeClass("store-display-none")
+          .addClass("category-dropdown-scroll");
       }
     } else {
       $initialScroll.removeClass("stop-fixed");
       $newScroll.removeClass("new-fixed");
       $headerRight.removeClass("scroll");
       $headerRightScroll.addClass("scroll");
-      $categoryDropdown.removeClass("category-dropdown-scroll");
+      $categoryDropdown
+        .removeClass("category-dropdown-scroll")
+        .addClass("store-display-none");
     }
   });
 

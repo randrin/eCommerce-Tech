@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { CategoriesHeaderList } from "../../..";
 import { Translation } from "react-i18next";
+import { CategoriesHeaderList } from "../../../index";
 
 export default class HeaderBottom extends Component {
   render() {
