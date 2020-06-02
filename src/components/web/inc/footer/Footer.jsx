@@ -64,16 +64,20 @@ export default class Footer extends Component {
                       <div className="row">
                         <ul className="widget-list store-footer-link">
                           <li>
-                            <Link to="#">{t("FOOTER.TERMS_CONDITIONS")}</Link>
+                            <Link to="/terms-conditions">
+                              {t("FOOTER.TERMS_CONDITIONS")}
+                            </Link>
                           </li>
                           <li>
-                            <Link to="#">{t("FOOTER.PRIVACY_POLICY")}</Link>
+                            <Link to="/policy">
+                              {t("FOOTER.PRIVACY_POLICY")}
+                            </Link>
                           </li>
                           {/* <li>
                             <Link to="#">{t("FOOTER.LEGAL_NOTICE")}</Link>
                             </li> */}
                           <li>
-                            <Link to="#">{t("FOOTER.COOKIES")}</Link>
+                            <Link to="/cookies">{t("FOOTER.COOKIES")}</Link>
                           </li>
                         </ul>
                       </div>

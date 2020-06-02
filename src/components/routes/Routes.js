@@ -23,6 +23,9 @@ import {
   Register,
   ResetPassword,
   QuickView,
+  Cookies,
+  PolitiquesConfidentialite,
+  TermesConditions
 } from "../../components";
 
 const Routes = (props) => (
@@ -51,6 +54,9 @@ const Routes = (props) => (
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/register" component={Register} />
     <Route exact path="/reset-password" component={ResetPassword} />
+    <Route exact path="/cookies" component={Cookies} />
+    <Route exact path="/policy" component={PolitiquesConfidentialite} />
+    <Route exact path="/terms-conditions" component={TermesConditions} />
     <Route component={Error404} />
   </Switch>
 );
