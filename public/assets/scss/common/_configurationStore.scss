@@ -44,7 +44,7 @@ body {
     color: var(--blue-bunting) !important;
 }
 
-.category-dropdown .dropdown-toggle:hover,
+//.category-dropdown .dropdown-toggle:hover,
 .category-dropdown .dropdown-toggle:focus,
 .category-dropdown:not(.is-on):hover .dropdown-toggle,
 .header-bottom .menu>li>a:before,
@@ -150,7 +150,7 @@ a.btn-primary,
     color: #fff !important;
 }
 
-.header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
+//.header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
 .header-intro-clearance .header-bottom .container::after {
     background-color: #fff !important;
 }

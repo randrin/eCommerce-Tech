@@ -163,7 +163,7 @@
     "BUTTONS": {
         "SHOW_NOW": "Achetez Maintenant",
         "SHOW_MORE": "Achetez Plus",
-        "SHOW_DEALS": "Voir plus de nouveautés",
+        "SHOW_DEALS": "Voir toutes les nouveautés",
         "SIGN_IN": "Connectez-vous et économisez",
         "SUBSCRIBE": "Souscrire"
     },
@@ -175,7 +175,7 @@
     },
     "PRODUCTS": {
         "BREADCRUMB": "Tous nos produits",
-        "TRENDING": "Produits de Tendance",
+        "TRENDING": "Tendances Actuelles",
         "TOP": "MEILLEUR PRODUITS",
         "SALE": "EN SOLDES",
         "SELLING": "MEILLEURE VENTE",
@@ -190,7 +190,7 @@
         "HEROBANNER_SUBTITLE": "Boutique"
     },
     "RECOMMENDATIONS": {
-        "TITLE": "Recommandation pour vous",
+        "TITLE": "Nos Recommandations",
         "LINK": "Voir toutes les recommandations"
     },
     "SERVICES": {

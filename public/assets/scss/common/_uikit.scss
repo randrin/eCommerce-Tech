@@ -84,12 +84,24 @@
 }
 
 .category-dropdown-scroll {
-    left: -5px;
-    top: 5px;
-    position: relative;
-}
+    @include large() {
+        left: -5px;
+        top: 5px;
+        position: relative;
+        border-radius: 5px;
 
-.category-dropdown-scroll .dropdown-menu .side-nav ul {
-    background: white;
-    width: 270px;
+        .dropdown-menu .side-nav ul {
+            background: white;
+            width: 270px;
+        }
+
+        .dropdown-toggle:not(:hover):not(:focus) {
+            border-radius: 5px;
+            background-color: var(--yellow-amber) !important;
+        }
+
+        .dropdown-toggle::after {
+            color: #fff !important;
+        }
+    }
 }
