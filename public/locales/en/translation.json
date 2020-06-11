@@ -5,16 +5,40 @@
         "HEROBANNER_SUBTITLE": "Shop"
     },
     "HOME": {
-        "BREADCRUMB": "Home"
+        "BREADCRUMB": "Home",
+        "RETURN": "Back to Home"
     },
     "LOGIN": {
-        "BREADCRUMB": "Login"
+        "BREADCRUMB": "Login",
+        "USERNAME_FIELD": "Username or email address",
+        "PASSWORD_FIELD": "Password",
+        "PASSWORD_CONFIRMATION_FIELD": "Confirmation Password",
+        "FIRSTNAME_FIELD": "First Name",
+        "LASTNAME_FIELD": "Last Name",
+        "EMAIL_FIELD": "Email address",
+        "PASSWORD_FORGOT" : "Forgot Your Password ?",
+        "REMEMBER_LOGIN" : "Remember Me",
+        "LOGIN": "LOG IN",
+        "SIGN": "Sign In",
+        "NEW_USER": " Are you new user on this website ?",
+        "CREATE_ACCOUNT" : "Create my account",
+        "REGISTER": "Registration",
+        "SOCIAL_LOGIN": "or sign in with",
+        "LOGIN_FACEBOOK": "Facebook",
+        "LOGIN_GOOGLE": "Google",
+        "POLICY_AGREE_1": "I agree to the",
+        "POLICY_AGREE_2": "privacy policy"
     },
     "LOGOUT": {
         "BREADCRUMB": "Logout"
     },
     "RESET-PASSWORD": {
-        "BREADCRUMB": "Password Reset"
+        "BREADCRUMB": "Password Reset",
+        "TITLE": "Forgot your password ?",
+        "SUBTITLE": "Enter the email address you provided when registering, to receive a password reset link.",
+        "CONFIRMATION_TITLE": "We have sent you an email to reset your password",
+        "CONFIRMATION_SUBTITLE": "If you do not receive this email, we invite you to check in the SPAM section of your email.",
+        "SUBMIT": "SUBMIT"
     },
     "REGISTER": {
         "BREADCRUMB": "New User"

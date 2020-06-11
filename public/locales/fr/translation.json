@@ -5,16 +5,40 @@
         "HEROBANNER_SUBTITLE": "Boutique"
     },
     "HOME": {
-        "BREADCRUMB": "Accueil"
+        "BREADCRUMB": "Accueil",
+        "RETURN": "Retour à l'accueil"
     },
     "LOGIN": {
-        "BREADCRUMB": "S'identifier"
+        "BREADCRUMB": "S'identifier",
+        "USERNAME_FIELD": "Pseudo ou adresse e-mail",
+        "PASSWORD_FIELD": "Mot de passe",
+        "PASSWORD_CONFIRMATION_FIELD": "Confirmation Mot de passe",
+        "FIRSTNAME_FIELD": "Nom",
+        "LASTNAME_FIELD": "Prènom",
+        "EMAIL_FIELD": "Adresse e-mail",
+        "PASSWORD_FORGOT": "Mot de passe oublié ?",
+        "REMEMBER_LOGIN": "Se souvenir de moi",
+        "LOGIN": "SE CONNECTER",
+        "SIGN": "Se Connecter",
+        "NEW_USER": "Êtes-vous un nouvel utilisateur sur ce site?",
+        "CREATE_ACCOUNT": "Créer mon compte",
+        "REGISTER": "S' Enregistrer",
+        "SOCIAL_LOGIN": "ou connectez-vous avec",
+        "LOGIN_FACEBOOK": "Facebook",
+        "LOGIN_GOOGLE": "Google",
+        "POLICY_AGREE_1": "Je suis d'accord avec la",
+        "POLICY_AGREE_2": "politique de confidentialité"
     },
     "LOGOUT": {
         "BREADCRUMB": "Se déconnecter"
     },
     "RESET-PASSWORD": {
-        "BREADCRUMB": "Réinitialisation Mot de Passe"
+        "BREADCRUMB": "Réinitialisation Mot de Passe",
+        "TITLE": "Vous avez oublié votre mot de passe ?",
+        "SUBTITLE": "Saisissez l'adresse mail que vous nous avez indiquée lors de votre inscription, afin de recevoir un lien de réinitialisation de votre mot de passe.",
+        "CONFIRMATION_TITLE": "Nous vous avons envoyé un e-mail pour la réinitialisation de votre mot de passe",
+        "CONFIRMATION_SUBTITLE": "Si vous ne recevez pas cette e-mail, nous vous invitions de vérifier dans la section SPAM de votre courrier électronique.",
+        "SUBMIT": "ENVOYER"
     },
     "REGISTER": {
         "BREADCRUMB": "Nouveau Client"

@@ -55,7 +55,7 @@ export default class LoginPage extends Component {
       this.setState({
         email: remember.email,
         password: remember.password,
-        remember: true
+        remember: true,
       });
     }
   }
@@ -65,135 +65,141 @@ export default class LoginPage extends Component {
   render() {
     return (
       <>
-        <main className="main">
-          <Breadcrumb
-            title={
-              <Translation>
-                {(t) => <span>{t("LOGIN.BREADCRUMB")}</span>}
-              </Translation>
-            }
-            showMultiLanguages="true"
-          />
-          <div
-            className="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
-            style={{
-              backgroundImage:
-                "url(" + "assets/images/backgrounds/login-bg.jpg" + ")",
-            }}
-          >
-            <div className="container">
-              <div className="form-box">
-                <div className="form-tab">
+        <Translation>
+          {(t) => (
+            <>
+              <main className="main">
+                <Breadcrumb
+                  title={<span>{t("LOGIN.BREADCRUMB")}</span>}
+                  showMultiLanguages="true"
+                />
+                <div
+                  className="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
+                  style={{
+                    backgroundImage:
+                      "url(" + "assets/images/backgrounds/login-bg.jpg" + ")",
+                  }}
+                >
                   <div className="container">
-                    <div className="row">
-                      <div className="col-md-4 mt-2 mb-2 store-logo-page">
-                        <Link to="/" className="logo">
-                          <img
-                            src="/assets/images/demos/demo-4/logo.png"
-                            alt="Molla Logo"
-                            width="105"
-                            height="25"
-                          />
-                        </Link>
-                        <div className="store-logo-container">
-                          <span className="store-logo-flag-green"></span>
-                          <span className="store-logo-flag-red"></span>
-                          <span className="store-logo-flag-yellow"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tab-content">
-                    <div
-                      className="tab-pane fade show active"
-                      id="signin"
-                      role="tabpanel"
-                      aria-labelledby="signin-tab"
-                    >
-                      <form onSubmit={this.handleLogin}>
-                        <div className="form-group">
-                          <label htmlFor="email">
-                            Username or email address *
-                          </label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="email"
-                            name="email"
-                            onChange={this.handleChange}
-                            value={this.state.email}
-                            required
-                          />
-                        </div>
-
-                        <div className="form-group">
-                          <label htmlFor="password">Password *</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="password"
-                            name="password"
-                            onChange={this.handleChange}
-                            value={this.state.password}
-                            required
-                          />
-                        </div>
-                        <div className="form-footer">
-                          <button
-                            type="submit"
-                            className="btn btn-outline-primary-2"
-                          >
-                            <span>LOG IN</span>
-                            <i className="icon-long-arrow-right"></i>
-                          </button>
-
-                          <div className="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              id="signin-remember"
-                              value={this.state.remender}
-                              onChange={this.handleChange}
-                            />
-                            <label
-                              className="custom-control-label"
-                              htmlFor="signin-remember"
-                              onClick={this.rememberMe}
-                            >
-                              Remember Me
-                            </label>
+                    <div className="form-box">
+                      <div className="form-tab">
+                        <div className="container">
+                          <div className="row">
+                            <div className="col-md-4 mt-2 mb-2 store-logo-page">
+                              <Link to="/" className="logo">
+                                <img
+                                  src="/assets/images/demos/demo-4/logo.png"
+                                  alt="Molla Logo"
+                                  width="105"
+                                  height="25"
+                                />
+                              </Link>
+                              <div className="store-logo-container">
+                                <span className="store-logo-flag-green"></span>
+                                <span className="store-logo-flag-red"></span>
+                                <span className="store-logo-flag-yellow"></span>
+                              </div>
+                            </div>
                           </div>
-                          <Link
-                            to="/reset-password"
-                            className="btn btn-link forgot-link"
-                          >
-                            Forgot Your Password ?
-                          </Link>
                         </div>
-                      </form>
-                      <div className="form-choice mt-3">
-                        <h6 className="text-center">
-                          Vous êtes nouveau sur le site ?
-                        </h6>
-                        <div className="row">
-                          <div className="col-sm-12 store-create-account">
-                            <Link
-                              to="/register"
-                              className="btn btn-primary btn-g"
-                            >
-                              <span>Créer mon compte</span>
-                              <i className="icon-long-arrow-right"></i>
-                            </Link>
+                        <div className="tab-content">
+                          <div
+                            className="tab-pane fade show active"
+                            id="signin"
+                            role="tabpanel"
+                            aria-labelledby="signin-tab"
+                          >
+                            <form onSubmit={this.handleLogin}>
+                              <div className="form-group">
+                                <label htmlFor="email">
+                                  <span>{t("LOGIN.USERNAME_FIELD")}</span>
+                                  <span className="store-required">*</span>
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="email"
+                                  name="email"
+                                  onChange={this.handleChange}
+                                  value={this.state.email}
+                                  required
+                                />
+                              </div>
+
+                              <div className="form-group">
+                                <label htmlFor="password">
+                                  <span>{t("LOGIN.PASSWORD_FIELD")}</span>
+                                  <span className="store-required">*</span>
+                                </label>
+                                <input
+                                  type="password"
+                                  className="form-control"
+                                  id="password"
+                                  name="password"
+                                  onChange={this.handleChange}
+                                  value={this.state.password}
+                                  required
+                                />
+                              </div>
+                              <div className="form-footer">
+                                <button
+                                  type="submit"
+                                  className="btn btn-outline-primary-2"
+                                >
+                                  <span>{t("LOGIN.LOGIN")}</span>
+                                  <i className="icon-long-arrow-right"></i>
+                                </button>
+
+                                <div className="custom-control custom-checkbox">
+                                  <input
+                                    type="checkbox"
+                                    className="custom-control-input"
+                                    id="signin-remember"
+                                    value={this.state.remender}
+                                    onChange={this.handleChange}
+                                  />
+                                  <label
+                                    className="custom-control-label"
+                                    htmlFor="signin-remember"
+                                    onClick={this.rememberMe}
+                                  >
+                                    <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
+                                  </label>
+                                </div>
+                                <Link
+                                  to="/reset-password"
+                                  className="btn btn-link forgot-link"
+                                >
+                                  <span>{t("LOGIN.PASSWORD_FORGOT")}</span>
+                                </Link>
+                              </div>
+                            </form>
+                            <div className="form-choice mt-3">
+                              <h6 className="text-center">
+                                <span>{t("LOGIN.NEW_USER")}</span>
+                              </h6>
+                              <div className="row">
+                                <div className="col-sm-12 store-create-account">
+                                  <Link
+                                    to="/register"
+                                    className="btn btn-primary btn-g"
+                                  >
+                                    <span>{t("LOGIN.CREATE_ACCOUNT")}</span>
+                                    <i className="icon-long-arrow-right"></i>
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </main>
+              </main>
+            </>
+          )}
+        </Translation>
         <Footer />
       </>
     );

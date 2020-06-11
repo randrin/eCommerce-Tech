@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Translation } from "react-i18next";
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -44,254 +45,285 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div
-        className="modal fade"
-        id="signin-modal"
-        tabIndex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered" role="document">
-          <div className="modal-content">
-            <div className="modal-body">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">
-                  <i className="icon-close"></i>
-                </span>
-              </button>
-              <div className="form-box">
-                <div className="form-tab">
-                  <ul
-                    className="nav nav-pills nav-fill nav-border-anim"
-                    role="tablist"
+      <Translation>
+        {(t) => (
+          <div
+            className="modal fade"
+            id="signin-modal"
+            tabIndex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-dialog-centered" role="document">
+              <div className="modal-content">
+                <div className="modal-body">
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
                   >
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active"
-                        id="signin-tab"
-                        data-toggle="tab"
-                        href="#signin"
-                        role="tab"
-                        aria-controls="signin"
-                        aria-selected="true"
+                    <span aria-hidden="true">
+                      <i className="icon-close"></i>
+                    </span>
+                  </button>
+                  <div className="form-box">
+                    <div className="form-tab">
+                      <ul
+                        className="nav nav-pills nav-fill nav-border-anim"
+                        role="tablist"
                       >
-                        Sign In
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        id="register-tab"
-                        data-toggle="tab"
-                        href="#register"
-                        role="tab"
-                        aria-controls="register"
-                        aria-selected="false"
-                      >
-                        Register
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="tab-content" id="tab-content-5">
-                    <div
-                      className="tab-pane fade show active"
-                      id="signin"
-                      role="tabpanel"
-                      aria-labelledby="signin-tab"
-                    >
-                      <form onSubmit={this.handleLogin}>
-                        <div className="form-group">
-                          <label htmlFor="email">
-                            Username or email address *
-                          </label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="email"
-                            name="email"
-                            onChange={this.handleChange}
-                            value={this.state.email}
-                            required
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="password">Password *</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="password"
-                            name="password"
-                            onChange={this.handleChange}
-                            value={this.state.password}
-                            required
-                          />
-                        </div>
-                        <div className="form-footer">
-                          <button
-                            type="submit"
-                            className="btn btn-outline-primary-2"
+                        <li className="nav-item">
+                          <a
+                            className="nav-link active"
+                            id="signin-tab"
+                            data-toggle="tab"
+                            href="#signin"
+                            role="tab"
+                            aria-controls="signin"
+                            aria-selected="true"
                           >
-                            <span>LOG IN</span>
-                            <i className="icon-long-arrow-right"></i>
-                          </button>
-                          <div className="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              id="signin-remember"
-                            />
-                            <label
-                              className="custom-control-label"
-                              htmlFor="signin-remember"
-                            >
-                              Remember Me
-                            </label>
-                          </div>
-                          <Link
-                            id="reset-password"
-                            to="/reset-password"
-                            className="btn btn-link forgot-link"
+                            <span>{t("LOGIN.SIGN")}</span>
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a
+                            className="nav-link"
+                            id="register-tab"
+                            data-toggle="tab"
+                            href="#register"
+                            role="tab"
+                            aria-controls="register"
+                            aria-selected="false"
                           >
-                            Forgot Your Password?
-                          </Link>
-                        </div>
-                      </form>
-                      <div className="form-choice">
-                        <p className="text-center">or sign in with</p>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <a href="#" className="btn btn-login btn-g">
-                              <i className="icon-google"></i>
-                              Login With Google
-                            </a>
-                          </div>
-                          <div className="col-sm-6">
-                            <a href="#" className="btn btn-login btn-f">
-                              <i className="icon-facebook-f"></i>
-                              Login With Facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="register"
-                      role="tabpanel"
-                      aria-labelledby="register-tab"
-                    >
-                      <form onSubmit={this.handleRegister}>
-                        <div className="row">
-                          <div className="col-md-6">
+                            <span>{t("LOGIN.REGISTER")}</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div className="tab-content" id="tab-content-5">
+                        <div
+                          className="tab-pane fade show active"
+                          id="signin"
+                          role="tabpanel"
+                          aria-labelledby="signin-tab"
+                        >
+                          <form onSubmit={this.handleLogin}>
                             <div className="form-group">
-                              <label htmlFor="firstname">First Name *</label>
+                              <label htmlFor="email">
+                                <span>{t("LOGIN.USERNAME_FIELD")}</span>
+                                <span className="store-required">*</span>
+                              </label>
                               <input
                                 type="text"
                                 className="form-control"
-                                id="firstname"
-                                name="firstname"
+                                id="email"
+                                name="email"
                                 onChange={this.handleChange}
-                                value={this.state.firstname}
+                                value={this.state.email}
                                 required
                               />
                             </div>
-                          </div>
-                          <div className="col-md-6">
                             <div className="form-group">
-                              <label htmlFor="lastname">Last Name *</label>
+                              <label htmlFor="password">
+                                <span>{t("LOGIN.PASSWORD_FIELD")}</span>
+                                <span className="store-required">*</span>
+                              </label>
+                              <input
+                                type="password"
+                                className="form-control"
+                                id="password"
+                                name="password"
+                                onChange={this.handleChange}
+                                value={this.state.password}
+                                required
+                              />
+                            </div>
+                            <div className="form-footer">
+                              <button
+                                type="submit"
+                                className="btn btn-outline-primary-2"
+                              >
+                                <span>{t("LOGIN.LOGIN")}</span>
+                                <i className="icon-long-arrow-right"></i>
+                              </button>
+                              <div className="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  className="custom-control-input"
+                                  id="signin-remember"
+                                />
+                                <label
+                                  className="custom-control-label"
+                                  htmlFor="signin-remember"
+                                >
+                                  <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
+                                </label>
+                              </div>
+                              <Link
+                                id="reset-password"
+                                to="/reset-password"
+                                className="btn btn-link forgot-link"
+                              >
+                                <span>{t("LOGIN.PASSWORD_FORGOT")}</span>
+                              </Link>
+                            </div>
+                          </form>
+                          <div className="form-choice">
+                            <p className="text-center">
+                              <span>{t("LOGIN.SOCIAL_LOGIN")}</span>
+                            </p>
+                            <div className="row">
+                              <div className="col-sm-6">
+                                <a href="#" className="btn btn-login btn-g">
+                                  <i className="icon-google"></i>
+                                  <span>{t("LOGIN.LOGIN_GOOGLE")}</span>
+                                </a>
+                              </div>
+                              <div className="col-sm-6">
+                                <a href="#" className="btn btn-login btn-f">
+                                  <i className="icon-facebook-f"></i>
+                                  <span>{t("LOGIN.LOGIN_FACEBOOK")}</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="register"
+                          role="tabpanel"
+                          aria-labelledby="register-tab"
+                        >
+                          <form onSubmit={this.handleRegister}>
+                            <div className="row">
+                              <div className="col-md-6">
+                                <div className="form-group">
+                                  <label htmlFor="firstname">
+                                    <span>{t("LOGIN.FIRSTNAME_FIELD")}</span>
+                                    <span className="store-required">*</span>
+                                  </label>
+                                  <input
+                                    type="text"
+                                    className="form-control"
+                                    id="firstname"
+                                    name="firstname"
+                                    onChange={this.handleChange}
+                                    value={this.state.firstname}
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="form-group">
+                                  <label htmlFor="lastname">
+                                    <span>{t("LOGIN.LASTNAME_FIELD")}</span>
+                                    <span className="store-required">*</span>
+                                  </label>
+                                  <input
+                                    type="text"
+                                    className="form-control"
+                                    id="lastname"
+                                    name="lastname"
+                                    onChange={this.handleChange}
+                                    value={this.state.lastname}
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-group">
+                              <label htmlFor="email">
+                                <span>{t("LOGIN.EMAIL_FIELD")}</span>
+                                <span className="store-required">*</span>
+                              </label>
                               <input
                                 type="text"
                                 className="form-control"
-                                id="lastname"
-                                name="lastname"
+                                id="email"
+                                name="email"
                                 onChange={this.handleChange}
-                                value={this.state.lastname}
+                                value={this.state.email}
                                 required
                               />
                             </div>
-                          </div>
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="email">Email address *</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="email"
-                            name="email"
-                            onChange={this.handleChange}
-                            value={this.state.email}
-                            required
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="password">Password *</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="password"
-                            name="password"
-                            onChange={this.handleChange}
-                            value={this.state.password}
-                            required
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="confirmation_password">
-                            Confirmation Password *
-                          </label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="confirmation_password"
-                            name="confirmation_password"
-                            onChange={this.handleChange}
-                            value={this.state.confirmation_password}
-                            required
-                          />
-                        </div>
-                        <div className="custom-control custom-checkbox mt-2 mb-3">
-                          <input
-                            type="checkbox"
-                            className="custom-control-input"
-                            id="register-policy"
-                            required
-                          />
-                          <label
-                            className="custom-control-label"
-                            htmlFor="register-policy"
-                          >
-                            I agree to the <a href="#">privacy policy</a> *
-                          </label>
-                        </div>
-                        <div className="form-footer">
-                          <button
-                            type="submit"
-                            className="btn btn-outline-primary-2"
-                          >
-                            <span>REGISTER</span>
-                            <i className="icon-long-arrow-right"></i>
-                          </button>
-                        </div>
-                      </form>
-                      <div className="form-choice">
-                        <p className="text-center">or sign in with</p>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <a href="#" className="btn btn-login btn-g">
-                              <i className="icon-google"></i>
-                              Login With Google
-                            </a>
-                          </div>
-                          <div className="col-sm-6">
-                            <a href="#" className="btn btn-login  btn-f">
-                              <i className="icon-facebook-f"></i>
-                              Login With Facebook
-                            </a>
+                            <div className="form-group">
+                              <label htmlFor="password">
+                                <span>{t("LOGIN.PASSWORD_FIELD")}</span>
+                                <span className="store-required">*</span>
+                              </label>
+                              <input
+                                type="password"
+                                className="form-control"
+                                id="password"
+                                name="password"
+                                onChange={this.handleChange}
+                                value={this.state.password}
+                                required
+                              />
+                            </div>
+                            <div className="form-group">
+                              <label htmlFor="confirmation_password">
+                                <span>
+                                  {t("LOGIN.PASSWORD_CONFIRMATION_FIELD")}
+                                </span>
+                                <span className="store-required">*</span>
+                              </label>
+                              <input
+                                type="password"
+                                className="form-control"
+                                id="confirmation_password"
+                                name="confirmation_password"
+                                onChange={this.handleChange}
+                                value={this.state.confirmation_password}
+                                required
+                              />
+                            </div>
+                            <div className="custom-control custom-checkbox mt-2 mb-3">
+                              <input
+                                type="checkbox"
+                                className="custom-control-input"
+                                id="register-policy"
+                                required
+                              />
+                              <label
+                                className="custom-control-label"
+                                htmlFor="register-policy"
+                              >
+                                <span>{t("LOGIN.POLICY_AGREE_1")}</span>{" "}
+                                <Link to="/policy">
+                                  <span>{t("LOGIN.POLICY_AGREE_2")}</span>
+                                </Link>{" "}
+                                <span className="store-required">*</span>
+                              </label>
+                            </div>
+                            <div className="form-footer">
+                              <button
+                                type="submit"
+                                className="btn btn-outline-primary-2"
+                              >
+                                <span>{t("LOGIN.REGISTER")}</span>
+                                <i className="icon-long-arrow-right"></i>
+                              </button>
+                            </div>
+                          </form>
+                          <div className="form-choice">
+                            <p className="text-center">
+                              <span>{t("LOGIN.SOCIAL_LOGIN")}</span>
+                            </p>
+                            <div className="row">
+                              <div className="col-sm-6">
+                                <a href="#" className="btn btn-login btn-g">
+                                  <i className="icon-google"></i>
+                                  <span>{t("LOGIN.LOGIN_GOOGLE")}</span>
+                                </a>
+                              </div>
+                              <div className="col-sm-6">
+                                <a href="#" className="btn btn-login  btn-f">
+                                  <i className="icon-facebook-f"></i>
+                                  <span>{t("LOGIN.LOGIN_FACEBOOK")}</span>
+                                </a>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -301,8 +333,8 @@ export default class Login extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        )}
+      </Translation>
     );
   }
 }
