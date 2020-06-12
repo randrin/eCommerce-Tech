@@ -21,7 +21,7 @@ export default class HeaderMiddle extends Component {
                 <i className="icon-bars"></i>
               </button>
               <div className="row">
-                <div className="col-2">
+                <div className="col-2 store-display-none">
                   <div className="dropdown category-dropdown store-display-none">
                     <a
                       href="#"

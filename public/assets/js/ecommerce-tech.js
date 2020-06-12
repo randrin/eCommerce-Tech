@@ -36,6 +36,7 @@ $(document).ready(function () {
         $categoryDropdown
           .removeClass("store-display-none")
           .addClass("category-dropdown-scroll");
+        $categoryDropdown.parent().removeClass("store-display-none");
       }
     } else {
       $initialScroll.removeClass("stop-fixed");
@@ -45,6 +46,7 @@ $(document).ready(function () {
       $categoryDropdown
         .removeClass("category-dropdown-scroll")
         .addClass("store-display-none");
+      $categoryDropdown.parent().addClass("store-display-none");
     }
   });
 

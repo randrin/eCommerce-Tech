@@ -48,7 +48,7 @@ export default class Login extends Component {
       <Translation>
         {(t) => (
           <div
-            className="modal fade"
+            className="store-login-wrapper modal fade"
             id="signin-modal"
             tabIndex="-1"
             role="dialog"
@@ -138,34 +138,40 @@ export default class Login extends Component {
                                 required
                               />
                             </div>
-                            <div className="form-footer">
+                            <div className="form-footer mt-4">
                               <button
                                 type="submit"
-                                className="btn btn-outline-primary-2"
+                                className="btn btn-outline-primary-2 store-fullwidth-btn"
                               >
                                 <span>{t("LOGIN.LOGIN")}</span>
                                 <i className="icon-long-arrow-right"></i>
                               </button>
-                              <div className="custom-control custom-checkbox">
-                                <input
-                                  type="checkbox"
-                                  className="custom-control-input"
-                                  id="signin-remember"
-                                />
-                                <label
-                                  className="custom-control-label"
-                                  htmlFor="signin-remember"
-                                >
-                                  <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
-                                </label>
+                              <div className="container">
+                                <div className="row mt-2">
+                                  <div className="custom-control custom-checkbox">
+                                    <input
+                                      type="checkbox"
+                                      className="custom-control-input"
+                                      id="signin-remember"
+                                    />
+                                    <label
+                                      className="custom-control-label"
+                                      htmlFor="signin-remember"
+                                    >
+                                      <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
+                                    </label>
+                                  </div>
+                                  <div className="store-login-pull-right">
+                                    <Link
+                                      id="reset-password"
+                                      to="/reset-password"
+                                      className="btn btn-link forgot-link"
+                                    >
+                                      <span>{t("LOGIN.PASSWORD_FORGOT")}</span>
+                                    </Link>
+                                  </div>
+                                </div>
                               </div>
-                              <Link
-                                id="reset-password"
-                                to="/reset-password"
-                                className="btn btn-link forgot-link"
-                              >
-                                <span>{t("LOGIN.PASSWORD_FORGOT")}</span>
-                              </Link>
                             </div>
                           </form>
                           <div className="form-choice">
@@ -292,14 +298,13 @@ export default class Login extends Component {
                                 <span>{t("LOGIN.POLICY_AGREE_1")}</span>{" "}
                                 <Link to="/policy">
                                   <span>{t("LOGIN.POLICY_AGREE_2")}</span>
-                                </Link>{" "}
-                                <span className="store-required">*</span>
+                                </Link>
                               </label>
                             </div>
                             <div className="form-footer">
                               <button
                                 type="submit"
-                                className="btn btn-outline-primary-2"
+                                className="btn btn-outline-primary-2 store-fullwidth-btn"
                               >
                                 <span>{t("LOGIN.REGISTER")}</span>
                                 <i className="icon-long-arrow-right"></i>

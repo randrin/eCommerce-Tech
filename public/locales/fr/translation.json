@@ -41,7 +41,8 @@
         "SUBMIT": "ENVOYER"
     },
     "REGISTER": {
-        "BREADCRUMB": "Nouveau Client"
+        "BREADCRUMB": "Nouveau Client",
+        "ALREADY_CUSTOMER": "Déjà client chez XXXXX ?"
     },
     "HEADER-TOP": {
         "CALL": "Appelez le : ",
@@ -65,7 +66,8 @@
         "LOGOUT": "Se Déconnecter",
         "TOTAL_CART": "TOTAL",
         "VIEW_CART": "Voir le Panier",
-        "CHECKOUT": "Payer"
+        "CHECKOUT": "Payer",
+        "PRODUCTS": "Allez à la boutique"
     },
     "ANNONCES": {
         "TITLE": "LIVRAISON GRATUITE POUR TOUTES LES COMMANDES DE PLUS DE 50$"

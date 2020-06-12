@@ -41,7 +41,8 @@
         "SUBMIT": "SUBMIT"
     },
     "REGISTER": {
-        "BREADCRUMB": "New User"
+        "BREADCRUMB": "New User",
+        "ALREADY_CUSTOMER": "Already a customer at XXXXX ?"
     },
     "HEADER-TOP": {
         "CALL": "Call: ",
@@ -65,7 +66,8 @@
         "LOGOUT": "Logout",
         "TOTAL_CART": "TOTAL",
         "VIEW_CART": "View Cart",
-        "CHECKOUT": "Checkout"
+        "CHECKOUT": "Checkout",
+        "PRODUCTS": "Go to the shop"
     },
     "ANNONCES": {
         "TITLE": "FREE SHIPPING FOR ALL ORDERS OVER $50"

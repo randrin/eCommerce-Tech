@@ -110,7 +110,7 @@ export default class ResetPassword extends Component {
                                       <div className="col-sm-12 store-create-account">
                                         <button
                                           type="submit"
-                                          className="btn btn-primary btn-g store-btn"
+                                          className="btn btn-primary btn-g store-btn store-fullwidth-btn"
                                         >
                                           <span>
                                             {t("RESET-PASSWORD.SUBMIT")}

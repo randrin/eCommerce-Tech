@@ -104,7 +104,7 @@ export default class LoginPage extends Component {
                         </div>
                         <div className="tab-content">
                           <div
-                            className="tab-pane fade show active"
+                            className="store-login-wrapper tab-pane fade show active"
                             id="signin"
                             role="tabpanel"
                             aria-labelledby="signin-tab"
@@ -141,37 +141,44 @@ export default class LoginPage extends Component {
                                   required
                                 />
                               </div>
-                              <div className="form-footer">
+                              <div className="form-footer mt-4">
                                 <button
                                   type="submit"
-                                  className="btn btn-outline-primary-2"
+                                  className="btn btn-outline-primary-2 store-fullwidth-btn"
                                 >
                                   <span>{t("LOGIN.LOGIN")}</span>
                                   <i className="icon-long-arrow-right"></i>
                                 </button>
-
-                                <div className="custom-control custom-checkbox">
-                                  <input
-                                    type="checkbox"
-                                    className="custom-control-input"
-                                    id="signin-remember"
-                                    value={this.state.remender}
-                                    onChange={this.handleChange}
-                                  />
-                                  <label
-                                    className="custom-control-label"
-                                    htmlFor="signin-remember"
-                                    onClick={this.rememberMe}
-                                  >
-                                    <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
-                                  </label>
+                                <div className="container">
+                                  <div className="row mt-2">
+                                    <div className="custom-control custom-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        className="custom-control-input"
+                                        id="signin-remember"
+                                        value={this.state.remender}
+                                        onChange={this.handleChange}
+                                      />
+                                      <label
+                                        className="custom-control-label"
+                                        htmlFor="signin-remember"
+                                        onClick={this.rememberMe}
+                                      >
+                                        <span>{t("LOGIN.REMEMBER_LOGIN")}</span>
+                                      </label>
+                                    </div>
+                                    <div className="store-login-pull-right">
+                                      <Link
+                                        to="/reset-password"
+                                        className="btn btn-link forgot-link"
+                                      >
+                                        <span>
+                                          {t("LOGIN.PASSWORD_FORGOT")}
+                                        </span>
+                                      </Link>
+                                    </div>
+                                  </div>
                                 </div>
-                                <Link
-                                  to="/reset-password"
-                                  className="btn btn-link forgot-link"
-                                >
-                                  <span>{t("LOGIN.PASSWORD_FORGOT")}</span>
-                                </Link>
                               </div>
                             </form>
                             <div className="form-choice mt-3">
@@ -182,7 +189,7 @@ export default class LoginPage extends Component {
                                 <div className="col-sm-12 store-create-account">
                                   <Link
                                     to="/register"
-                                    className="btn btn-primary btn-g"
+                                    className="btn btn-primary btn-g store-fullwidth-btn"
                                   >
                                     <span>{t("LOGIN.CREATE_ACCOUNT")}</span>
                                     <i className="icon-long-arrow-right"></i>
