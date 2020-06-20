@@ -10,7 +10,7 @@
     },
     "LOGIN": {
         "BREADCRUMB": "Login",
-        "USERNAME_FIELD": "Username or email address",
+        "USERNAME_FIELD": "Username or Email address",
         "PASSWORD_FIELD": "Password",
         "PASSWORD_CONFIRMATION_FIELD": "Confirmation Password",
         "FIRSTNAME_FIELD": "First Name",

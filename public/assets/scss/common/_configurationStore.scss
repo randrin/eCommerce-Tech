@@ -6,6 +6,7 @@ body {
 }
 
 //Test Orange Tangerine
+.breadcrumb-item a,
 .header-top a:hover,
 .header-top a:focus,
 .wishlist a:focus,
@@ -122,6 +123,8 @@ a.btn-primary,
     color: var(--blue-bunting) !important;
 }
 
+.breadcrumb-item a:hover,
+.breadcrumb-item a:focus,
 .footer a:hover,
 .footer a:focus,
 .wishlist a:hover,

@@ -1,6 +1,10 @@
 .store-login-wrapper {
     .store-login-pull-right {
+        @include small() {
+            float: left;
+        }
         right: 0;
-        position: absolute;
+        float: right;
+        position: relative;
     }
 }
