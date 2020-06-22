@@ -16,7 +16,7 @@ class MultiLanguages extends Component {
   render() {
     const { selectLang } = this.state;
     return (
-      <div className="header-dropdown store-multilanguages">
+      <div className="store-multilanguages header-dropdown">
         <a href="#" className="store-selected-lang">
           {selectLang === "fr" ? (
             <>

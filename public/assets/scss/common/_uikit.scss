@@ -110,5 +110,18 @@
     bottom: 10px;
     position: fixed;
     z-index: 3;
-    left: 10px;
+    left: 25px;
+
+    .header-menu {
+        top: -80px;
+    }
+
+    a.store-selected-lang {
+
+        p,
+        &::after {
+            color: var(--yellow-amber) !important;
+            font-weight: 600;
+        }
+    }
 }

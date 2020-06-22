@@ -38,7 +38,9 @@ $(document).ready(function () {
           .removeClass("store-display-none")
           .addClass("category-dropdown-scroll");
         $categoryDropdown.parent().removeClass("store-display-none");
-        $multilanguages.addClass("store-multilanguages-scroll");
+        $(".store-multilanguages.header-dropdown").addClass(
+          "store-multilanguages-scroll"
+        );
       }
     } else {
       $initialScroll.removeClass("stop-fixed");
@@ -49,6 +51,9 @@ $(document).ready(function () {
         .removeClass("category-dropdown-scroll")
         .addClass("store-display-none");
       $categoryDropdown.parent().addClass("store-display-none");
+      $(".store-multilanguages.header-dropdown").removeClass(
+        "store-multilanguages-scroll"
+      );
     }
   });
 

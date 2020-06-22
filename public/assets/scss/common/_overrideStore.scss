@@ -9,6 +9,9 @@
 
 .header-menu ul li {
     padding: 5px;
+    &:hover {
+        background-color: var(--silver);
+    }
 }
 
 .header-4 .header-middle {
