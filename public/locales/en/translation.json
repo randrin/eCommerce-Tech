@@ -95,6 +95,14 @@
     },
     "CONTACT": {
         "BREADCRUMB": "Contact Us",
+        "TITLE": "Contact Us",
+        "SUBTITLE": "keep in touch with us",
+        "INFORMATIONS": "Contact Information",
+        "INFORMATIONS_TITLE": "You can reach us at our store address or call / write to our team support",
+        "QUESTIONS": "Got Any Questions?",
+        "QUESTIONS_TITLE": "Use the form below to get in touch with the sales team",
+        "OPEN_STORE": "Working days and hours",
+        "ADDRESS_STORE": "Store Address",
         "BANNER_TITLE": "If You Have More Questions",
         "BANNER_SUBTITLE": "Please contact us"
     },

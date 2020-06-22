@@ -41,7 +41,8 @@ body {
 .icon-angle-right:before,
 .icon-angle-left:before,
 .icon-box-icon,
-.menu-vertical i::before {
+.menu-vertical i::before,
+.contact-list i {
     color: var(--blue-bunting) !important;
 }
 
@@ -86,7 +87,8 @@ a.btn-primary,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover,
 .banner-link:hover,
 .input-group-append .btn-primary,
-.owl-full .owl-dots .owl-dot.active span {
+.owl-full .owl-dots .owl-dot.active span,
+.owl-theme.owl-light .owl-dots .owl-dot.active span {
     color: #fff !important;
     background-color: var(--blue-bunting) !important;
     border-color: var(--blue-bunting) !important;
@@ -162,4 +164,11 @@ a.btn-primary,
 .header-bottom .menu li.show>a:before,
 .header-bottom .menu li.active>a:before {
     border-top: 1px solid #fff;
+}
+
+// Configuration Small Devices
+.product-action:not(.product-action-dark) .btn-product:not(:hover):not(:focus) span {
+    @include small() {
+        display: none;
+    }
 }

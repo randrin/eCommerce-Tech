@@ -95,6 +95,14 @@
     },
     "CONTACT": {
         "BREADCRUMB": "Nous Contactez",
+        "TITLE": "Nous Contactez",
+        "SUBTITLE": "Restez en contact avec nous",
+        "INFORMATIONS": "Informations de Contact",
+        "INFORMATIONS_TITLE": "Vous pouvez nous joindre à l'adresse de notre magasin ou appeler / écrire à notre équipe d'assistance",
+        "QUESTIONS": "Vous avez des questions?",
+        "QUESTIONS_TITLE": "Utilisez le formulaire ci-dessous pour entrer en contact avec l'équipe commerciale",
+        "OPEN_STORE": "Jours et heures de travail",
+        "ADDRESS_STORE": "Adresse du magasin",
         "BANNER_TITLE": "Si vous avez d'autres questions",
         "BANNER_SUBTITLE": "bien vouloir nous contactez"
     },
