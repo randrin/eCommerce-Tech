@@ -38,7 +38,7 @@ export default class HeaderMiddle extends Component {
                     <CategoriesHeaderList />
                   </div>
                 </div>
-                <div className="col-8">
+                <div className="col-8 store-logo">
                   <Link to="/" className="logo">
                     <img
                       src="/assets/images/logo-footer.png"

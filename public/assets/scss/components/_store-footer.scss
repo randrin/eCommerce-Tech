@@ -58,4 +58,11 @@
             padding-right: 0;
         }
     }
+
+    .footer-payments {
+        @include small() {
+            text-align: center;
+        }
+        text-align: right;
+    }
 }

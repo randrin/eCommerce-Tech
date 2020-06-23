@@ -5,7 +5,12 @@ body {
     //background-color: var(--silver-two) !important;
 }
 
-//Test Orange Tangerine
+// Color Tomato
+.contact-list i {
+    color: var(--tomato) !important;
+}
+
+// Color Blue Bunting
 .breadcrumb-item a,
 .header-top a:hover,
 .header-top a:focus,
@@ -41,8 +46,7 @@ body {
 .icon-angle-right:before,
 .icon-angle-left:before,
 .icon-box-icon,
-.menu-vertical i::before,
-.contact-list i {
+.menu-vertical i::before {
     color: var(--blue-bunting) !important;
 }
 
@@ -150,8 +154,7 @@ a.btn-primary,
 .header-4 .mobile-menu-toggler,
 .header-right-login a:hover,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-left:before,
-.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-right:before
-{
+.owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-right:before {
     color: #fff !important;
 }
 
@@ -167,8 +170,9 @@ a.btn-primary,
 }
 
 // Configuration Small Devices
-.product-action:not(.product-action-dark) .btn-product:not(:hover):not(:focus) span {
-    @include small() {
+@include small() {
+    .product-action:not(.product-action-dark) .btn-product:not(:hover):not(:focus) span,
+    .store-logo {
         display: none;
     }
 }

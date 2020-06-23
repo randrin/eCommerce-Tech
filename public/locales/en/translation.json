@@ -16,21 +16,25 @@
         "FIRSTNAME_FIELD": "First Name",
         "LASTNAME_FIELD": "Last Name",
         "EMAIL_FIELD": "Email address",
-        "PASSWORD_FORGOT" : "Forgot Your Password ?",
-        "REMEMBER_LOGIN" : "Remember Me",
+        "PASSWORD_FORGOT": "Forgot Your Password ?",
+        "REMEMBER_LOGIN": "Remember Me",
         "LOGIN": "LOG IN",
         "SIGN": "Sign In",
         "NEW_USER": " Are you new user on this website ?",
-        "CREATE_ACCOUNT" : "Create my account",
+        "CREATE_ACCOUNT": "Create my account",
         "REGISTER": "Registration",
         "SOCIAL_LOGIN": "or sign in with",
         "LOGIN_FACEBOOK": "Facebook",
         "LOGIN_GOOGLE": "Google",
         "POLICY_AGREE_1": "I agree to the",
-        "POLICY_AGREE_2": "privacy policy"
+        "POLICY_AGREE_2": "Privacy Policy"
     },
     "LOGOUT": {
-        "BREADCRUMB": "Logout"
+        "BREADCRUMB": "Logout",
+        "TITLE": "Warning !!!",
+        "SUBTITLE": "Are you sure you want to leave the Appliction Website",
+        "BUTTTON_CANCEL": "Cancel",
+        "BUTTON_LOGOUT": "Logout"
     },
     "RESET-PASSWORD": {
         "BREADCRUMB": "Password Reset",
@@ -103,6 +107,8 @@
         "QUESTIONS_TITLE": "Use the form below to get in touch with the sales team",
         "OPEN_STORE": "Working days and hours",
         "ADDRESS_STORE": "Store Address",
+        "OPEN_DAYS_1": "Monday - Saturday",
+        "OPEN_DAYS_2": "Sunday",
         "BANNER_TITLE": "If You Have More Questions",
         "BANNER_SUBTITLE": "Please contact us"
     },

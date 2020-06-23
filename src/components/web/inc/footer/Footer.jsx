@@ -238,7 +238,7 @@ export default class Footer extends Component {
                     <span>{t("FOOTER.COPYRIGHT")}</span>
                   </p>
                   <figure className="footer-payments">
-                    <p className="text-right mb-1">
+                    <p className="mb-1">
                       {t("FOOTER.PAIMENT_METHOD")}
                     </p>
 

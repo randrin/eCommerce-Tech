@@ -49,16 +49,16 @@ export default class Contact extends Component {
                               <h3>{t("CONTACT.ADDRESS_STORE")}</h3>
                               <ul className="contact-list">
                                 <li>
-                                  <i className="icon-map-marker"></i>
+                                  <i className="icon-map-marker store-icon-medium"></i>
                                   70 Washington Square South New York, NY 10012,
                                   United States
                                 </li>
                                 <li>
-                                  <i className="icon-phone"></i>
+                                  <i className="icon-phone store-icon-medium"></i>
                                   <a href="tel:#">+92 423 567</a>
                                 </li>
                                 <li>
-                                  <i className="icon-envelope"></i>
+                                  <i className="icon-envelope store-icon-medium"></i>
                                   <a href="mailto:#">info@Molla.com</a>
                                 </li>
                               </ul>
@@ -69,7 +69,7 @@ export default class Contact extends Component {
                               <h3>{t("CONTACT.OPEN_STORE")}</h3>
                               <ul className="contact-list">
                                 <li>
-                                  <i className="icon-clock-o"></i>
+                                  <i className="icon-clock-o store-icon-medium"></i>
                                   <span className="text-dark">
                                     Monday-Saturday
                                   </span>{" "}
@@ -77,7 +77,7 @@ export default class Contact extends Component {
                                   11am-7pm ET
                                 </li>
                                 <li>
-                                  <i className="icon-calendar"></i>
+                                  <i className="icon-calendar store-icon-medium"></i>
                                   <span className="text-dark">Sunday</span>{" "}
                                   <br />
                                   11am-6pm ET

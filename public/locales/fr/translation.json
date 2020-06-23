@@ -27,10 +27,14 @@
         "LOGIN_FACEBOOK": "Facebook",
         "LOGIN_GOOGLE": "Google",
         "POLICY_AGREE_1": "Je suis d'accord avec la",
-        "POLICY_AGREE_2": "politique de confidentialité"
+        "POLICY_AGREE_2": "Politique de confidentialité"
     },
     "LOGOUT": {
-        "BREADCRUMB": "Se déconnecter"
+        "BREADCRUMB": "Se déconnecter",
+        "TITLE": "Attention !!!",
+        "SUBTITLE": "Êtes vous sûre de vouloir quitter l 'application",
+        "BUTTON_CANCEL": "Annuller",
+        "BUTTON_LOGOUT": "Quitter"
     },
     "RESET-PASSWORD": {
         "BREADCRUMB": "Réinitialisation Mot de Passe",
@@ -101,8 +105,8 @@
         "INFORMATIONS_TITLE": "Vous pouvez nous joindre à l'adresse de notre magasin ou appeler / écrire à notre équipe d'assistance",
         "QUESTIONS": "Vous avez des questions?",
         "QUESTIONS_TITLE": "Utilisez le formulaire ci-dessous pour entrer en contact avec l'équipe commerciale",
-        "OPEN_STORE": "Jours et heures de travail",
-        "ADDRESS_STORE": "Adresse du magasin",
+        "OPEN_STORE": "Jours et Heures ouvrables",
+        "ADDRESS_STORE": "Localisation du Store",
         "BANNER_TITLE": "Si vous avez d'autres questions",
         "BANNER_SUBTITLE": "bien vouloir nous contactez"
     },
