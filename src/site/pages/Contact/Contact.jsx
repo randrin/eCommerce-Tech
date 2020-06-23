@@ -71,16 +71,18 @@ export default class Contact extends Component {
                                 <li>
                                   <i className="icon-clock-o store-icon-medium"></i>
                                   <span className="text-dark">
-                                    Monday-Saturday
-                                  </span>{" "}
+                                    {t("CONTACT.OPEN_DAYS_1")}
+                                  </span>
                                   <br />
-                                  11am-7pm ET
+                                  {t("CONTACT.OPEN_HOURS_1")}
                                 </li>
                                 <li>
                                   <i className="icon-calendar store-icon-medium"></i>
-                                  <span className="text-dark">Sunday</span>{" "}
+                                  <span className="text-dark">
+                                    {t("CONTACT.OPEN_DAYS_2")}
+                                  </span>
                                   <br />
-                                  11am-6pm ET
+                                  {t("CONTACT.OPEN_HOURS_2")}
                                 </li>
                               </ul>
                             </div>
@@ -100,7 +102,7 @@ export default class Contact extends Component {
                                 type="text"
                                 className="form-control"
                                 id="cname"
-                                placeholder="Name *"
+                                placeholder={t("CONTACT.FORM_NAME")}
                                 required
                               />
                             </div>
@@ -112,7 +114,7 @@ export default class Contact extends Component {
                                 type="email"
                                 className="form-control"
                                 id="cemail"
-                                placeholder="Email *"
+                                placeholder={t("CONTACT.FORM_EMAIL")}
                                 required
                               />
                             </div>
@@ -126,7 +128,7 @@ export default class Contact extends Component {
                                 type="tel"
                                 className="form-control"
                                 id="cphone"
-                                placeholder="Phone"
+                                placeholder={t("CONTACT.FORM_PHONE")}
                               />
                             </div>
                             <div className="col-sm-6">
@@ -137,7 +139,7 @@ export default class Contact extends Component {
                                 type="text"
                                 className="form-control"
                                 id="csubject"
-                                placeholder="Subject"
+                                placeholder={t("CONTACT.FORM_SUBJECT")}
                               />
                             </div>
                           </div>
@@ -150,13 +152,18 @@ export default class Contact extends Component {
                             rows="4"
                             id="cmessage"
                             required
-                            placeholder="Message *"
+                            placeholder={t("CONTACT.FORM_MESSAGE")}
                           ></textarea>
+                          <div className="my-4 text-right">
+                            <span className="store-text-tomato">
+                              * {t("CONTACT.FORM_REQUIERED")}
+                            </span>
+                          </div>
                           <button
                             type="submit"
                             className="btn btn-outline-primary-2 btn-minwidth-sm"
                           >
-                            <span>SUBMIT</span>
+                            <span>{t("CONTACT.FORM_SUBMIT")}</span>
                             <i className="icon-long-arrow-right"></i>
                           </button>
                         </form>
@@ -164,7 +171,9 @@ export default class Contact extends Component {
                     </div>
                     <hr className="mt-4 mb-5" />
                     <div className="stores mb-4 mb-lg-5">
-                      <h2 className="title text-center mb-3">Our Stores</h2>
+                      <h2 className="title text-center mb-5">
+                        {t("CONTACT.ANOTHER_ADDRESS_STORE")}
+                      </h2>
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="store">
@@ -189,16 +198,22 @@ export default class Contact extends Component {
                                     <a href="tel:#">+1 987-876-6543</a>
                                   </div>
                                   <h4 className="store-subtitle">
-                                    Store Hours:
+                                    {t("CONTACT.OPEN_STORE")}:
                                   </h4>
-                                  <div>Monday - Saturday 11am to 7pm</div>
-                                  <div>Sunday 11am to 6pm</div>
+                                  <div>
+                                    {t("CONTACT.OPEN_DAYS_1")}{" "}
+                                    {t("CONTACT.OPEN_HOURS_1")}
+                                  </div>
+                                  <div>
+                                    {t("CONTACT.OPEN_DAYS_2")}{" "}
+                                    {t("CONTACT.OPEN_HOURS_2")}
+                                  </div>
                                   <a
                                     href="#"
                                     className="btn btn-link"
                                     target="_blank"
                                   >
-                                    <span>View Map</span>
+                                    <span>{t("CONTACT.VIEW_MAP")}</span>
                                     <i className="icon-long-arrow-right"></i>
                                   </a>
                                 </div>
@@ -229,17 +244,26 @@ export default class Contact extends Component {
                                     <a href="tel:#">+1 987-876-6543</a>
                                   </div>
                                   <h4 className="store-subtitle">
-                                    Store Hours:
+                                    {t("CONTACT.OPEN_STORE")}:
                                   </h4>
-                                  <div>Monday - Friday 9am to 8pm</div>
-                                  <div>Saturday - 9am to 2pm</div>
-                                  <div>Sunday - Closed</div>
+                                  <div>
+                                    {t("CONTACT.OPEN_DAYS_3")}{" "}
+                                    {t("CONTACT.OPEN_HOURS_1")}
+                                  </div>
+                                  <div>
+                                    {t("CONTACT.OPEN_DAYS_4")} -{" "}
+                                    {t("CONTACT.OPEN_HOURS_3")}
+                                  </div>
+                                  <div>
+                                    {t("CONTACT.OPEN_DAYS_2")} -{" "}
+                                    {t("CONTACT.OPEN_HOURS_4")}
+                                  </div>
                                   <a
                                     href="#"
                                     className="btn btn-link"
                                     target="_blank"
                                   >
-                                    <span>View Map</span>
+                                    <span>{t("CONTACT.VIEW_MAP")}</span>
                                     <i className="icon-long-arrow-right"></i>
                                   </a>
                                 </div>

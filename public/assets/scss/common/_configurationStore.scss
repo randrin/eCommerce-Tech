@@ -175,4 +175,17 @@ a.btn-primary,
     .store-logo {
         display: none;
     }
+    .widget-call {
+        max-width: initial;
+    }
+    .store-footer-wrapper {
+        .store-footer-container {
+            div:last-child {
+                justify-content: center;
+            }
+        }
+        .social-icons {
+            justify-content: center;
+        }
+    }
 }
