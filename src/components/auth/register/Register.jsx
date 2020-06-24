@@ -169,9 +169,14 @@ export default class Register extends Component {
                                   htmlFor="register-policy"
                                 >
                                   <span>{t("LOGIN.POLICY_AGREE_1")}</span>{" "}
-                                  <Link to="/policy">
-                                    <span>{t("LOGIN.POLICY_AGREE_2")}</span>
+                                  <Link to="/terms-conditions" target="_blank">
+                                    <span>{t("FOOTER.TERMS_CONDITIONS")}</span>
                                   </Link>
+                                  <span>{t("LOGIN.POLICY_AGREE_2")}</span>{" "}
+                                  <Link to="/policy" target="_blank">
+                                    <span>{t("FOOTER.PRIVACY_POLICY")}</span>
+                                  </Link>
+                                  <span>{t("LOGIN.POLICY_AGREE_3")}</span>{" "}
                                 </label>
                               </div>
                               <div className="form-footer">

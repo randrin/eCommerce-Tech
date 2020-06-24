@@ -9,11 +9,11 @@ export default class Breadcrumb extends Component {
     return (
       <nav
         aria-label="breadcrumb"
-        className="store-breadcrumb-wrapper breadcrumb-nav border-0 mb-2 pt-3"
+        className={`store-breadcrumb-wrapper breadcrumb-nav border-0 ${showMultiLanguages ? 'mb-0' : 'mb-2'} pt-3`}
       >
         <div className="container p-0">
           <div className="row justify-content-between">
-            <div className="col-md-6 col-sm-6">
+            <div className="col-md-6 col-sm-6 ml-4">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
                   <Link to="/">

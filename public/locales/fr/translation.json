@@ -26,8 +26,9 @@
         "SOCIAL_LOGIN": "ou connectez-vous avec",
         "LOGIN_FACEBOOK": "Facebook",
         "LOGIN_GOOGLE": "Google",
-        "POLICY_AGREE_1": "Je suis d'accord avec la",
-        "POLICY_AGREE_2": "Politique de confidentialité"
+        "POLICY_AGREE_1": "En cliquant sur la case, vous acceptez les ",
+        "POLICY_AGREE_2": " et vous déclarez d'avoir lu les ",
+        "POLICY_AGREE_3": " du site."
     },
     "LOGOUT": {
         "BREADCRUMB": "Se déconnecter",
@@ -170,7 +171,7 @@
         "OUR_SHOP": "Notre Boutique",
         "OUR_STORY": "Qui nous-sommes?",
         "TERMS_CONDITIONS": "Termes et Conditions",
-        "PRIVACY_POLICY": "Politique de Confidentialité",
+        "PRIVACY_POLICY": "Politiques de Confidentialité",
         "LEGAL_NOTICE": "Mentions Légales",
         "COOKIES": "Notre Politique Cookies",
         "ABOUT": "A' Propos de xxxx",
