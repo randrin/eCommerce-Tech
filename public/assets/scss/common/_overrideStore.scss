@@ -9,6 +9,7 @@
 
 .header-menu ul li {
     padding: 5px;
+
     &:hover {
         background-color: var(--silver);
     }
@@ -199,10 +200,48 @@
     .product-action {
         margin: 0px 5px 1.2rem;
     }
+
     a.btn-cart {
         margin: 0px 5px;
     }
 }
+
+.new-arrivals,
+.trending-products {
+    .product-price {
+        color: var(--green) !important;
+    }
+}
+
+.product {
+    .product-label.label-sale {
+        background-color: var(--tomato) !important;
+    }
+    .product-label.label-new {
+        background-color: var(--green) !important;
+    }
+}
+
+.product-body,
+.deal-content {
+    .product-price {
+        .new-price {
+            color: var(--tomato) !important;
+        }
+    }
+}
+
+.intro-price {
+    .text-third {
+        color: var(--tomato) !important;
+    }
+}
+
+.text-third,
+.deal h2 {
+    color: var(--tomato) !important;
+}
+
 
 /**************************/
 /* Scroll to Top section */

@@ -35,7 +35,7 @@ export default class Deals extends Component {
                       </h3>
                       <div className="product-price">
                         <span className="new-price">$129.00</span>
-                        <span className="old-price">Was $150.99</span>
+                        <span className="old-price">$150.99</span>
                       </div>
                       <a href="product.html" className="btn btn-link">
                         <span>{t("BUTTONS.SHOW_NOW")}</span>

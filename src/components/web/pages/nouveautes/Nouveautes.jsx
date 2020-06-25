@@ -431,7 +431,7 @@ export default class Nouveautes extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$35.41</span>
-                      <span className="old-price">Was $41.67</span>
+                      <span className="old-price"> $41.67</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -831,7 +831,7 @@ export default class Nouveautes extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$35.41</span>
-                      <span className="old-price">Was $41.67</span>
+                      <span className="old-price"> $41.67</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -1363,7 +1363,7 @@ export default class Nouveautes extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$35.41</span>
-                      <span className="old-price">Was $41.67</span>
+                      <span className="old-price"> $41.67</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -1828,7 +1828,7 @@ export default class Nouveautes extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$35.41</span>
-                      <span className="old-price">Was $41.67</span>
+                      <span className="old-price"> $41.67</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -1949,7 +1949,7 @@ export default class Nouveautes extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$35.41</span>
-                      <span className="old-price">Was $41.67</span>
+                      <span className="old-price"> $41.67</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -2603,11 +2603,7 @@ export default class Nouveautes extends Component {
                   </div>
                   <a href="#" className="btn btn-primary btn-g btn-round">
                     <Translation>
-                      {(t) => (
-                        <span>
-                          {t("BUTTONS.SHOW_NOW")} - $429.99
-                        </span>
-                      )}
+                      {(t) => <span>{t("BUTTONS.SHOW_NOW")} - $429.99</span>}
                     </Translation>
                     <i className="icon-long-arrow-right"></i>
                   </a>

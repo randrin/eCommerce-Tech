@@ -55,19 +55,19 @@
 }
 
 .store-logo-flag-green {
-    background-color: green;
+    background-color: var(--green);
     width: 35px;
     height: 5px;
 }
 
 .store-logo-flag-red {
-    background-color: red;
+    background-color: var(--tomato);
     width: 35px;
     height: 5px;
 }
 
 .store-logo-flag-yellow {
-    background-color: yellow;
+    background-color: var(--yellow-amber);
     width: 35px;
     height: 5px;
 }

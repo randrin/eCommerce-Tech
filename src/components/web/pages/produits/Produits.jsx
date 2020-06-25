@@ -403,7 +403,7 @@ export default class Produits extends Component {
                           </h3>
                           <div className="product-price">
                             <span className="new-price">$1,699.99</span>
-                            <span className="old-price">Was $1,999.99</span>
+                            <span className="old-price"> $1,999.99</span>
                           </div>
                           <div className="ratings-container">
                             <div className="ratings">
@@ -735,7 +735,7 @@ export default class Produits extends Component {
                           </h3>
                           <div className="product-price">
                             <span className="new-price">$35.41</span>
-                            <span className="old-price">Was $41.67</span>
+                            <span className="old-price"> $41.67</span>
                           </div>
                           <div className="ratings-container">
                             <div className="ratings">

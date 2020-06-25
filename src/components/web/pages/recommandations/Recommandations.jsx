@@ -89,7 +89,7 @@ export default class Recommandations extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$279.99</span>
-                      <span className="old-price">Was $349.99</span>
+                      <span className="old-price"> $349.99</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
@@ -561,7 +561,7 @@ export default class Recommandations extends Component {
                     </h3>
                     <div className="product-price">
                       <span className="new-price">$99.99</span>
-                      <span className="old-price">Was $129.99</span>
+                      <span className="old-price"> $129.99</span>
                     </div>
                     <div className="ratings-container">
                       <div className="ratings">
