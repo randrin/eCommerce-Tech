@@ -2,7 +2,17 @@
     "DASHBOARD": {
         "BREADCRUMB": "My Account",
         "HEROBANNER_TITLE": "My Account",
-        "HEROBANNER_SUBTITLE": "Shop"
+        "HEROBANNER_SUBTITLE": "Shop",
+        "TITLE": "My Dashboard",
+        "ORDERS": {
+            "TITLE": "My Orders",
+            "MESSAGE_EMPLTY": "You have not yet placed an order on xxxxx.com",
+            "BUTTON_SHOP": "Discover all the sales of the moment"
+        },
+        "ADRESSES": "My Address Book",
+        "DOWNLOADS": "My Downloads",
+        "ACCOUNT_DETAILS": "My Account Details",
+        "SIGN_OUT": "Sign Out"
     },
     "HOME": {
         "BREADCRUMB": "Home",

@@ -46,7 +46,8 @@ body {
 .icon-angle-right:before,
 .icon-angle-left:before,
 .icon-box-icon,
-.menu-vertical i::before {
+.menu-vertical i::before,
+.nav-dashboard .nav-link {
     color: var(--blue-bunting) !important;
 }
 

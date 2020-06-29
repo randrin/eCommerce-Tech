@@ -265,3 +265,12 @@
 .banner-badge .banner-link:focus .banner-link-text {
     cursor: pointer;
 }
+
+/**********************/
+/* Dashboard section */
+/*********************/
+.nav-dashboard .nav-link:hover,
+.nav-dashboard .nav-link:focus,
+.nav-dashboard .nav-link.active {
+    font-weight: 600;
+}
