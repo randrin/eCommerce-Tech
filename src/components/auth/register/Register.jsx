@@ -14,11 +14,31 @@ export default class Register extends Component {
       email: "",
       password: "",
       confirmation_password: "",
+      passwordType: "password",
+      confirmation_passwordType: "password",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleRegister = this.handleRegister.bind(this);
+    this.handleHideShowPassword = this.handleHideShowPassword.bind(this);
+    this.handleHideShowPasswordConfirmation = this.handleHideShowPasswordConfirmation.bind(
+      this
+    );
   }
 
+  handleHideShowPassword() {
+    this.setState({
+      passwordType:
+        this.state.passwordType === "password" ? "text" : "password",
+    });
+  }
+  handleHideShowPasswordConfirmation() {
+    this.setState({
+      confirmation_passwordType:
+        this.state.confirmation_passwordType === "password"
+          ? "text"
+          : "password",
+    });
+  }
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -27,6 +47,7 @@ export default class Register extends Component {
     e.preventDefault();
   }
   render() {
+    const { passwordType, confirmation_passwordType } = this.state;
     return (
       <>
         <Translation>
@@ -68,7 +89,7 @@ export default class Register extends Component {
                         </div>
                         <div className="tab-content">
                           <div
-                            className="tab-pane fade show active"
+                            className="store-registration-wrapper tab-pane fade show active"
                             id="signin"
                             role="tabpanel"
                             aria-labelledby="signin-tab"
@@ -131,7 +152,7 @@ export default class Register extends Component {
                                   <span className="store-required">*</span>
                                 </label>
                                 <input
-                                  type="password"
+                                  type={passwordType}
                                   className="form-control"
                                   id="password"
                                   name="password"
@@ -139,6 +160,18 @@ export default class Register extends Component {
                                   value={this.state.password}
                                   required
                                 />
+                                <div
+                                  className="store-hide-show-password"
+                                  onClick={this.handleHideShowPassword}
+                                >
+                                  <i
+                                    className={`fa fa-${
+                                      passwordType === "password"
+                                        ? "lock"
+                                        : "unlock"
+                                    } store-icon-medium`}
+                                  ></i>
+                                </div>
                               </div>
                               <div className="form-group">
                                 <label htmlFor="confirmation_password">
@@ -148,7 +181,7 @@ export default class Register extends Component {
                                   <span className="store-required">*</span>
                                 </label>
                                 <input
-                                  type="password"
+                                  type={confirmation_passwordType}
                                   className="form-control"
                                   id="confirmation_password"
                                   name="confirmation_password"
@@ -156,6 +189,20 @@ export default class Register extends Component {
                                   value={this.state.confirmation_password}
                                   required
                                 />
+                                <div
+                                  className="store-hide-show-password"
+                                  onClick={
+                                    this.handleHideShowPasswordConfirmation
+                                  }
+                                >
+                                  <i
+                                    className={`fa fa-${
+                                      confirmation_passwordType === "password"
+                                        ? "lock"
+                                        : "unlock"
+                                    } store-icon-medium`}
+                                  ></i>
+                                </div>
                               </div>
                               <div className="custom-control custom-checkbox mt-2 mb-3">
                                 <input
@@ -165,7 +212,7 @@ export default class Register extends Component {
                                   required
                                 />
                                 <label
-                                  className="custom-control-label"
+                                  className="custom-control-label store-register-policy"
                                   htmlFor="register-policy"
                                 >
                                   <span>{t("LOGIN.POLICY_AGREE_1")}</span>{" "}

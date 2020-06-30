@@ -12,12 +12,20 @@ export default class LoginPage extends Component {
       email: "",
       password: "",
       remender: false,
+      passwordType: "password",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
     this.rememberMe = this.rememberMe.bind(this);
+    this.handleHideShowPassword = this.handleHideShowPassword.bind(this);
   }
 
+  handleHideShowPassword() {
+    this.setState({
+      passwordType:
+        this.state.passwordType === "password" ? "text" : "password",
+    });
+  }
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -63,6 +71,7 @@ export default class LoginPage extends Component {
     this.retrieveInformarionsUser();
   }
   render() {
+    const { passwordType } = this.state;
     return (
       <>
         <Translation>
@@ -132,7 +141,7 @@ export default class LoginPage extends Component {
                                   <span className="store-required">*</span>
                                 </label>
                                 <input
-                                  type="password"
+                                  type={passwordType}
                                   className="form-control"
                                   id="password"
                                   name="password"
@@ -140,6 +149,18 @@ export default class LoginPage extends Component {
                                   value={this.state.password}
                                   required
                                 />
+                                <div
+                                  className="store-hide-show-password"
+                                  onClick={(this.handleHideShowPassword)}
+                                >
+                                  <i
+                                    className={`fa fa-${
+                                      passwordType === "password"
+                                        ? "lock"
+                                        : "unlock"
+                                    } store-icon-medium`}
+                                  ></i>
+                                </div>
                               </div>
                               <div className="form-footer mt-4">
                                 <button
