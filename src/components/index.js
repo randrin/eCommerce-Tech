@@ -11,6 +11,7 @@ export { default as Register } from "./auth/register/Register";
 export { default as Logout } from "./auth/logout/Logout";
 export { default as LogoutModal } from "./auth/logout/inc/LogoutModal";
 export { default as Dashboard } from "./auth/dashboard/Dashboard";
+export { default as HomePage } from "./auth/dashboard/inc/HomePage";
 export { default as Account } from "./auth/dashboard/inc/Account";
 export { default as Adresses } from "./auth/dashboard/inc/Adresses";
 export { default as Downloads } from "./auth/dashboard/inc/Downloads";

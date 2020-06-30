@@ -44,8 +44,11 @@
         "BREADCRUMB": "Se déconnecter",
         "TITLE": "Attention !!!",
         "SUBTITLE": "Êtes vous sûre de vouloir quitter l 'application",
+        "TEXT_LOGOUT_1": "Merci de votre visite sur le site.",
+        "TEXT_LOGOUT_2": "Nous vous suggérons ces ventes :",
         "BUTTON_CANCEL": "Annuller",
-        "BUTTON_LOGOUT": "Quitter"
+        "BUTTON_LOGOUT": "Quitter",
+        "BUTTON_SHOP": "Accéder aux ventes en cours"
     },
     "RESET-PASSWORD": {
         "BREADCRUMB": "Réinitialisation Mot de Passe",

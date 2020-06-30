@@ -44,8 +44,11 @@
         "BREADCRUMB": "Logout",
         "TITLE": "Warning !!!",
         "SUBTITLE": "Are you sure you want to leave the Appliction Website",
+        "TEXT_LOGOUT_1": "Thank you for visiting the site.",
+        "TEXT_LOGOUT_2": "We suggest these sales:",
         "BUTTTON_CANCEL": "Cancel",
-        "BUTTON_LOGOUT": "Logout"
+        "BUTTON_LOGOUT": "Logout",
+        "BUTTON_SHOP": "Access current sales"
     },
     "RESET-PASSWORD": {
         "BREADCRUMB": "Password Reset",
