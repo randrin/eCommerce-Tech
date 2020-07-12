@@ -37,6 +37,7 @@ export default class Logout extends Component {
                 <div className="container">
                   <div className="row py-5 text-center">
                     <div className="col-12">
+                      <i className="fa fa-smile-o store-icon-large store-text-blue-bunting my-5"></i>
                       <h4 className="display-4 store-text-blue-bunting">
                         {t("LOGOUT.TEXT_LOGOUT_1")}
                       </h4>
