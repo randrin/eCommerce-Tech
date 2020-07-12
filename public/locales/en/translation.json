@@ -173,7 +173,12 @@
         "BREADCRUMB": "My Wishlist",
         "HEROBANNER_TITLE": "My Wishlist",
         "HEROBANNER_SUBTITLE": "Shop",
-        "TEXT": "You are not logged in to access your wishlist to you last visited in this site."
+        "TEXT": "You are not logged in to access your wishlist to you last visited in this site.",
+        "TEXT_NEW_USER": "New Customer on xxxxxx ?",
+        "TEXT_ALREADY_USER": "You already have an account on xxxxxx ?",
+        "STEP_1": "You have not currently selected any product.",
+        "STEP_2": "Click here",
+        "STEP_3": "To add a product to your selection."
     },
     "FOOTER": {
         "PAIMENT_METHOD": "Payment Methods",

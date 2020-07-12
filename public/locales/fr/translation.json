@@ -173,7 +173,12 @@
         "BREADCRUMB": "Ma Liste d'envies",
         "HEROBANNER_TITLE": "Ma Liste d'envies",
         "HEROBANNER_SUBTITLE": "Boutique",
-        "TEXT": "Vous n'êtes pas connecté pour avoir accès à votre liste d'envies lors de votre dernière navigation sur le site."
+        "TEXT": "Vous n'êtes pas connecté pour avoir accès à votre liste d'envies lors de votre dernière navigation sur le site.",
+        "TEXT_NEW_USER": "Nouveau Client sur xxxxxx ?",
+        "TEXT_ALREADY_USER": "Vous avez déjà un compte sur xxxxxx ?",
+        "STEP_1": "Vous n’avez actuellement selectionné aucun produit.",
+        "STEP_2": "Cliquez ici",
+        "STEP_3": "Pour ajouter un produit à votre sélection."
     },
     "FOOTER": {
         "PAIMENT_METHOD": "Méthodes de Payement",
