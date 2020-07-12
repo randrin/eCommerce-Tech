@@ -7,7 +7,7 @@ export default class FavorisProducts extends Component {
       <Translation>
         {(t) => (
           <>
-            <div class="page-content">
+            <div class="store-favories-wrapper page-content">
               <div class="container">
                 <table class="table table-wishlist table-mobile">
                   <thead>

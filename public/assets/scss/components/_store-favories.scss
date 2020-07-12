@@ -5,4 +5,9 @@
     .store-favories-steps {
         display: inline-flex;
     }
+    .product {
+        &:hover {
+            box-shadow: none;
+        }
+    }
 }

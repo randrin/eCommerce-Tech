@@ -23,7 +23,7 @@ export default class Cart extends Component {
             )}
           </Translation>
           <div className="page-content">
-            <div className="cart">
+            <div className="store-cart-wrapper cart">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-9">
