@@ -34,9 +34,9 @@ export default class Logout extends Component {
               <Navbar />
               <main className="main">
                 <Breadcrumb title={<span>{t("LOGOUT.BREADCRUMB")}</span>} />
-                <div className="container">
+                <div className="store-logout-wrapper container">
                   <div className="row py-5 text-center">
-                    <div className="col-12">
+                    <div className="col-12 store-divider-line">
                       <i className="fa fa-smile-o store-icon-large store-text-blue-bunting my-5"></i>
                       <h4 className="display-4 store-text-blue-bunting">
                         {t("LOGOUT.TEXT_LOGOUT_1")}
