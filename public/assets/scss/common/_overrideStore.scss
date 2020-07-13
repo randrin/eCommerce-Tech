@@ -104,7 +104,7 @@
 /* Product Section */
 /*******************/
 .product:hover {
-    box-shadow: rgb(61, 57, 61) 5px 5px 5px 0px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.18)
 }
 
 .product-details-tab .nav.nav-pills .nav-link:hover,
@@ -197,6 +197,8 @@
 }
 
 .product.product-list {
+    padding-bottom: 0 !important;
+    margin-bottom: 4rem;
     .product-action {
         margin: 0px 5px 1.2rem;
     }

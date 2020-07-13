@@ -47,7 +47,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart">
+                <a href="#" className="btn-product btn-cart mb-2">
                   <span>add to cart</span>
                 </a>
               </div>
@@ -143,7 +143,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart">
+                <a href="#" className="btn-product btn-cart mb-2">
                   <span>add to cart</span>
                 </a>
               </div>
@@ -237,7 +237,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart disabled">
+                <a href="#" className="btn-product btn-cart mb-2 disabled">
                   <span>add to cart</span>
                 </a>
               </div>
@@ -311,7 +311,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart">
+                <a href="#" className="btn-product btn-cart mb-2">
                   <span>add to cart</span>
                 </a>
               </div>
@@ -386,7 +386,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart">
+                <a href="#" className="btn-product btn-cart mb-2">
                   <span>add to cart</span>
                 </a>
               </div>
@@ -475,7 +475,7 @@ export default class ProductsListFullWidth extends Component {
                   </a>
                 </div>
 
-                <a href="#" className="btn-product btn-cart">
+                <a href="#" className="btn-product btn-cart mb-2">
                   <span>add to cart</span>
                 </a>
               </div>
