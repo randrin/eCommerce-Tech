@@ -31,7 +31,7 @@ export default class Dashboard extends Component {
                     title={<span>{t("DASHBOARD.BREADCRUMB")}</span>}
                   />
                 </>
-                <div className="page-content">
+                <div className="page-content mt-5">
                   <div className="dashboard">
                     <div className="container">
                       <div className="row">
