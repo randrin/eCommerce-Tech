@@ -33,7 +33,7 @@ export default class Dashboard extends Component {
                   />
                 </>
                 <div className="page-content mt-5">
-                  <div className="dashboard">
+                  <div className="dashboard store-dashboard-wrapper">
                     <div className="container">
                       <div className="row">
                         <NavLeftDashboard />

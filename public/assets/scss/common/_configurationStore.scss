@@ -66,7 +66,7 @@ button[type="submit"].store-btn,
 .banner-badge .banner-link:focus .banner-link-text,
 .owl-full .owl-dots .owl-dot:hover span {
     background-color: var(--blue-bunting) !important;
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 .btn-outline-primary-2,
@@ -95,7 +95,7 @@ a.btn-primary,
 .owl-full .owl-dots .owl-dot.active span,
 .owl-theme.owl-light .owl-dots .owl-dot.active span,
 .icon-box-circle .icon-box-icon {
-    color: #fff !important;
+    color: var(--white) !important;
     background-color: var(--blue-bunting) !important;
     border-color: var(--blue-bunting) !important;
 }
@@ -127,7 +127,7 @@ a.btn-primary,
 .store-logout .btn-g:hover,
 .store-favoris .btn-g:hover,
 .store-btn-hover .btn-g:hover {
-    background-color: #fff !important;
+    background-color: var(--white) !important;
     color: var(--blue-bunting) !important;
 }
 
@@ -157,18 +157,18 @@ a.btn-primary,
 .header-right-login a:hover,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-left:before,
 .owl-theme .owl-nav [class*='owl-']:not(.disabled):hover .icon-angle-right:before {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 //.header-4 .dropdown.category-dropdown .dropdown-toggle:not(:hover):not(:focus),
 .header-intro-clearance .header-bottom .container::after {
-    background-color: #fff !important;
+    background-color: var(--white) !important;
 }
 
 .header-bottom .menu li:hover>a:before,
 .header-bottom .menu li.show>a:before,
 .header-bottom .menu li.active>a:before {
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--white);
 }
 
 // Configuration Small Devices
