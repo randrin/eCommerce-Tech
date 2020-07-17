@@ -28,7 +28,7 @@ export default class HomePage extends Component {
                 </span>
               </div>
               <div className="store-dashboard-container">
-                <div className="row mb-1">
+                <div className="row mb-1 mt-1">
                   <div className="col-md-12 store-dashboard-fullbox store-btn-hover">
                     <h4>— Mon Abonnement Infinity —</h4>
                     <div>
@@ -64,10 +64,16 @@ export default class HomePage extends Component {
                       Vous pouvez suivre les étapes de votre commande en cours
                       et retrouver l'historique de vos commandes passées.
                     </p>
-                    <Link to="/" className="btn btn-primary btn-g">
+                    <a
+                      data-toggle="tab"
+                      href="#tab-orders"
+                      role="tab"
+                      aria-controls="tab-orders"
+                      className="btn btn-primary btn-g"
+                    >
                       Voir le détail
                       <i className="icon-long-arrow-right"></i>
-                    </Link>
+                    </a>
                   </div>
                   <div className="col-md-6 store-dashboard-halfbox store-btn-hover">
                     <h4>— Mes Informations —</h4>
@@ -88,7 +94,7 @@ export default class HomePage extends Component {
                     </Link>
                   </div>
                 </div>
-                <div className="row mb-1">
+                <div className="row">
                   <div className="col-md-6 store-dashboard-halfbox store-btn-hover">
                     <h4>— Mes Filleuls —</h4>
                     <div>

@@ -145,7 +145,8 @@ export default class HeaderMiddle extends Component {
                   <div className="icon">
                     <i className="icon-heart-o"></i>
                     <span className="wishlist-count badge">
-                      {isLogged ? 3 : 0}
+                      {isLogged ? 3 : 0}{" "}
+                      {/* Retrieve number favories user's last connexion */}
                     </span>
                   </div>
                   <Translation>
@@ -166,7 +167,8 @@ export default class HeaderMiddle extends Component {
                 >
                   <div className="icon">
                     <i className="icon-shopping-cart"></i>
-                    <span className="cart-count">{isLogged ? 2 : 0}</span>
+                    <span className="cart-count">{isLogged ? 2 : 0}</span>{" "}
+                    {/* Retrieve number products user's last connexion */}
                   </div>
                   <Translation>
                     {(t) => <p>{t("HEADER-MIDDLE.CART")}</p>}
@@ -192,7 +194,8 @@ export default class HeaderMiddle extends Component {
                 >
                   <div className="icon">
                     <i className="icon-shopping-cart"></i>
-                    <span className="cart-count">{isLogged ? 2 : 0}</span>
+                    <span className="cart-count">{isLogged ? 2 : 0}</span>{" "}
+                    {/* Retrieve number favories user's last connexion */}
                   </div>
                   <Translation>
                     {(t) => <p>{t("HEADER-MIDDLE.CART")}</p>}
