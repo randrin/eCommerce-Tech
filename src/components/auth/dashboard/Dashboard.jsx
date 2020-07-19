@@ -23,7 +23,6 @@ export default class Dashboard extends Component {
             <>
               <Navbar />
               <main className="main">
-                <>
                   <HeroBanner
                     title={t("DASHBOARD.HEROBANNER_TITLE")}
                     subtitle={t("DASHBOARD.HEROBANNER_SUBTITLE")}
@@ -31,7 +30,6 @@ export default class Dashboard extends Component {
                   <Breadcrumb
                     title={<span>{t("DASHBOARD.BREADCRUMB")}</span>}
                   />
-                </>
                 <div className="page-content mt-5">
                   <div className="dashboard store-dashboard-wrapper">
                     <div className="container">
