@@ -100,7 +100,8 @@
         "BANNER_SUBTITLE": "et recevez un coupon de 20 $ pour vos premiers achats"
     },
     "ABOUT": {
-        "BREADCRUMB": "A' Propos de nous"
+        "BREADCRUMB": "A' Propos de nous",
+        "BUTTON_BOTTOM": "TRAVAILLER AVEC NOUS"
     },
     "CHECKOUT": {
         "BREADCRUMB": "Allez à la caisse",
@@ -276,5 +277,17 @@
         "OFFER_SUBTITLE": "lorsque vous vous inscrivez",
         "SUPPORT_TITLE": "Nous vous soutenons",
         "SUPPORT_SUBTITLE": "Nous sommes disponible 24/7 pour vous"
+    },
+    "COOKIES": {
+        "HEROBANNER_TITLE": "Nos Cookies",
+        "BREADCRUMB": "Nos politiques de cookies"
+    },
+    "PRIVACY_POLICY": {
+        "HEROBANNER_TITLE": "Nos Politique de Confidentialités",
+        "BREADCRUMB": "Nos Politique de Confidentialités"
+    },
+    "TERMS_CONDITIONS": {
+        "HEROBANNER_TITLE": "Politiques et Conditions",
+        "BREADCRUMB": "Nos politiques et conditions"
     }
 }

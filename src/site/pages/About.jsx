@@ -456,7 +456,9 @@ export default class About extends Component {
                 href="blog.html"
                 className="btn btn-sm btn-minwidth-lg btn-outline-primary-2"
               >
-                <span>LETS START WORK WITH US</span>
+                <Translation>
+                  {(t) => <span>{t("ABOUT.BUTTON_BOTTOM")}</span>}
+                </Translation>
                 <i className="icon-long-arrow-right"></i>
               </a>
             </div>
