@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Footer } from "../../components";
 import { Breadcrumb } from "./../../site";
 import { Translation } from "react-i18next";
@@ -452,15 +453,15 @@ export default class About extends Component {
             </div>
             <div className="mb-2"></div>
             <div className="text-center mt-3 mb-5">
-              <a
-                href="blog.html"
+              <Link
+                to="/work-with-us"
                 className="btn btn-sm btn-minwidth-lg btn-outline-primary-2"
               >
                 <Translation>
                   {(t) => <span>{t("ABOUT.BUTTON_BOTTOM")}</span>}
                 </Translation>
                 <i className="icon-long-arrow-right"></i>
-              </a>
+              </Link>
             </div>
 
             {/* <div className="about-testimonials bg-light-2 pt-6 pb-6">

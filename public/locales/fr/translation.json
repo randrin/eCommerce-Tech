@@ -289,5 +289,18 @@
     "TERMS_CONDITIONS": {
         "HEROBANNER_TITLE": "Politiques et Conditions",
         "BREADCRUMB": "Nos politiques et conditions"
+    },
+    "WORK_WITH_US": {
+        "BREADCRUMB": "Travaillez avec nous",
+        "TITLE": "Nous cherchons les profils compétents comme le votre",
+        "SUBTITLE": "Envoyez votre candidature",
+        "FULLNAME": "Nom et Prénom",
+        "FULLNAME_PLACEHOLDER": "Entrez votre nom et prénom",
+        "EMAIL_PLACEHOLDER": "Entrez votre email address",
+        "PROFESSION": "Votre Profession",
+        "PROFESSION_PLACEHOLDER": "Selectionnez votre profession",
+        "DESCRIPTION": "Votre Breve Description",
+        "DESCRIPTION_PLACEHOLDER": "Entrez votre description",
+        "FORM_SEND": "ENVOYER"
     }
 }

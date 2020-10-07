@@ -4,6 +4,7 @@ export { default as Checkout } from "./pages/Checkout";
 export { default as Contact } from "./pages/Contact/Contact";
 export { default as ContactBanner } from "./pages/Contact/ContactBanner";
 export { default as Error404 } from "./pages/Error-404";
+export { default as WorkWithUs } from "./pages/Work-with-us";
 export { default as Home } from "./pages/Home";
 export { default as ProductSingle } from "./pages/Products/ProductSingle";
 export { default as ProductsSimilar } from "./pages/Products/ProductsSimilar";

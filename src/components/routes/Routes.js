@@ -11,6 +11,7 @@ import {
   Faqs,
   FaqsByCategories,
   Checkout,
+  WorkWithUs,
 } from "../../site";
 import {
   ComingSoon,
@@ -25,7 +26,7 @@ import {
   QuickView,
   Cookies,
   PolitiquesConfidentialite,
-  TermesConditions
+  TermesConditions,
 } from "../../components";
 
 const Routes = (props) => (
@@ -57,6 +58,7 @@ const Routes = (props) => (
     <Route exact path="/cookies" component={Cookies} />
     <Route exact path="/policy" component={PolitiquesConfidentialite} />
     <Route exact path="/terms-conditions" component={TermesConditions} />
+    <Route exact path="/work-with-us" component={WorkWithUs} />
     <Route component={Error404} />
   </Switch>
 );

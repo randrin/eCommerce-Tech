@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { Component } from "react";
 import { Breadcrumb } from "../..";
 import { Navbar, Footer } from "../../../components";
@@ -279,7 +280,16 @@ export default class Contact extends Component {
             </>
           )}
         </Translation>
-        <div id="map"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.50029059043!2d8.859947515200576!3d45.29831867909925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786e328de92df7f%3A0xbd53955262fcac36!2sVia%20Santa%20Maria%2C%2027029%20Vigevano%20PV!5e0!3m2!1sen!2sit!4v1602082655732!5m2!1sen!2sit"
+          width="100%"
+          height="500"
+          frameborder="0"
+          style={{ border: '0' }}
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
         <Footer />
       </>
     );
