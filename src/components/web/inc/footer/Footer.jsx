@@ -124,7 +124,7 @@ export default class Footer extends Component {
                             <Link to="/about">{t("FOOTER.ABOUT")}</Link>
                           </li>
                           <li>
-                            <Link to="#">{t("FOOTER.CAREERS_AT")}</Link>
+                            <Link to="/work-with-us">{t("FOOTER.CAREERS_AT")}</Link>
                           </li>
                           <li>
                             <Link to="#">{t("FOOTER.OURS_SERVICES")}</Link>

@@ -107,10 +107,9 @@ export default class WorkWithUs extends Component {
                               ></textarea>
                             </div>
                           </div>
-
                           <button
                             type="submit"
-                            className="btn btn-outline-primary-2"
+                            className="btn btn-outline-primary-2 my-5"
                           >
                             <span>{t("WORK_WITH_US.FORM_SEND")}</span>
                             <i className="icon-long-arrow-right"></i>
